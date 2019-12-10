@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5298667231804720329
+  m_GuidHigh: 12527972918502697635
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5455111240470409997
+      m_GuidHigh: 7866041491224151444
+    m_SerializedTextureGuid:
+      m_GuidLow: 15311798782828497478
+      m_GuidHigh: 9264943695392589243
+    m_Size: {x: 1, y: 0.9409158}
+    m_SpecifySize: 1
+    m_Name: hokoriinu
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4959628627519633077
+      m_GuidHigh: 167491328612663716
+    m_SerializedTextureGuid:
+      m_GuidLow: 15310457757452257870
+      m_GuidHigh: 14339069191401716041
+    m_Size: {x: 1, y: 0.8056872}
+    m_SpecifySize: 1
+    m_Name: pechoro
+    m_Texture: {fileID: 0}
