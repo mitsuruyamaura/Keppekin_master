@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4de5e0b41a14997b3259f7b6bc18f9, type: 3}
+  m_Name: KinData
+  m_EditorClassIdentifier: 
+  kinDataList:
+  - kinNum: 0
+    kinName: tegakin
+    rarerity: 1
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 1
+  - kinNum: 1
+    kinName: obasi
+    rarerity: 2
+    level: 2
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 2
+    kinName: mokkiran
+    rarerity: 3
+    level: 2
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Big_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 3
+    kinName: musoku
+    rarerity: 2
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Small_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 4
+    kinName: petora
+    rarerity: 3
+    level: 3
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 5
+    kinName: momonzo
+    rarerity: 1
+    level: 1
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 2
+  - kinNum: 6
+    kinName: pechoro
+    rarerity: 2
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Small_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 7
+    kinName: hokoriinu
+    rarerity: 1
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 8
+    kinName: poosun
+    rarerity: 1
+    level: 1
+    kinType: 2
+    bulletSpeed: 0
+    inkImage: Small_neut
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 9
+    kinName: medikuma
+    rarerity: 3
+    level: 2
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Big_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 10
+    kinName: forkin
+    rarerity: 1
+    level: 1
+    kinType: 2
+    bulletSpeed: 0
+    inkImage: Small_neut
+    removeCount: 0
+    nakamaKinNum: 3
+  - kinNum: 11
+    kinName: kogepi
+    rarerity: 2
+    level: 3
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 12
+    kinName: hisimo
+    rarerity: 1
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Snall_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 13
+    kinName: kinkirakin
+    rarerity: 2
+    level: 1
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+  - kinNum: 14
+    kinName: rippers
+    rarerity: 2
+    level: 3
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
