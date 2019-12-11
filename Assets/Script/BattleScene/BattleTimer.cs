@@ -32,10 +32,10 @@ public class BattleTimer : MonoBehaviour
 
     void Update()
     {
-        //if (battleUIManager.isStop)
-        //{
-        //    return;
-        //}
+        if (battleUIManager.isStop)
+        {
+            return;
+        }
 
         //バトルが終了していないなら
         if (!battleManager.isGameUp)
