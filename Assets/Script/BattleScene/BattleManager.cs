@@ -173,6 +173,8 @@ public class BattleManager : MonoBehaviour
 /// </summary>
 public void GameUp()
 {
+        isGameUp = false;
+
     //リザルトポップアップを生成する
     ResultPopUp resultPopUp = Instantiate(resultPopUpPrefab, canvasTran, false);
 
