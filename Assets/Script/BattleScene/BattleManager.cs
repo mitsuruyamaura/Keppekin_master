@@ -147,36 +147,16 @@ public class BattleManager : MonoBehaviour
     }
 
 
-
-
-
-
- 
-    void Update()
+    /// <summary>
+    /// ゲーム終了処理
+    /// リザルト用ポップアップを生成
+    /// </summary>
+    public void GameUp(bool result)
     {
-        if(isGameUp == true)
-        {
-            //負け判定
-            isWin = false;
-            //ゲーム終了処理の呼び出し
-            GameUp();
+        isWin = result;
 
-        }
-
-    }
-
-    
-
-/// <summary>
-/// ゲーム終了処理
-/// リザルト用ポップアップを生成
-/// </summary>
-public void GameUp()
-{
-        isGameUp = false;
-
-    //リザルトポップアップを生成する
-    ResultPopUp resultPopUp = Instantiate(resultPopUpPrefab, canvasTran, false);
+        //リザルトポップアップを生成する
+        ResultPopUp resultPopUp = Instantiate(resultPopUpPrefab, canvasTran, false);
 
         //アニメさせながら表示
         Sequence sequence = DOTween.Sequence();
@@ -188,10 +168,18 @@ public void GameUp()
         sequence.Join(resultPopUp.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InCirc));
 
 
-    //勝敗、アイコンや倒した回数などを設定する
-    resultPopUp.SetUp(kinStateManager, isWin);
+        //勝敗、アイコンや倒した回数などを設定する
+        resultPopUp.SetUp(kinStateManager, isWin);
+
+    }
+
+
+
 
 }
 
 
-}
+
+
+
+

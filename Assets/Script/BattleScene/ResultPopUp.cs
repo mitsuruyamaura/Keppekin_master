@@ -87,7 +87,7 @@ public class ResultPopUp : MonoBehaviour
 
         sequence.Append(transform.DOScale(new Vector3(0.8f,  0.8f, 0.8f), 0.25f).SetEase(Ease.Linear));
 
-        sequence.Join(GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.Linear));
+        sequence.Join(GetComponent<CanvasGroup>().DOFade(1, 0.7f).SetEase(Ease.Linear));
 
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }

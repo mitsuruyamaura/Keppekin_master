@@ -67,6 +67,7 @@ public class BattleTimer : MonoBehaviour
                     currentTime = 0;
                     countText.text = currentTime.ToString("F0");
                     battleManager.isGameUp = true;
+                    battleManager.GameUp(false);
                 }
             }
         }
