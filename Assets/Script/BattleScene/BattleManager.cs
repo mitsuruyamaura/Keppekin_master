@@ -176,6 +176,16 @@ public void GameUp()
     //リザルトポップアップを生成する
     ResultPopUp resultPopUp = Instantiate(resultPopUpPrefab, canvasTran, false);
 
+        //アニメさせながら表示
+        Sequence sequence = DOTween.Sequence();
+
+        sequence.Append(resultPopUp.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f)).SetEase(Ease.InCirc);
+
+        sequence.Append(resultPopUp.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 0.3f)).SetEase(Ease.InCirc);
+
+        sequence.Join(resultPopUp.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InCirc));
+
+
     //勝敗、アイコンや倒した回数などを設定する
     resultPopUp.SetUp(kinStateManager, isWin);
 

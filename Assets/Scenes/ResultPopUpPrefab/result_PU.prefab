@@ -1996,6 +1996,7 @@ GameObject:
   - component: {fileID: 1241962932281237526}
   - component: {fileID: 4559519586340841654}
   - component: {fileID: 8623395982505481606}
+  - component: {fileID: 7293341020790385453}
   m_Layer: 0
   m_Name: result_PU
   m_TagString: Untagged
@@ -2203,6 +2204,18 @@ MonoBehaviour:
   - {fileID: 8115000531769660212}
   - {fileID: 3687380179324686922}
   - {fileID: 4698808037419931511}
+--- !u!225 &7293341020790385453
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623395982505481601}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8788414055287833942
 GameObject:
   m_ObjectHideFlags: 0
