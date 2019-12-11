@@ -25,6 +25,8 @@ public class ShotManager : MonoBehaviour
 
     public string inkImageName;
 
+    public BattleUIManager battleUI;
+
 
     /// <summary>
     /// 
@@ -33,6 +35,7 @@ public class ShotManager : MonoBehaviour
     {
         kinStateManager = kinState;
         inkImageName = kinStateManager.loadEnemyData.inkImage;
+        battleUI = GameObject.FindGameObjectWithTag("BattleUI").GetComponent<BattleUIManager>();
 
     }
 
@@ -41,10 +44,14 @@ public class ShotManager : MonoBehaviour
 
     void Update()
     {
+        if (battleUI.isStop)
+        {
+            return;
+        }
+
+
         if (!debugSwitch)
         {
-
-
 
             count += 1;
             //waittTimeフレームごとにショットする（小さいほど早く打ってくる）

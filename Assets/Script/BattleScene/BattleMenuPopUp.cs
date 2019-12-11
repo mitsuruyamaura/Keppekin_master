@@ -23,7 +23,7 @@ public class BattleMenuPopUp : MonoBehaviour
         //////timeScale....ゲームの中の時間の流れ
         //////1倍速
         ////Time.timeScale = 1;
-        //battleUIManager.isStop = false;
+        battleUIManager.isStop = false;
 
 
         //backGround.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1.0f);

@@ -11,6 +11,7 @@ TagManager:
   - EXPSlider
   - Bullet
   - ReturnBullet
+  - BattleUI
   layers:
   - Default
   - TransparentFX

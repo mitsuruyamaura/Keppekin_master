@@ -16,16 +16,15 @@ public class BattleUIManager : MonoBehaviour
     {
 
         BattleMenuPopUp battleMenuPu = Instantiate(battleMenuPuPrefab, canvasTransform, false);
-        //battleMenuPu.battleUIManager = this;
+        battleMenuPu.battleUIManager = this;
 
         Sequence sequence = DOTween.Sequence();
         sequence.Append(battleMenuPu.battleBg.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f)).SetEase(Ease.InCirc);
         sequence.Append(battleMenuPu.battleBg.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 0.3f)).SetEase(Ease.InCirc);
         sequence.Join(battleMenuPu.battleBg.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InCirc));
 
-        //isStop = true;
-        ////timeScale = ０は時間が止まる
-        //Time.timeScale = 0;
+        isStop = true;
+       
 
     }
 }
