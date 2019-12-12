@@ -111,6 +111,7 @@ public class StagePopUp : MonoBehaviour
             saveEnemyKindata.kinLebel = battlekinStates.level;
             saveEnemyKindata.kinType = battlekinStates.type;
             saveEnemyKindata.inkImage = battlekinStates.inkColor;
+            saveEnemyKindata.kinPower = battlekinStates.kinPower;
 
             //仲間菌のデータをGameDataに渡す
             //スクロールされて出てきた仲間(真ん中の子)の情報
@@ -122,6 +123,7 @@ public class StagePopUp : MonoBehaviour
             saveNakamaKindata.kinType = nakamaKinStates.type;
             saveNakamaKindata.inkImage = nakamaKinStates.inkColor;
             saveNakamaKindata.nakamaKinNum = nakamaKinStates.nakamaKinNum;
+            saveNakamaKindata.kinPower = nakamaKinStates.kinPower;
 
 
 

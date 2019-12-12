@@ -30,6 +30,9 @@ public class KinStates : MonoBehaviour
     [Header("連れてく仲間キン用の番号")]
     public int nakamaKinNum;
 
+    [Header("キンの攻撃力")]
+    public int kinPower; //キンの攻撃力
+
     private JyunbiPopUp jyunbi; //StagePopUpを開くための紐付け
 
     public void Start()

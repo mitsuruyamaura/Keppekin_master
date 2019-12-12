@@ -184,7 +184,7 @@ public class KinStateManager : MonoBehaviour
         float shrinkScale = (currnetHp - 0) / (maxHp - 0);
         
 
-        //battleKinObj.transform.localScale = new Vector3(shrinkScale * battleKinObj.transform.localScale.x, shrinkScale * battleKinObj.transform.localScale.y, shrinkScale * battleKinObj.transform.localScale.z);
+        battleKinObj.transform.localScale = new Vector3(shrinkScale * battleKinObj.transform.localScale.x, shrinkScale * battleKinObj.transform.localScale.y, shrinkScale * battleKinObj.transform.localScale.z);
 
         //DOTweenアニメーション
 

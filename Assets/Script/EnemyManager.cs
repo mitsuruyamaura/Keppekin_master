@@ -160,6 +160,7 @@ public class EnemyManager : MonoBehaviour
                     silhouetteObj.rarelity = data.rarerity;
                     silhouetteObj.inkColor = data.inkImage;
                     silhouetteObj.nakamaKinNum = data.nakamaKinNum;
+                    silhouetteObj.kinPower = data.kinPower;
 
 
                     //キンをリストに追加する
