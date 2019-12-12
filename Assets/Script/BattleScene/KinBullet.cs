@@ -12,7 +12,7 @@ public class KinBullet : MonoBehaviour
 
     private float timer; //生存時間のカウント用
 
-    public float damage;
+    public int damage;
 
     public string inkImageName;
 

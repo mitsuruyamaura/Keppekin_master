@@ -25,12 +25,16 @@ public class BattleManager : MonoBehaviour
     
     public bool isGameUp; //バトル終了確認用
 
+    public BattleUIManager battleUIManager;
+
+    public DestroyBullet destroyBullet;
+
 
 
     public GameData.BattleKinData nakamaData;
     public GameData.BattleKinData enemyData;
 
-    public float attackPower;
+    public int attackPower;
     public int maxHp;
 
 
@@ -87,7 +91,10 @@ public class BattleManager : MonoBehaviour
                 //Prefab第一引数だけだとPrefabの持ってる位置情報が利用できるけど、第二引数に位置情報を入れると第二引数の
                 //位置情報が優先される
                 Instantiate(nakamaKinPrefabs[data.nakamaKinNum - 1], nakamaKinPos);
-                
+
+                //キンの攻撃力を計算用の変数に入れる
+                attackPower = data.kinPower;
+              
               
             }
 
@@ -143,7 +150,10 @@ public class BattleManager : MonoBehaviour
 
         //最終的な攻撃力とmaxHpは倍率をかけて整数にした値
         attackPower = Mathf.CeilToInt(attackPower * rate);
+        //倍率のかかった攻撃力がでる
+        destroyBullet.SetAttackPower(attackPower);
         maxHp = Mathf.CeilToInt(maxHp * rate);
+        Debug.Log(attackPower);
     }
 
 
@@ -153,6 +163,7 @@ public class BattleManager : MonoBehaviour
     /// </summary>
     public void GameUp(bool result)
     {
+        battleUIManager.isStop = true;
         isWin = result;
 
         //リザルトポップアップを生成する

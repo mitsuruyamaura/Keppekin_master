@@ -11,8 +11,8 @@ public class KinStateManager : MonoBehaviour
     public string bulletTypeName;
     public KinStates kinStates;
 
-    public float maxHp;
-    public float currnetHp;
+    public int maxHp;
+    public int currnetHp;
 
     public GameObject[] kinModelPrefabs;
     public GameObject setKinPrefab;
@@ -178,11 +178,11 @@ public class KinStateManager : MonoBehaviour
     /// <summary>
     /// キンへのダメージと縮小処理
     /// </summary>
-    public void ProcDamage(float damage)
+    public void ProcDamage(int damage)
     {
         currnetHp -= damage;
         float shrinkScale = (currnetHp - 0) / (maxHp - 0);
-        
+        Debug.Log(shrinkScale);
 
         battleKinObj.transform.localScale = new Vector3(shrinkScale * battleKinObj.transform.localScale.x, shrinkScale * battleKinObj.transform.localScale.y, shrinkScale * battleKinObj.transform.localScale.z);
 

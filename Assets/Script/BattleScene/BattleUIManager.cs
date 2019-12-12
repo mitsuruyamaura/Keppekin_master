@@ -10,7 +10,8 @@ public class BattleUIManager : MonoBehaviour
     public BattleMenuPopUp battleMenuPuPrefab;
     public Transform canvasTransform;
 
-    public bool isStop;
+    public bool isStop = true;
+    
 
     public void CreateBattleMenuPopUp()
     {

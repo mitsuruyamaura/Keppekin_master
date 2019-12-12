@@ -27,6 +27,7 @@ public class BattleTimer : MonoBehaviour
     {
         //currentTimeにbattleTimeを設定する
         currentTime = battleTime;
+        battleUIManager.isStop = false;
     }
 
 
