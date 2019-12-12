@@ -1540,6 +1540,8 @@ GameObject:
   - component: {fileID: 6733744616608256670}
   - component: {fileID: 3745045236397047780}
   - component: {fileID: 7108716403883046635}
+  - component: {fileID: 4924086712168368339}
+  - component: {fileID: 8066639685549805969}
   m_Layer: 9
   m_Name: rippers_Scale_FIX
   m_TagString: Untagged
@@ -1603,6 +1605,35 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: 
   battleUI: {fileID: 0}
+--- !u!54 &4924086712168368339
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721501643588804749}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &8066639685549805969
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721501643588804749}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0048804325
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8071377350669614775
 GameObject:
   m_ObjectHideFlags: 0

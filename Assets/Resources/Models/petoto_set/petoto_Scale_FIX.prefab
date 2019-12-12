@@ -596,6 +596,8 @@ GameObject:
   - component: {fileID: 7774780026284855456}
   - component: {fileID: 391693305371852250}
   - component: {fileID: 6595582136446151013}
+  - component: {fileID: 2340461124445306265}
+  - component: {fileID: 4035807280775320311}
   m_Layer: 9
   m_Name: petoto_Scale_FIX
   m_TagString: Untagged
@@ -657,6 +659,36 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: 
   battleUI: {fileID: 0}
+--- !u!54 &2340461124445306265
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755057377614242483}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &4035807280775320311
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755057377614242483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.002939445
+  m_Height: 0.010370169
+  m_Direction: 0
+  m_Center: {x: -0, y: 0.00045532733, z: -0}
 --- !u!1 &7752111019299188446
 GameObject:
   m_ObjectHideFlags: 0

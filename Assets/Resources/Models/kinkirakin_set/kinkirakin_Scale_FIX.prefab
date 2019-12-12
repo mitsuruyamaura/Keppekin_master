@@ -291,6 +291,8 @@ GameObject:
   - component: {fileID: 6277525906837899182}
   - component: {fileID: 4149015154160708308}
   - component: {fileID: 7893886106396458506}
+  - component: {fileID: 5557774513714730301}
+  - component: {fileID: 1153942380341762504}
   m_Layer: 9
   m_Name: kinkirakin_Scale_FIX
   m_TagString: Untagged
@@ -352,6 +354,36 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: 
   battleUI: {fileID: 0}
+--- !u!54 &5557774513714730301
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009036250601780669}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &1153942380341762504
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009036250601780669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0024546506
+  m_Height: 0.009504154
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7786941136765801912
 GameObject:
   m_ObjectHideFlags: 0
