@@ -242,17 +242,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_AddCommandBufferImpl();
 		Register_UnityEngine_Camera_AddCommandBufferImpl();
 
-		//System.Void UnityEngine.Camera::CopyFrom(UnityEngine.Camera)
-		void Register_UnityEngine_Camera_CopyFrom();
-		Register_UnityEngine_Camera_CopyFrom();
-
 		//System.Void UnityEngine.Camera::RemoveCommandBufferImpl(UnityEngine.Rendering.CameraEvent,UnityEngine.Rendering.CommandBuffer)
 		void Register_UnityEngine_Camera_RemoveCommandBufferImpl();
 		Register_UnityEngine_Camera_RemoveCommandBufferImpl();
-
-		//System.Void UnityEngine.Camera::Render()
-		void Register_UnityEngine_Camera_Render();
-		Register_UnityEngine_Camera_Render();
 
 		//System.Void UnityEngine.Camera::ResetProjectionMatrix()
 		void Register_UnityEngine_Camera_ResetProjectionMatrix();
@@ -301,14 +293,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)
 		void Register_UnityEngine_Camera_set_clearFlags();
 		Register_UnityEngine_Camera_set_clearFlags();
-
-		//System.Void UnityEngine.Camera::set_cullingMask(System.Int32)
-		void Register_UnityEngine_Camera_set_cullingMask();
-		Register_UnityEngine_Camera_set_cullingMask();
-
-		//System.Void UnityEngine.Camera::set_depthTextureMode(UnityEngine.DepthTextureMode)
-		void Register_UnityEngine_Camera_set_depthTextureMode();
-		Register_UnityEngine_Camera_set_depthTextureMode();
 
 		//System.Void UnityEngine.Camera::set_farClipPlane(System.Single)
 		void Register_UnityEngine_Camera_set_farClipPlane();
@@ -950,10 +934,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
-		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
-		void Register_UnityEngine_GameObject_Find();
-		Register_UnityEngine_GameObject_Find();
-
 		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
 		Register_UnityEngine_GameObject_FindGameObjectWithTag();
@@ -1353,10 +1333,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Light::set_intensity(System.Single)
 		void Register_UnityEngine_Light_set_intensity();
 		Register_UnityEngine_Light_set_intensity();
-
-		//System.Void UnityEngine.Light::set_shadowCustomResolution(System.Int32)
-		void Register_UnityEngine_Light_set_shadowCustomResolution();
-		Register_UnityEngine_Light_set_shadowCustomResolution();
 
 		//System.Void UnityEngine.Light::set_shadowStrength(System.Single)
 		void Register_UnityEngine_Light_set_shadowStrength();
@@ -2384,14 +2360,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Screen
 
-	//Start Registrations for type : UnityEngine.ScreenCapture
-
-		//System.Void UnityEngine.ScreenCapture::CaptureScreenshot(System.String,System.Int32,UnityEngine.ScreenCapture/StereoScreenCaptureMode)
-		void Register_UnityEngine_ScreenCapture_CaptureScreenshot();
-		Register_UnityEngine_ScreenCapture_CaptureScreenshot();
-
-	//End Registrations for type : UnityEngine.ScreenCapture
-
 	//Start Registrations for type : UnityEngine.ScriptableObject
 
 		//System.Void UnityEngine.ScriptableObject::CreateScriptableObject(UnityEngine.ScriptableObject)
@@ -2838,10 +2806,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Time
 
-		//System.Int32 UnityEngine.Time::get_frameCount()
-		void Register_UnityEngine_Time_get_frameCount();
-		Register_UnityEngine_Time_get_frameCount();
-
 		//System.Single UnityEngine.Time::get_deltaTime()
 		void Register_UnityEngine_Time_get_deltaTime();
 		Register_UnityEngine_Time_get_deltaTime();
@@ -2862,6 +2826,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Time_get_timeScale();
 		Register_UnityEngine_Time_get_timeScale();
 
+		//System.Single UnityEngine.Time::get_timeSinceLevelLoad()
+		void Register_UnityEngine_Time_get_timeSinceLevelLoad();
+		Register_UnityEngine_Time_get_timeSinceLevelLoad();
+
 		//System.Single UnityEngine.Time::get_unscaledDeltaTime()
 		void Register_UnityEngine_Time_get_unscaledDeltaTime();
 		Register_UnityEngine_Time_get_unscaledDeltaTime();
@@ -2869,10 +2837,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_unscaledTime()
 		void Register_UnityEngine_Time_get_unscaledTime();
 		Register_UnityEngine_Time_get_unscaledTime();
-
-		//System.Void UnityEngine.Time::set_captureFramerate(System.Int32)
-		void Register_UnityEngine_Time_set_captureFramerate();
-		Register_UnityEngine_Time_set_captureFramerate();
 
 	//End Registrations for type : UnityEngine.Time
 

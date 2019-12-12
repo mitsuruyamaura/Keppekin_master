@@ -119,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 11.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -515,7 +515,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: "\u30AB\u30E1\u30E9\u3092\u4F7F\u3046"
+  cameraUsageDescription: "\u30AB\u30E1\u30E9\u3092\u4F7F\u3044\u307E\u3059"
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 

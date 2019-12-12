@@ -33,11 +33,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
 
+	void RegisterModule_JSONSerialize();
+	RegisterModule_JSONSerialize();
+
+	void RegisterModule_Input();
+	RegisterModule_Input();
+
 	void RegisterModule_XR();
 	RegisterModule_XR();
-
-	void RegisterModule_TLS();
-	RegisterModule_TLS();
 
 	void RegisterModule_UnityWebRequest();
 	RegisterModule_UnityWebRequest();
@@ -45,26 +48,20 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UnityAnalytics();
 	RegisterModule_UnityAnalytics();
 
-	void RegisterModule_ScreenCapture();
-	RegisterModule_ScreenCapture();
-
 	void RegisterModule_GameCenter();
 	RegisterModule_GameCenter();
 
 	void RegisterModule_TextCore();
 	RegisterModule_TextCore();
 
-	void RegisterModule_JSONSerialize();
-	RegisterModule_JSONSerialize();
-
-	void RegisterModule_Input();
-	RegisterModule_Input();
-
 	void RegisterModule_AR();
 	RegisterModule_AR();
 
 	void RegisterModule_VR();
 	RegisterModule_VR();
+
+	void RegisterModule_TLS();
+	RegisterModule_TLS();
 
 	void RegisterModule_ImageConversion();
 	RegisterModule_ImageConversion();
@@ -394,32 +391,32 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<Sprite>("Core");
 	//39. SpriteAtlas
 	RegisterUnityClass<SpriteAtlas>("Core");
-	//40. Rigidbody
-	RegisterUnityClass<Rigidbody>("Physics");
-	//41. Collider
-	RegisterUnityClass<Collider>("Physics");
-	//42. MeshCollider
-	RegisterUnityClass<MeshCollider>("Physics");
-	//43. ParticleSystem
+	//40. ParticleSystem
 	RegisterUnityClass<ParticleSystem>("ParticleSystem");
-	//44. ParticleSystemRenderer
+	//41. ParticleSystemRenderer
 	RegisterUnityClass<ParticleSystemRenderer>("ParticleSystem");
-	//45. Animator
+	//42. Animator
 	RegisterUnityClass<Animator>("Animation");
-	//46. AnimatorOverrideController
+	//43. AnimatorOverrideController
 	RegisterUnityClass<AnimatorOverrideController>("Animation");
-	//47. RuntimeAnimatorController
+	//44. RuntimeAnimatorController
 	RegisterUnityClass<RuntimeAnimatorController>("Animation");
-	//48. AudioClip
+	//45. AudioClip
 	RegisterUnityClass<AudioClip>("Audio");
-	//49. SampleClip
+	//46. SampleClip
 	RegisterUnityClass<SampleClip>("Audio");
-	//50. AudioSource
+	//47. AudioSource
 	RegisterUnityClass<AudioSource>("Audio");
-	//51. AudioBehaviour
+	//48. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
-	//52. AudioMixer
+	//49. AudioMixer
 	RegisterUnityClass<AudioMixer>("Audio");
+	//50. Rigidbody
+	RegisterUnityClass<Rigidbody>("Physics");
+	//51. Collider
+	RegisterUnityClass<Collider>("Physics");
+	//52. MeshCollider
+	RegisterUnityClass<MeshCollider>("Physics");
 	//53. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
 	//54. TextRendering::Font
