@@ -20,11 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _1st_ShadeMap:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _2nd_ShadeMap:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BakedNormal:
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap_Sampler:
@@ -88,11 +88,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Outline_Sampler:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -116,27 +116,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set_RimLightMask:
-        m_Texture: {fileID: 2800000, guid: 6dff287f8ab2b46c2ad1b1f158e7d5ac, type: 3}
+        m_Texture: {fileID: 2800000, guid: a77e2199636fc4c95b80582e7b637a2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _1st2nd_Shades_Feather: 1
-    - _1st_ShadeColor_Feather: 0.1
-    - _1st_ShadeColor_Step: 0.638
-    - _2nd_ShadeColor_Feather: 1
-    - _2nd_ShadeColor_Step: 0.444
+    - _1st2nd_Shades_Feather: 0.0001
+    - _1st_ShadeColor_Feather: 0.142
+    - _1st_ShadeColor_Step: 0.493
+    - _2nd_ShadeColor_Feather: 0.0001
+    - _2nd_ShadeColor_Step: 0
     - _Add_Antipodean_RimLight: 0
     - _Ap_RimLight_FeatherOff: 0
     - _Ap_RimLight_Power: 0.1
-    - _BaseColor_Step: 0.638
-    - _BaseShade_Feather: 0.1
+    - _BaseColor_Step: 0.493
+    - _BaseShade_Feather: 0.142
     - _Base_Speed: 0
     - _BlurLevelMatcap: 0
     - _BumpScale: 1
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
     - _ColorShift_Speed: 0
-    - _CullMode: 0
+    - _CullMode: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -177,7 +177,7 @@ Material:
     - _Is_UseTweakMatCapOnShadow: 0
     - _Is_ViewCoord_Scroll: 0
     - _Is_ViewShift: 0
-    - _LightDirection_MaskOn: 1
+    - _LightDirection_MaskOn: 0
     - _MatCap: 0
     - _Metallic: 0
     - _Mode: 0
@@ -186,20 +186,20 @@ Material:
     - _OcclusionStrength: 1
     - _Offset_X_Axis_BLD: -0.05
     - _Offset_Y_Axis_BLD: 0.09
-    - _Offset_Z: 5.3
-    - _Outline_Width: 5
+    - _Offset_Z: 5.27
+    - _Outline_Width: 0.07
     - _Parallax: 0.02
     - _RimLight: 1
     - _RimLight_FeatherOff: 1
-    - _RimLight_InsideMask: 0.254
-    - _RimLight_Power: 0.46
+    - _RimLight_InsideMask: 0.072
+    - _RimLight_Power: 0.263
     - _Rotate_EmissiveUV: 0
     - _Rotate_MatCapUV: 0
     - _Rotate_NormalMapForMatCapUV: 0
     - _Scroll_EmissiveU: 0
     - _Scroll_EmissiveV: 0
     - _Set_SystemShadowsToBase: 1
-    - _ShadeColor_Step: 0.444
+    - _ShadeColor_Step: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -207,10 +207,10 @@ Material:
     - _TweakHighColorOnShadow: 0
     - _TweakMatCapOnShadow: 0
     - _Tweak_HighColorMaskLevel: 0
-    - _Tweak_LightDirection_MaskLevel: 0.331
+    - _Tweak_LightDirection_MaskLevel: 0
     - _Tweak_MatCapUV: 0
     - _Tweak_MatcapMaskLevel: 0
-    - _Tweak_RimLightMaskLevel: -0.3
+    - _Tweak_RimLightMaskLevel: -0.72
     - _Tweak_SystemShadowsLevel: 0
     - _UVSec: 0
     - _Unlit_Intensity: 1
@@ -221,8 +221,8 @@ Material:
     - _utsTechnique: 0
     - _utsVersion: 2.075
     m_Colors:
-    - _1st_ShadeColor: {r: 0.9528302, g: 0.6786668, b: 0.7188489, a: 1}
-    - _2nd_ShadeColor: {r: 0.6067551, g: 0.84596336, b: 0.9528302, a: 1}
+    - _1st_ShadeColor: {r: 0.8018868, g: 0.4349858, b: 0.61786103, a: 1}
+    - _2nd_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
     - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,6 +231,6 @@ Material:
     - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
     - _HighColor: {r: 0, g: 0, b: 0, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Outline_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
-    - _RimLightColor: {r: 1, g: 0.7311321, b: 0.98240906, a: 1}
+    - _Outline_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _RimLightColor: {r: 1, g: 0.5613208, b: 0.5613208, a: 1}
     - _ViewShift: {r: 0, g: 0, b: 0, a: 1}

@@ -916,9 +916,9 @@ MonoBehaviour:
   resistRate: 0.75
   weakRate: 1.25
   nakamaKinPrefabs:
-  - {fileID: 2267547102923957915, guid: c34643483072d4b50bb61df280c8949e, type: 3}
-  - {fileID: 6020589757976693888, guid: 6fe2ae56516924f2193937890b796d33, type: 3}
-  - {fileID: 630756213133431423, guid: 1b56f12a4ad8d4c2ba640be5843deba1, type: 3}
+  - {fileID: 7406104483744830823, guid: 55e9baf7c23a64be0bd282a98cf644ca, type: 3}
+  - {fileID: 8342043501544473723, guid: 09dc3df9af9744fd1b16f3350eb468e5, type: 3}
+  - {fileID: 2476173047926896457, guid: 5d6bebffb560a412983c4a5eb83a601a, type: 3}
   nakamaKinPos: {fileID: 100686763}
 --- !u!4 &754676061
 Transform:

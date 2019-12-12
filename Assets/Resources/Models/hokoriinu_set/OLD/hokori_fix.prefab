@@ -232,7 +232,8 @@ MonoBehaviour:
   waitTime: 60
   debugSwitch: 0
   kinStateManager: {fileID: 0}
-  inkImageName: Small_Diety
+  inkImageName: Small_Dirty
+  battleUI: {fileID: 0}
 --- !u!135 &465554439383906090
 SphereCollider:
   m_ObjectHideFlags: 0
