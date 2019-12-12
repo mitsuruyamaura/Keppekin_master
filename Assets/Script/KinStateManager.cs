@@ -187,6 +187,11 @@ public class KinStateManager : MonoBehaviour
         battleKinObj.transform.localScale = new Vector3(shrinkScale * battleKinObj.transform.localScale.x, shrinkScale * battleKinObj.transform.localScale.y, shrinkScale * battleKinObj.transform.localScale.z);
 
         //DOTweenアニメーション
+        //TODOエフェクト....KinstateManangerにExprosionPrefabをpublic(GameObject)で登録
+        //インスタんしエイトする
+        //GameObject effectObj =　instan(prefab, battlekinobj.transform);
+        //エフェクトが終わるぐらいにdestroyする
+        //destroy(gameobject, 1.0f(effectの時間による));
 
         battleKinObj.transform.DOScale(tempScale * shrinkScale, 0.5f);
 
