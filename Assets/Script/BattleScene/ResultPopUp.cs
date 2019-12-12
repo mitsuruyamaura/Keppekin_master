@@ -83,11 +83,11 @@ public class ResultPopUp : MonoBehaviour
     {
         Sequence sequence = DOTween.Sequence();
 
-        sequence.Append(transform.DOScale(new Vector3(1.1f, 1.1f, 1.1f), 0.1f).SetEase(Ease.Linear));
+        sequence.Append(transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f).SetEase(Ease.Linear));
 
         sequence.Append(transform.DOScale(new Vector3(0.8f,  0.8f, 0.8f), 0.25f).SetEase(Ease.Linear));
 
-        sequence.Join(GetComponent<CanvasGroup>().DOFade(1, 0.7f).SetEase(Ease.Linear));
+        sequence.Join(GetComponent<CanvasGroup>().DOFade(0, 0.7f).SetEase(Ease.Linear));
 
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }

@@ -163,7 +163,7 @@ public class BattleManager : MonoBehaviour
 
         sequence.Append(resultPopUp.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f)).SetEase(Ease.InCirc);
 
-        sequence.Append(resultPopUp.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 0.3f)).SetEase(Ease.InCirc);
+        sequence.Append(resultPopUp.transform.DOScale(new Vector3(1.0f, 1.0f, 1.0f), 0.3f)).SetEase(Ease.InCirc);
 
         sequence.Join(resultPopUp.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InCirc));
 

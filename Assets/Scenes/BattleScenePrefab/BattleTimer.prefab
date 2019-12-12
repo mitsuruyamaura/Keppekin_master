@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 0}
-  battleTime: 25
+  battleTime: 5
   limitTime: 10
   countText: {fileID: 6528545742303128568}
   battleUIManager: {fileID: 0}
