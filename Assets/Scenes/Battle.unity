@@ -407,7 +407,7 @@ MonoBehaviour:
     nakamaKinNum: 0
   battleManager: {fileID: 754676060}
   timerTran: {fileID: 1358849505}
-  battleTimerPrefab: {fileID: 4135316017024445340, guid: c298e5383522a431495bc286bb38f0e3,
+  battleTimerPrefab: {fileID: 4135316017024445340, guid: c91e6b7b2d8647341a25b5cb6b53e62a,
     type: 3}
   target: {fileID: 8641420280052896162}
   warningPrefabs:
@@ -420,11 +420,11 @@ MonoBehaviour:
   - {fileID: 1749520594}
   - {fileID: 242342306}
   warningGreenImages:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3938906088567041723, guid: dd4ef1ea99e374ec9b846812a2ee5599, type: 3}
+  - {fileID: 3938906088567041723, guid: dd4ef1ea99e374ec9b846812a2ee5599, type: 3}
   warningPinkImages:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3938906088567041723, guid: d32aa4cfbb6dc473eb6eae9b4df23874, type: 3}
+  - {fileID: 3938906088567041723, guid: d32aa4cfbb6dc473eb6eae9b4df23874, type: 3}
 --- !u!114 &253280750
 MonoBehaviour:
   m_ObjectHideFlags: 0
