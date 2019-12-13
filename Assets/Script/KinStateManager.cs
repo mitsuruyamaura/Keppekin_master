@@ -181,7 +181,7 @@ public class KinStateManager : MonoBehaviour
     public void ProcDamage(int damage)
     {
         currnetHp -= damage;
-        float shrinkScale = (currnetHp - 0) / (maxHp - 0);
+        float shrinkScale = (float)currnetHp / (float)maxHp;
         Debug.Log(shrinkScale);
 
         battleKinObj.transform.localScale = new Vector3(shrinkScale * battleKinObj.transform.localScale.x, shrinkScale * battleKinObj.transform.localScale.y, shrinkScale * battleKinObj.transform.localScale.z);

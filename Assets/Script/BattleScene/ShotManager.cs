@@ -76,6 +76,7 @@ public class ShotManager : MonoBehaviour
         KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
         //KinBulletクラスで作ったinkImageName変数にこのクラスで作ったinkImageNameを入れる
         kinBullet.inkImageName = inkImageName;
+        kinBullet.damage = kinStateManager.loadEnemyData.kinPower;
         kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
     }
 
