@@ -379,7 +379,7 @@ MonoBehaviour:
   maxHp: 100
   currnetHp: 100
   kinModelPrefabs:
-  - {fileID: 1401200517003410154, guid: 88e628a5639744601a58f28adaf572b1, type: 3}
+  - {fileID: 1219734482671587915, guid: 9d1af06a6c3634eb1a5628e5fdd68a4e, type: 3}
   - {fileID: 1385172791554909310, guid: 998a3f199dcc948f5a6dc63350d4e09a, type: 3}
   - {fileID: 7721501643588804749, guid: c7eea437d897b4cbab57f58e2ac71a12, type: 3}
   - {fileID: 306987612584570532, guid: 51380b3a5a08545a39dc6531cdc7df93, type: 3}
@@ -389,6 +389,11 @@ MonoBehaviour:
   - {fileID: 2450406664276978756, guid: c3b347302d31f4be2ad7fd7fa04f1bda, type: 3}
   - {fileID: 5541300360482250464, guid: b3720a29a6aa64e088b3736c55259ea1, type: 3}
   - {fileID: 5951658880821389817, guid: 941f943627d734b56a8b01c48c21f2a1, type: 3}
+  - {fileID: 2818639819519794905, guid: b87c0628ac556400683c27c1ab667f85, type: 3}
+  - {fileID: 1801337373811350858, guid: beb988badd42944a1b77a9d8275dbf6a, type: 3}
+  - {fileID: 5735976139570671223, guid: 37d91780e6bbb4eafaf7e6a8c36113e0, type: 3}
+  - {fileID: 7009036250601780669, guid: 823fbcfec05a0400e80e4a73693d7001, type: 3}
+  - {fileID: 7721501643588804749, guid: c7eea437d897b4cbab57f58e2ac71a12, type: 3}
   setKinPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
   isDebugOn: 0

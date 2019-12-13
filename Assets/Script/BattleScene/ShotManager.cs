@@ -44,11 +44,15 @@ public class ShotManager : MonoBehaviour
 
     void Update()
     {
+        if (battleUI != null)
+        {
+
         if (battleUI.isStop)
         {
             return;
         }
 
+        }
 
         if (!debugSwitch)
         {

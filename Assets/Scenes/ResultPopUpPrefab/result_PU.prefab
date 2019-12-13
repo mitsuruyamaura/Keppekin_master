@@ -2189,8 +2189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   removeCountTxt: {fileID: 3579292213415559162}
   removeKinIcon: {fileID: 1485877395703516319}
-  removeKinName: 
-  removeKinType: 0
+  removeKinName: {fileID: 3579292211983633383}
+  removeKinType: {fileID: 3579292212715661262}
   winImage: {fileID: 3157902349482213714}
   loseImage: {fileID: 8762436204702929180}
   closeBut: {fileID: 3396711359648226284}

@@ -27,15 +27,21 @@ public class BattleTimer : MonoBehaviour
     {
         //currentTimeにbattleTimeを設定する
         currentTime = battleTime;
+        battleUIManager = GameObject.FindGameObjectWithTag("BattleUI").GetComponent<BattleUIManager>();
         battleUIManager.isStop = false;
     }
 
 
     void Update()
     {
+        if (battleUIManager != null)
+        {
+        
         if (battleUIManager.isStop)
         {
             return;
+        }
+
         }
 
         //バトルが終了していないなら

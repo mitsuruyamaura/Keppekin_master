@@ -14,10 +14,10 @@ public class ResultPopUp : MonoBehaviour
     public Image removeKinIcon;
 
     [Header("バトルしたキンのなまえ")]
-    public string removeKinName;
+    public TMP_Text removeKinName;
 
     [Header("バトルしたキンの属性")]
-    public KIN_TYPE removeKinType;
+    public TMP_Text removeKinType;
 
     [Header("勝利イメージ")]
     public Image winImage;
@@ -41,13 +41,13 @@ public class ResultPopUp : MonoBehaviour
     /// BattleManager.CSから呼ばれる
     /// リザルトポップアップに表示する情報を設定する
     /// </summary>
-    public void SetUp(KinStateManager kinState, bool isResult)
+    public IEnumerator SetUp(GameData.BattleKinData enemyData, bool isResult)
     {
         //除菌回数やキンのアイコンなどの情報をKinStateManagerのloadEnemyDataから取得し表示する
-        removeCountTxt.text = kinState.loadEnemyData.removeCount.ToString();
-        removeKinIcon.sprite = Resources.Load<Sprite>("Image/" + kinState.loadEnemyData.kinName);
-        removeKinName = kinState.loadEnemyData.kinName;
-        removeKinType = kinState.loadEnemyData.kinType;
+        removeCountTxt.text = enemyData.removeCount.ToString();
+        removeKinIcon.sprite = Resources.Load<Sprite>("Image/" + enemyData.kinName);
+        removeKinName.text = enemyData.kinName;
+        removeKinType.text = enemyData.kinType.ToString();
 
         //勝敗によって分岐
         if (isResult)
@@ -60,10 +60,13 @@ public class ResultPopUp : MonoBehaviour
                 winMesImage[i].enabled = true;
             }
 
+            yield return new WaitForSeconds(1.0f);
+
+
             //除菌回数をアニメ付きで加算する
-            DOTween.To(() => kinState.loadEnemyData.removeCount, (x) =>
-            kinState.loadEnemyData.removeCount = x,
-            kinState.loadEnemyData.removeCount++, 1.5f).SetRelative();
+            DOTween.To(() => enemyData.removeCount, (x) =>
+            enemyData.removeCount = x,
+            enemyData.removeCount++, 1.5f).SetRelative();
         }
         else
         {
@@ -78,16 +81,24 @@ public class ResultPopUp : MonoBehaviour
         }
         }
 
-
     public void OnClickCloseButton()
+    {
+        StartCoroutine(ClosePopUp());
+    }
+
+
+
+    public IEnumerator ClosePopUp()
     {
         Sequence sequence = DOTween.Sequence();
 
         sequence.Append(transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f).SetEase(Ease.Linear));
 
-        sequence.Append(transform.DOScale(new Vector3(0.8f,  0.8f, 0.8f), 0.25f).SetEase(Ease.Linear));
+        sequence.Append(transform.DOScale(new Vector3(0f,  0f, 0f), 0.7f).SetEase(Ease.Linear));
 
         sequence.Join(GetComponent<CanvasGroup>().DOFade(0, 0.7f).SetEase(Ease.Linear));
+
+        yield return new WaitForSeconds(0.3f);
 
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }

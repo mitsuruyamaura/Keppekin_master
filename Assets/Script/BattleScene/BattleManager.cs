@@ -180,7 +180,8 @@ public class BattleManager : MonoBehaviour
 
 
         //勝敗、アイコンや倒した回数などを設定する
-        resultPopUp.SetUp(kinStateManager, isWin);
+        StartCoroutine(resultPopUp.SetUp(enemyData, isWin)); 
+
 
     }
 
