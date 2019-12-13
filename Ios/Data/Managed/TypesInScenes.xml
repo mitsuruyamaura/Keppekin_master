@@ -66,6 +66,7 @@
 		<type fullname="BattleDebug" preserve="nothing"/>
 		<type fullname="BattleManager" preserve="nothing"/>
 		<type fullname="BattleMenuPopUp" preserve="nothing"/>
+		<type fullname="BattleTimer" preserve="nothing"/>
 		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
