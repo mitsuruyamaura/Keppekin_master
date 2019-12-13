@@ -24,6 +24,11 @@ public class DamaedInk : MonoBehaviour
     private Sprite ink;
 
 
+    //battlemanagerをアサイン
+    public BattleManager battleManager;
+
+
+
 
     //タグBulletじゃなければこの処理は実行されない
     private void OnCollisionEnter(Collision col) //col == 弾(当たったオブジェクトの情報が入る) KinBulletクラスを持っている弾
@@ -53,10 +58,14 @@ public class DamaedInk : MonoBehaviour
 
             stainList.Add(stain);
             Destroy(col.gameObject, 0.5f);
+            battleManager.maxHp -= kinBullet.damage;
 
-            if (stainList.Count >= 10)
+            //ゲームオーバー処理(自分のHP0以下の時)
+            if (battleManager.maxHp <= 0)
             {
-                //TODO ゲームオーバー処理を書く
+                battleManager.GameUp(false);
+
+
                 //画面をインクだらけにするエフェクト？
                 //SE BGM
                 //シーン遷移

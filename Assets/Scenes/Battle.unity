@@ -389,7 +389,7 @@ MonoBehaviour:
   - {fileID: 2450406664276978756, guid: c3b347302d31f4be2ad7fd7fa04f1bda, type: 3}
   - {fileID: 5541300360482250464, guid: b3720a29a6aa64e088b3736c55259ea1, type: 3}
   - {fileID: 5951658880821389817, guid: 941f943627d734b56a8b01c48c21f2a1, type: 3}
-  - {fileID: 2818639819519794905, guid: b87c0628ac556400683c27c1ab667f85, type: 3}
+  - {fileID: 7988122056851621873, guid: 4b545ed79f80d4a908c6c6dd3f6a4bbb, type: 3}
   - {fileID: 1801337373811350858, guid: beb988badd42944a1b77a9d8275dbf6a, type: 3}
   - {fileID: 5735976139570671223, guid: 37d91780e6bbb4eafaf7e6a8c36113e0, type: 3}
   - {fileID: 7009036250601780669, guid: 823fbcfec05a0400e80e4a73693d7001, type: 3}
@@ -917,7 +917,7 @@ MonoBehaviour:
     removeCount: 0
     nakamaKinNum: 0
   attackPower: 0
-  maxHp: 0
+  maxHp: 100
   resistRate: 0.75
   weakRate: 1.25
   nakamaKinPrefabs:
@@ -1497,7 +1497,7 @@ PrefabInstance:
     - target: {fileID: 8204915111900576470, guid: 1ddb8248cf6e8459689add33437fdf20,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204915111900576470, guid: 1ddb8248cf6e8459689add33437fdf20,
         type: 3}
@@ -1544,6 +1544,11 @@ PrefabInstance:
       propertyPath: canvasTran
       value: 
       objectReference: {fileID: 556525259}
+    - target: {fileID: 7773050737786924425, guid: 1ddb8248cf6e8459689add33437fdf20,
+        type: 3}
+      propertyPath: battleManager
+      value: 
+      objectReference: {fileID: 754676060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ddb8248cf6e8459689add33437fdf20, type: 3}
 --- !u!4 &8641420280052896162 stripped

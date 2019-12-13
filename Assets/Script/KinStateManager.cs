@@ -195,5 +195,11 @@ public class KinStateManager : MonoBehaviour
 
         battleKinObj.transform.DOScale(tempScale * shrinkScale, 0.5f);
 
+
+        if (currnetHp <= 0)
+        {
+            battleManager.GameUp(true);
+            //TODO エフェクトを足す時ここ（ヤラレター）
+        }
     }
 }
