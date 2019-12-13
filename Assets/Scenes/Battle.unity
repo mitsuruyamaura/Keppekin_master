@@ -379,16 +379,16 @@ MonoBehaviour:
   maxHp: 100
   currnetHp: 100
   kinModelPrefabs:
-  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
-  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
-  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
-  - {fileID: 5148688619286189677, guid: 8dc8fc1d3e05e4934a7e03c54f4f6a92, type: 3}
-  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
-  - {fileID: 3934977714420553202, guid: b60a7d14c5d36410284fe4caea7ac1cd, type: 3}
-  - {fileID: 1983128778870702777, guid: eb5ad630084534def96a3875822a8aaa, type: 3}
-  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
-  - {fileID: 2537071523960213484, guid: 536469237fe81459c8def55de74090c1, type: 3}
-  - {fileID: 2952226574312794635, guid: 29847ca1192f644e393b9ff942363a65, type: 3}
+  - {fileID: 1401200517003410154, guid: 88e628a5639744601a58f28adaf572b1, type: 3}
+  - {fileID: 1385172791554909310, guid: 998a3f199dcc948f5a6dc63350d4e09a, type: 3}
+  - {fileID: 7721501643588804749, guid: c7eea437d897b4cbab57f58e2ac71a12, type: 3}
+  - {fileID: 306987612584570532, guid: 51380b3a5a08545a39dc6531cdc7df93, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 1401200517003410154, guid: 88e628a5639744601a58f28adaf572b1, type: 3}
+  - {fileID: 8470860096190415390, guid: 29edb83480758406a8796e860921effc, type: 3}
+  - {fileID: 2450406664276978756, guid: c3b347302d31f4be2ad7fd7fa04f1bda, type: 3}
+  - {fileID: 5541300360482250464, guid: b3720a29a6aa64e088b3736c55259ea1, type: 3}
+  - {fileID: 5951658880821389817, guid: 941f943627d734b56a8b01c48c21f2a1, type: 3}
   setKinPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
   isDebugOn: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 8641420280052896162}
   warningPrefabs:
-  - {fileID: 6629617771932614151, guid: b7e074da41a56445287deba9530d85cc, type: 3}
+  - {fileID: 3938906088567041723, guid: d32aa4cfbb6dc473eb6eae9b4df23874, type: 3}
   - {fileID: 3938906088567041723, guid: dd4ef1ea99e374ec9b846812a2ee5599, type: 3}
   warningTransGreen:
   - {fileID: 1999602136}
