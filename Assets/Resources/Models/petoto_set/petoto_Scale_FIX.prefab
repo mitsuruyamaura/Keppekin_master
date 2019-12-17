@@ -614,7 +614,7 @@ Transform:
   m_GameObject: {fileID: 6755057377614242483}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 8722949435397330790}
   - {fileID: 763740862498822982}
@@ -652,9 +652,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kinBulletPrefab: {fileID: 0}
-  speed: 0
-  waitTime: 0
+  kinBulletPrefab: {fileID: 6633198825311391333, guid: c51bfab24a5a04350b33fa55709cc825,
+    type: 3}
+  speed: 3
+  waitTime: 60
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: 
@@ -673,7 +674,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!136 &4035807280775320311
 CapsuleCollider:

@@ -15,6 +15,7 @@ public class GameData : MonoBehaviour
     public static int rank;
     public static int exp;
     public static int chochiku;
+    public static float currentDirtyPoint;
 
     [Header("キンのデータベース(スクリプタブルオブジェクト)")]
     public KinData kindata;
@@ -41,6 +42,16 @@ public class GameData : MonoBehaviour
 
     public BattleKinData nakamaDates = new BattleKinData();
 
+    //セーブ用のenum
+    public enum DATA_TYPE
+    {
+        RANK,
+        EXP,
+        CHOCHIKU,
+        DIRTY_POINT
+    }
+
+
 //初期化...普段は省略してかける
 //int x = new int();
 //x = 5;
@@ -64,7 +75,54 @@ public class GameData : MonoBehaviour
         {
             Destroy(this);
         }
+        Load(); //Awakeの後に保存されているデータがあれば呼びに行く
     }
 
+    /// <summary>
+    /// データセーブ用
+    /// </summary>
+    public void Save()
+    {
+        //SetFloatでデータをセットしてからSaveメソッドでデータを保存する
+        PlayerPrefs.SetFloat(DATA_TYPE.RANK.ToString(), GameData.rank);
+        PlayerPrefs.SetFloat(DATA_TYPE.EXP.ToString(), GameData.exp);
+        PlayerPrefs.SetFloat(DATA_TYPE.CHOCHIKU.ToString(), GameData.chochiku);
+        PlayerPrefs.SetFloat(DATA_TYPE.DIRTY_POINT.ToString(), GameData.currentDirtyPoint);
+
+        PlayerPrefs.Save();
+    }
+
+
+    /// <summary>
+    /// データロード用、呼びだし補助機能、とりあえず
+    /// </summary>
+    public void Load()
+    {
+
+        //引数なしで各値にデータを入れ込む
+        rank = (int)PlayerPrefs.GetFloat(DATA_TYPE.RANK.ToString(), 1);
+
+        exp = (int)PlayerPrefs.GetFloat(DATA_TYPE.EXP.ToString(), 0);
+
+        chochiku = (int)PlayerPrefs.GetFloat(DATA_TYPE.CHOCHIKU.ToString(), 0);
+
+        currentDirtyPoint = PlayerPrefs.GetFloat(DATA_TYPE.DIRTY_POINT.ToString(), 100);
+
+
+        Debug.Log(rank);
+        Debug.Log(exp);
+        Debug.Log(chochiku);
+        Debug.Log(currentDirtyPoint);
+
+    }
+
+
+    /// <summary>
+    /// データ一括削除用、アンインストールしなくても消せるように
+    /// </summary>
+    public void Delete()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 
 }

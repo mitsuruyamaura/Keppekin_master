@@ -379,21 +379,21 @@ MonoBehaviour:
   maxHp: 100
   currnetHp: 100
   kinModelPrefabs:
-  - {fileID: 1219734482671587915, guid: 9d1af06a6c3634eb1a5628e5fdd68a4e, type: 3}
-  - {fileID: 1385172791554909310, guid: 998a3f199dcc948f5a6dc63350d4e09a, type: 3}
-  - {fileID: 7721501643588804749, guid: c7eea437d897b4cbab57f58e2ac71a12, type: 3}
-  - {fileID: 306987612584570532, guid: 51380b3a5a08545a39dc6531cdc7df93, type: 3}
-  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
-  - {fileID: 1401200517003410154, guid: 88e628a5639744601a58f28adaf572b1, type: 3}
-  - {fileID: 8470860096190415390, guid: 29edb83480758406a8796e860921effc, type: 3}
-  - {fileID: 2450406664276978756, guid: c3b347302d31f4be2ad7fd7fa04f1bda, type: 3}
-  - {fileID: 5541300360482250464, guid: b3720a29a6aa64e088b3736c55259ea1, type: 3}
-  - {fileID: 5951658880821389817, guid: 941f943627d734b56a8b01c48c21f2a1, type: 3}
+  - {fileID: 1219734482671587915, guid: 8836927d2aaca482a8862575e1813ce5, type: 3}
+  - {fileID: 6755057377614242483, guid: 259a8bec567a8476daa10a09d67cfedc, type: 3}
+  - {fileID: 7721501643588804749, guid: 078533f0d1e654fb78d9f6d3b11feb44, type: 3}
+  - {fileID: 306987612584570532, guid: 2f287ec7810354d5fafc84bdd5eb49f5, type: 3}
+  - {fileID: 4272750756647087467, guid: 82493d140b50c466cbf188365da5adf1, type: 3}
+  - {fileID: 1401200517003410154, guid: 44456feb9271540ec95669e6aedbbcd9, type: 3}
+  - {fileID: 8470860096190415390, guid: 99fc1d6a0c74447eda86cac931fd7bbd, type: 3}
+  - {fileID: 2450406664276978756, guid: 57d095e4cde0d43909b1fd15d2f4513e, type: 3}
+  - {fileID: 5541300360482250464, guid: 07e83448fb40e4708bc54bae6f9ce79f, type: 3}
+  - {fileID: 5951658880821389817, guid: 5a902ca53a31248879028d578cca10ad, type: 3}
   - {fileID: 7988122056851621873, guid: 4b545ed79f80d4a908c6c6dd3f6a4bbb, type: 3}
-  - {fileID: 1801337373811350858, guid: beb988badd42944a1b77a9d8275dbf6a, type: 3}
-  - {fileID: 5735976139570671223, guid: 37d91780e6bbb4eafaf7e6a8c36113e0, type: 3}
-  - {fileID: 7009036250601780669, guid: 823fbcfec05a0400e80e4a73693d7001, type: 3}
-  - {fileID: 7721501643588804749, guid: c7eea437d897b4cbab57f58e2ac71a12, type: 3}
+  - {fileID: 1801337373811350858, guid: 8480ec92b73f3494a9f67cb1fcd2abf0, type: 3}
+  - {fileID: 5735976139570671223, guid: 13d1ede42ce554622a18466e1f8ef518, type: 3}
+  - {fileID: 7009036250601780669, guid: 900d181586e9e4d61bdf337e9a4cc071, type: 3}
+  - {fileID: 7721501643588804749, guid: 078533f0d1e654fb78d9f6d3b11feb44, type: 3}
   setKinPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
   isDebugOn: 0
