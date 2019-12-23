@@ -35,6 +35,27 @@ public class ResultPopUp : MonoBehaviour
     public Image[] loseMesImage;
 
 
+    public enum RESULT_TYPE
+    {
+        WIN,
+        LOSE
+    }
+
+    public RESULT_TYPE resultType;
+
+    int num = 0;
+
+    public int debugRarelity;
+    public int debugLevel;
+
+    private void Start()
+    {
+        removeCountTxt.text = num.ToString();
+        resultType = RESULT_TYPE.WIN;
+        StartCoroutine(AnimeText());
+    }
+
+
 
 
     /// <summary>
@@ -52,34 +73,18 @@ public class ResultPopUp : MonoBehaviour
         //勝敗によって分岐
         if (isResult)
         {
-            //勝利　勝利イメージを表示
-            winImage.enabled = true;
-
-            for (int i = 0; i < winMesImage.Length; i++)
-            {
-                winMesImage[i].enabled = true;
-            }
-
+            resultType = RESULT_TYPE.WIN;
+            StartCoroutine(AnimeText());
+     
             yield return new WaitForSeconds(1.0f);
-
-
-            //除菌回数をアニメ付きで加算する
-            DOTween.To(() => enemyData.removeCount, (x) =>
-            enemyData.removeCount = x,
-            enemyData.removeCount++, 1.5f).SetRelative();
 
             Win(enemyData.kinLebel, enemyData.kinRarelity);
 
         }
         else
         {
-            //敗北　敗北イメージ表示
-            loseImage.enabled = true;
-
-            for (int i = 0; i < loseMesImage.Length; i++)
-            {
-                loseMesImage[i].enabled = true;
-            }
+            resultType = RESULT_TYPE.LOSE;
+            StartCoroutine(AnimeText());
 
         }
     }
@@ -182,6 +187,95 @@ public class ResultPopUp : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
+    }
+
+
+    private IEnumerator AnimeText()
+    {
+        //アニメの中で待つとAppendが順番ではなく、まとまってしまうので先に一旦待つ。
+        yield return new WaitForSeconds(0.5f);
+
+        Sequence seq = DOTween.Sequence();
+        switch (resultType)
+        {
+            case RESULT_TYPE.WIN:
+                //勝利　勝利イメージを表示
+                winImage.enabled = true;
+
+                //菌イメージ
+                seq.Append(winImage.transform.DOScale(1.5f, 0.25f));
+                seq.Append(winImage.transform.DOScale(1.0f, 0.25f));
+
+                //染
+                //DOShakeScale()...ランダムに大きさが変わる
+                seq.Append(winMesImage[0].transform.DOLocalMoveY(2, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(winMesImage[0].transform.DOShakeScale(0.25f));
+
+                //領
+                seq.Append(winMesImage[1].transform.DOLocalMoveY(-9, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(winMesImage[1].transform.DOShakeScale(0.25f)).SetEase(Ease.Linear);
+
+                //完
+                seq.Append(winMesImage[2].transform.DOLocalMoveY(6.5f, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(winMesImage[2].transform.DOShakeScale(0.25f));
+
+                //了
+                seq.Append(winMesImage[3].transform.DOLocalMoveY(-13.5f, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(winMesImage[3].transform.DOShakeScale(0.25f));
+
+                break;
+
+
+
+            case RESULT_TYPE.LOSE:
+                //敗北 敗北イメージを表示
+                loseImage.enabled = true;
+
+                //菌イメージ
+                seq.Append(loseImage.transform.DOScale(1.5f, 0.25f));
+                seq.Append(loseImage.transform.DOScale(1.0f, 0.25f));
+
+                //染
+                seq.Append(loseMesImage[0].transform.DOLocalMoveY(3, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(loseMesImage[0].transform.DOShakeScale(0.25f));
+
+                //領
+                seq.Append(loseMesImage[1].transform.DOLocalMoveY(-8, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(loseMesImage[1].transform.DOShakeScale(0.25f));
+
+                //失
+                seq.Append(loseMesImage[2].transform.DOLocalMoveY(7, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(loseMesImage[2].transform.DOShakeScale(0.25f));
+
+                //敗
+                seq.Append(loseMesImage[3].transform.DOLocalMoveY(-15.5f, 0.25f)).SetEase(Ease.Linear);
+                seq.Append(loseMesImage[3].transform.DOShakeScale(0.25f));
+
+                break;
+
+        }
+
+        yield return new WaitForSeconds(1.0f);
+
+        //除菌回数をアニメさせてカウント
+        int value = 9;
+        int remove = value + 1;
+
+        //DOTween.To()と書くとDOTweenに登録されていないオブジェクトも動かせる
+        //DOTween.To(①...何に入れるか、②...何を入れるか、③どこまで値を変化させるか、④変化させるのにかける時間)
+        DOTween.To(
+            () => num,
+            (x) =>
+            {
+                num = x;
+                removeCountTxt.text = x.ToString();
+            },
+            remove,
+            3f);
+
+        //勝利メソッドのデバッグ
+        Win(debugLevel, debugRarelity);
+
     }
 
 }
