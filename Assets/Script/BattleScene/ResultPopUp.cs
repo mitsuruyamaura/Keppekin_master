@@ -109,55 +109,55 @@ public class ResultPopUp : MonoBehaviour
         Debug.Log(totalExp);
 
         //DirtyPointの現在値からEXPの半分を引く
-        GameData.currentDirtyPoint -= (float)totalExp / 2;
+        GameData.instance.currentDirtyPoint -= (float)totalExp / 2;
 
         //EXPを加算してEXpゲージの表示を更新
         //一旦倒した分はchoshikuに貯めておく
-        GameData.chochiku += totalExp / 3;
+        GameData.instance.chochiku += totalExp / 3;
 
 
         //Dirtyゲージが0以下になったらMaxに戻す(Debug用)
-        if (GameData.currentDirtyPoint <= 0)
+        if (GameData.instance.currentDirtyPoint <= 0)
         {
             //貯蓄が一気に経験値に入るとともにリセットをかける
-            GameData.exp += GameData.chochiku;
-            GameData.chochiku = 0;
-            GameData.currentDirtyPoint = 0;
-            GameData.currentDirtyPoint = 100;
+            GameData.instance.exp += GameData.instance.chochiku;
+            GameData.instance.chochiku = 0;
+            GameData.instance.currentDirtyPoint = 0;
+            GameData.instance.currentDirtyPoint = 100;
         }
 
         //経験値が100以上になるとランクが1上がる
-        if (GameData.exp >= 100)
+        if (GameData.instance.exp >= 100)
         {
             //100を超えた分だけ繰り越すようにしてEXpゲージを更新する
-            GameData.exp -= 100;
-            GameData.rank += 1;
+            GameData.instance.exp -= 100;
+            GameData.instance.rank += 1;
 
-            Debug.Log(GameData.rank);
+            Debug.Log(GameData.instance.rank);
 
         }
 
 
         //先頭に勝つたびダーティが-30
         //最終的に0以下になると経験値が30増える
-        GameData.currentDirtyPoint -= 30f;
+        GameData.instance.currentDirtyPoint -= 30f;
 
-        if (GameData.currentDirtyPoint <= 0)
+        if (GameData.instance.currentDirtyPoint <= 0)
         {
-            GameData.currentDirtyPoint = 0;
-            GameData.exp += 50;
+            GameData.instance.currentDirtyPoint = 0;
+            GameData.instance.exp += 50;
             //SceneStateManager.instance.UpdateGage();
 
-            GameData.currentDirtyPoint = 100;
+            GameData.instance.currentDirtyPoint = 100;
 
             //経験値が100以上になるとランクが１上がる
-            if (GameData.exp >= 100)
+            if (GameData.instance.exp >= 100)
             {
-                GameData.exp = 0;
+                GameData.instance.exp = 0;
                 // SceneStateManager.instance.UpdateGage();
-                GameData.rank += 1;
+                GameData.instance.rank += 1;
 
-                Debug.Log(GameData.rank);
+                Debug.Log(GameData.instance.rank);
 
             }
         }

@@ -12,10 +12,10 @@ public class GameData : MonoBehaviour
 
     //TODO ここにバトルシーンなどに引き継ぎたいデータを保存する変数を用意する
     //まずSceneManagerクラスから変数を移す
-    public static int rank;
-    public static int exp;
-    public static int chochiku;
-    public static float currentDirtyPoint;
+    public int rank;
+    public int exp;
+    public int chochiku;
+    public float currentDirtyPoint;
 
     [Header("キンのデータベース(スクリプタブルオブジェクト)")]
     public KinData kindata;
@@ -59,11 +59,6 @@ public class GameData : MonoBehaviour
 //けど、上で作ったクラスはUnityが知らないからいちいちnewで初期化してあげないと使えない
 
 
-
-
-    public static KinStates battleKinStates; //バトルするキンのデータ(その都度変更される)
-    public static KinStates nakamaKinStates; //バトルに連れていく仲間のキンのデータ(その都度変更される)
-
     private void Awake()
     {
         if (instance == null)
@@ -84,10 +79,10 @@ public class GameData : MonoBehaviour
     public void Save()
     {
         //SetFloatでデータをセットしてからSaveメソッドでデータを保存する
-        PlayerPrefs.SetFloat(DATA_TYPE.RANK.ToString(), GameData.rank);
-        PlayerPrefs.SetFloat(DATA_TYPE.EXP.ToString(), GameData.exp);
-        PlayerPrefs.SetFloat(DATA_TYPE.CHOCHIKU.ToString(), GameData.chochiku);
-        PlayerPrefs.SetFloat(DATA_TYPE.DIRTY_POINT.ToString(), GameData.currentDirtyPoint);
+        PlayerPrefs.SetFloat(DATA_TYPE.RANK.ToString(), rank);
+        PlayerPrefs.SetFloat(DATA_TYPE.EXP.ToString(), exp);
+        PlayerPrefs.SetFloat(DATA_TYPE.CHOCHIKU.ToString(), chochiku);
+        PlayerPrefs.SetFloat(DATA_TYPE.DIRTY_POINT.ToString(), currentDirtyPoint);
 
         PlayerPrefs.Save();
     }

@@ -49,9 +49,9 @@ public class UIManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
 
-        expGage.fillAmount = (float)GameData.exp / 100;
-        Debug.Log(GameData.rank);
-        Debug.Log(GameData.exp);
+        expGage.fillAmount = (float)GameData.instance.exp / 100;
+        Debug.Log(GameData.instance.rank);
+        Debug.Log(GameData.instance.exp);
 
         expSlider.DOValue(expGage.fillAmount, 0.5f).SetEase(Ease.Linear);
     }
