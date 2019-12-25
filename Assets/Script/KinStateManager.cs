@@ -110,7 +110,7 @@ public class KinStateManager : MonoBehaviour
                 if (raycastManager.Raycast(touch.position, raycastHitList, TrackableType.All))
                 {
                     Debug.Log("Raycast成功");
-                    Vector3 posY = new Vector3(raycastHitList[0].pose.position.x, raycastHitList[0].pose.position.y + 0.8f, raycastHitList[0].pose.position.z + 1f);
+                    Vector3 posY = new Vector3(raycastHitList[0].pose.position.x, raycastHitList[0].pose.position.y + 0.3f, raycastHitList[0].pose.position.z + 1f);
                  
 
                     battleKinObj = Instantiate(setKinPrefab, posY, raycastHitList[0].pose.rotation);
