@@ -16,6 +16,7 @@ public class GameData : MonoBehaviour
     public int exp;
     public int chochiku;
     public float currentDirtyPoint;
+    public int chochikuStar;
 
     [Header("キンのデータベース(スクリプタブルオブジェクト)")]
     public KinData kindata;

@@ -129,9 +129,22 @@ public class ResultPopUp : MonoBehaviour
         //経験値が100以上になるとランクが1上がる
         if (GameData.instance.exp >= 100)
         {
-            //100を超えた分だけ繰り越すようにしてEXpゲージを更新する
+            //100を超えた分だけ繰り越してスターが一個増える
+            //スター3個超えたらランクが一個上がる
             GameData.instance.exp -= 100;
-            GameData.instance.rank += 1;
+            GameData.instance.chochikuStar++;
+            if (GameData.instance.chochikuStar >= 3)
+            {
+                GameData.instance.rank++;
+                if (GameData.instance.rank >= 5)
+                {
+                    GameData.instance.rank = 5;
+                }
+
+                GameData.instance.chochikuStar = 0;
+            }
+
+            
 
             Debug.Log(GameData.instance.rank);
 
