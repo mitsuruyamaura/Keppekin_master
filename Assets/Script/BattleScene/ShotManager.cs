@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+
 /// <summary>
 /// キンから弾を生成するクラス
 /// </summary>
@@ -26,6 +27,8 @@ public class ShotManager : MonoBehaviour
     public string inkImageName;
 
     public BattleUIManager battleUI;
+
+    public GameObject damageEfe;
 
 
     /// <summary>
@@ -87,7 +90,10 @@ public class ShotManager : MonoBehaviour
         {
             kinStateManager.ProcDamage(col.gameObject.GetComponent<KinBullet>().damage);
             Debug.Log("ダメージ通ってるよ");
+
+            GameObject damageEffect = Instantiate(damageEfe, col.gameObject.transform);
             Destroy(col.gameObject, 0.2f);
+            Destroy(damageEffect, 2.0f);
         }
     }
 

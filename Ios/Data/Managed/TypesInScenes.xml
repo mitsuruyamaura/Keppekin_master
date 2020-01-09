@@ -93,6 +93,7 @@
 		<type fullname="ReturnHome" preserve="nothing"/>
 		<type fullname="SceneStateManager" preserve="nothing"/>
 		<type fullname="ShotManager" preserve="nothing"/>
+		<type fullname="StageManager" preserve="nothing"/>
 		<type fullname="StagePopUp" preserve="nothing"/>
 		<type fullname="Stain" preserve="nothing"/>
 		<type fullname="TransitionManager" preserve="nothing"/>
@@ -149,6 +150,7 @@
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>

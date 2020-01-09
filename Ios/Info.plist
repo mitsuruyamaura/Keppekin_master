@@ -33,8 +33,6 @@
     <string>カメラを使います</string>
     <key>UIApplicationExitsOnSuspend</key>
     <false />
-    <key>UILaunchStoryboardName~ipad</key>
-    <string>LaunchScreen-iPad</string>
     <key>UILaunchStoryboardName~iphone</key>
     <string>LaunchScreen-iPhone</string>
     <key>UILaunchStoryboardName~ipod</key>
