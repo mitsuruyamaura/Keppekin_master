@@ -23,5 +23,7 @@ public class KinData : ScriptableObject
 
         public int nakamaKinNum; //バトルシーンでインスタンスする用のきんにつける番号
 
+        public string info; //各キンの情報
+
     }
 }
