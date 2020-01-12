@@ -30,7 +30,9 @@ public class SceneStateManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(MoveScene(SCENE_TYPE.HOME));
+        //StartCoroutine(MoveScene(SCENE_TYPE.HOME));
+        StartCoroutine(MoveScene(SCENE_TYPE.ZUKAN));
+
     }
 
     public IEnumerator MoveScene(SCENE_TYPE sceneType)

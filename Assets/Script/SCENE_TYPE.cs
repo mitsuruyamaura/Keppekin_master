@@ -3,5 +3,6 @@
     UI,
     HOME,
     STAGE,
-    BATTLE
+    BATTLE,
+    ZUKAN
 }

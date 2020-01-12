@@ -1351,7 +1351,7 @@ GameObject:
   - component: {fileID: 341422054729864232}
   - component: {fileID: 5555659329497700144}
   m_Layer: 0
-  m_Name: "\u56F3\u9451\u30D8\u309A\u30FC\u30B7\u3099"
+  m_Name: zukan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

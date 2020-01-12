@@ -8,17 +8,28 @@ public class KinDetail : MonoBehaviour
     public Button buttonKinInfo;
     public bool isSelect;
     public KinData.KinDataList kinData;
-    public DisplayKinInfo displayKinInfo;
+    public ZukanManager zukanManager;
+    public Image kinImage;
+
+    private bool isOpenPU;
+
+    public KinInfoPu kinInfoPuPrefab;
+
+    public string folderName;
+
 
     void Start()
     {
         buttonKinInfo.onClick.AddListener(OnclickSelect);
     }
 
-    public void Init(KinData.KinDataList data, DisplayKinInfo display)
+    public void Init(KinData.KinDataList data, ZukanManager display)
     {
         kinData = data;
-        displayKinInfo = display;
+        zukanManager = display;
+
+        //TODO IconFaceが出来上がったら""を変更する
+        kinImage.sprite = Resources.Load<Sprite>("Image/" + kinData.kinName);
     }
 
     public void OnclickSelect()
@@ -38,7 +49,7 @@ public class KinDetail : MonoBehaviour
 
     public void DisplayKin()
     {
-        displayKinInfo.Display(kinData);
+        zukanManager.Display(kinData);
     }
 
     public void CreateKinInfoPu()
