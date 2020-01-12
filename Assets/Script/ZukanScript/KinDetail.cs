@@ -28,17 +28,18 @@ public class KinDetail : MonoBehaviour
         kinData = data;
         zukanManager = display;
 
-        //TODO IconFaceが出来上がったら""を変更する
-        kinImage.sprite = Resources.Load<Sprite>("Image/" + kinData.kinName);
+        //TODO IconFaceが出来上がったら""変更する
+        kinImage.sprite = Resources.Load<Sprite>("Image/Icon_FaceImage/" + kinData.kinName);
     }
 
     public void OnclickSelect()
     {
         if (!isSelect)
         {
+            zukanManager.Display(kinData);
 
-            isSelect = true;
-            DisplayKin();
+            //isSelect = true;
+            //DisplayKin();
 
         }
         else
@@ -47,10 +48,10 @@ public class KinDetail : MonoBehaviour
         }
     }
 
-    public void DisplayKin()
-    {
-        zukanManager.Display(kinData);
-    }
+    //public void DisplayKin()
+    //{
+    //    zukanManager.Display(kinData);
+    //}
 
     public void CreateKinInfoPu()
     {
