@@ -12,6 +12,9 @@ public class ZukanManager : MonoBehaviour
     public Image kinType;
     public TMP_Text removeCountText;
 
+    public Button btnRightArrow;
+    public Button btnLeftArrow;
+
     [Header("キンのボタンのプレファブ")]
     public KinDetail kinDetailPrefab;
     [Header("キンのボタンの生成位置")]
@@ -25,6 +28,12 @@ public class ZukanManager : MonoBehaviour
     public List<GameObject> kinButtonList = new List<GameObject>(6);
     public KinDetail[] kinButtons;
     public Transform popupTran;
+
+
+    //重複タップ防止用フラグ
+    private bool isMoveButtonList;
+    //現在のボタンリストの番号
+    private int currentButtonListNo = 0; 
 
 
     void Start()
@@ -47,23 +56,33 @@ public class ZukanManager : MonoBehaviour
                 tran = kinButtonList[1].transform;
             }
 
+
             KinDetail kinButton = Instantiate(kinDetailPrefab, tran, false);
             kinButton.Init(GameData.instance.kindata.kinDataList[i], this);
             kinButtons[i] = kinButton;
-
         }
+            
+            //最初のボタンリストを表示し、他のボタンリストは非表示にする。
+            //for (int i = 0; i < kinButtonList.Count; i++)
+            //{
+            //    if (i == 0)
+            //    {
+            //        kinButtonList[i].SetActive(true);
+            //    }
+            //    else
+            //    {
+            //        kinButtonList[i].SetActive(false);
+            //    }
+            //}
 
-        //for (int count = 0; count < kinButtons.Length; count++)
-        //{
-        //    if (count < 8)
-        //    {
-        //        kinButtons[count].transform.SetParent(kinButtonList[0].transform);
-        //    }
-        //    else if (count >= 8 && count < 16) 
-        //    {
-        //        kinButtons[count].transform.SetParent(kinButtonList[1].transform);
-        //    }
-        //}
+            //右矢印ボタンにメソッドを登録
+            btnRightArrow.onClick.AddListener(OnClickNextButtonList);
+
+            //左矢印ボタンにメソッドを登録
+            btnLeftArrow.onClick.AddListener(OnClickPrevButtonList);
+
+            //先頭なので左には戻れないようにする
+            btnLeftArrow.gameObject.SetActive(false);
 
         //先頭のキンのデータをデフォルトとして画面上部に表示
         Display(GameData.instance.kindata.kinDataList[0]);
@@ -113,4 +132,68 @@ public class ZukanManager : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// ボタンリストを1ページ進める
+    /// </summary>
+    private void OnClickNextButtonList()
+    {
+        if (!isMoveButtonList)
+        {
+            //ボタンの重複防止用のフラグを立てる
+            isMoveButtonList = true;
+            btnLeftArrow.gameObject.SetActive(true);
+
+            //現在表示中のボタンリストを非表示にする
+            kinButtonList[currentButtonListNo].SetActive(false);
+
+            //ボタンリストの番号を1つ(ページ)進める
+            currentButtonListNo++;
+
+            //すでにリストが最終ページなら最初のページ番号にする
+            if (currentButtonListNo >= kinButtonList.Count - 1)
+            {
+                btnRightArrow.gameObject.SetActive(false);
+            }
+
+            //1ページ進めたボタンリストを表示
+            kinButtonList[currentButtonListNo].SetActive(true);
+
+            //再度ボタンを押せるようにする
+            isMoveButtonList = false;
+
+
+
+        }
+    }
+
+    private void OnClickPrevButtonList()
+    {
+        if (!isMoveButtonList)
+        {
+            //ボタンの重複防止用のフラグを立てる
+            isMoveButtonList = true;
+
+            btnRightArrow.gameObject.SetActive(true);
+
+            //現在表示中のボタンリストを非表示にする
+            kinButtonList[currentButtonListNo].SetActive(false);
+
+            //ボタンリストの番号を一つページを戻す
+            currentButtonListNo--;
+
+            //すでにリストが最初のページなら最後のページ番号にする
+            if (currentButtonListNo <= 0)
+            {
+                btnLeftArrow.gameObject.SetActive(false);
+            }
+
+            //1ページ戻したボタンリストを表示
+            kinButtonList[currentButtonListNo].SetActive(true);
+
+            //再度ボタンを押せるようにする
+            isMoveButtonList = false;
+        }
+        
+
+    }
 }
