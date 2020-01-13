@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CreateRandomHomeKins : MonoBehaviour
+public class HomeManager : MonoBehaviour
 {
     [Header("Homeシーンに表示する菌のモデルのPrefabを登録する")]
     public GameObject[] homeKinPrefabs;
@@ -13,6 +14,7 @@ public class CreateRandomHomeKins : MonoBehaviour
     [Header("インスタンスする位置")]
     public Transform setPos;
 
+	public Button zukanButton;
 
 
     void Awake()
@@ -30,6 +32,7 @@ public class CreateRandomHomeKins : MonoBehaviour
     void Start()
     {
         StartCoroutine(TransitionManager.instance.FadeIn());
+        zukanButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN)));
     }
 
 }

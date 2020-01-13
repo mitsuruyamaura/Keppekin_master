@@ -194,6 +194,18 @@ public class ZukanManager : MonoBehaviour
             isMoveButtonList = false;
         }
         
-
+        
     }
+
+    //スワイプに合わせてボタンの表示/非表示を切り替え
+    void Update()
+    {
+        if (page.prevPageIndex == 0)
+        {
+            btnRightArrow.gameObject.SetActive(false);
+            btnLeftArrow.gameObject.SetActive(true);
+        }
+        Debug.Log(page.prevPageIndex);
+    }
+
 }

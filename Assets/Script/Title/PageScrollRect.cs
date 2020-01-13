@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class PageScrollRect : ScrollRect
 {
     private float pageWidth;
-    private int prevPageIndex = 0;
+    public int prevPageIndex = 0;
 
     protected override void Awake() {
         base.Awake();
