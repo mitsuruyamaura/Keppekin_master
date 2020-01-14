@@ -168,9 +168,6 @@ public class ZukanManager : MonoBehaviour
 
             //再度ボタンを押せるようにする
             isMoveButtonList = false;
-
-
-
         }
     }
 
@@ -210,10 +207,16 @@ public class ZukanManager : MonoBehaviour
     {
         if (page.prevPageIndex == 0)
         {
+            btnRightArrow.gameObject.SetActive(true);
+            btnLeftArrow.gameObject.SetActive(false);
+        }
+
+        if (page.prevPageIndex == -1)
+        {
             btnRightArrow.gameObject.SetActive(false);
             btnLeftArrow.gameObject.SetActive(true);
         }
-        Debug.Log(page.prevPageIndex);
+        
     }
 
 }
