@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using System;
 
 public class KinInfoPu : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class KinInfoPu : MonoBehaviour
             info[i].Replace("n", "");
 
             //配列の順番に表示内容を追加する(+= なので前のテキストに次のテキストが追加される)
-            txtInfo.text += info[i] + "¥n";
+            txtInfo.text += info[i] + "\n";
             //改行する
             //txtInfo.text += "¥n";
         }

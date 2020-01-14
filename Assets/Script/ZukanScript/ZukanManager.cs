@@ -15,6 +15,8 @@ public class ZukanManager : MonoBehaviour
     public Button btnRightArrow;
     public Button btnLeftArrow;
 
+    public Button btnHome;
+
     [Header("キンのボタンのプレファブ")]
     public KinDetail kinDetailPrefab;
     [Header("キンのボタンの生成位置")]
@@ -86,6 +88,8 @@ public class ZukanManager : MonoBehaviour
 
             //左矢印ボタンにメソッドを登録
             btnLeftArrow.onClick.AddListener(OnClickPrevButtonList);
+
+        btnHome.onClick.AddListener(()=>StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME)));
 
             //先頭なので左には戻れないようにする
             btnLeftArrow.gameObject.SetActive(false);
