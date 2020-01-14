@@ -27,13 +27,19 @@ public class ZukanManager : MonoBehaviour
 
     public List<GameObject> kinButtonList = new List<GameObject>(6);
     public KinDetail[] kinButtons;
-    public Transform popupTran;
+
+    [Header("キン詳細ポップアップの生成位置")]
+    //ヒエラルキー上のCanvasをアサインし、そこを生成位置とする
+    public Transform kinPopupTran;
+
 
 
     //重複タップ防止用フラグ
     private bool isMoveButtonList;
     //現在のボタンリストの番号
-    private int currentButtonListNo = 0; 
+    private int currentButtonListNo = 0;
+
+    public PageScrollRect page;
 
 
     void Start()
@@ -109,7 +115,9 @@ public class ZukanManager : MonoBehaviour
         kinName.text = kinData.kinName;
         
         kinType.sprite = Resources.Load<Sprite>("Type/" + kinData.kinType);
-        //removeCountText.text = kinData.removeCount.ToString();
+
+        //除菌回数の表示
+        removeCountText.text = kinData.removeCount.ToString();
 
         //キンのレアリティに応じてアイコンを生成する
         //すでに生成されている場合は生成されている数を比べて、違う場合は破棄する。

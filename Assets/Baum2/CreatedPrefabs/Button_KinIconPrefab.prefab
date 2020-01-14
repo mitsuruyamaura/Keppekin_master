@@ -149,5 +149,6 @@ MonoBehaviour:
     info: 
   zukanManager: {fileID: 0}
   kinImage: {fileID: 4858764840935004155}
-  kinInfoPuPrefab: {fileID: 0}
+  kinInfoPrefab: {fileID: 6984495423236680192, guid: 9af1c9a8769f440f79d067d7c5205e81,
+    type: 3}
   folderName: Icon_FaceImage/

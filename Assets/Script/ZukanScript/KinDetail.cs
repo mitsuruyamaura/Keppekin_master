@@ -13,10 +13,10 @@ public class KinDetail : MonoBehaviour
 
     private bool isOpenPU;
 
-    public KinInfoPu kinInfoPuPrefab;
+    [Header("キン詳細ポップアップのプレファブ")]
+    public KinInfoPu kinInfoPrefab;
 
     public string folderName;
-
 
     void Start()
     {
@@ -42,9 +42,13 @@ public class KinDetail : MonoBehaviour
             //DisplayKin();
 
         }
-        else
+        else　//選択中の場合
         {
-            CreateKinInfoPu();
+            if (!isOpenPU)
+            {
+                StartCoroutine(CreateKinInfoPu());
+            }
+    
         }
     }
 
@@ -53,11 +57,24 @@ public class KinDetail : MonoBehaviour
     //    zukanManager.Display(kinData);
     //}
 
-    public void CreateKinInfoPu()
+    public IEnumerator CreateKinInfoPu()
     {
         //TODO
         //PUインスタンス
         //名前、属性、説明文、イメージ(2D)
+
+        //重複防止用フラグを立てる
+        isOpenPU = true;
+
+        //ポップアップをインスタンスし、kinDataを渡して設定用メソッドを呼び出す
+        KinInfoPu kinPop = Instantiate(kinInfoPrefab, zukanManager.kinPopupTran, false);
+
+        kinPop.SetupPopUp(kinData);
+
+        //1秒経ったら重複防止フラグを下す
+        yield return new WaitForSeconds(1.0f);
+        isOpenPU = false;
+
     }
 
 }
