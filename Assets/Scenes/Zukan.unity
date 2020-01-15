@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 1040696908}
   m_Layer: 5
   m_Name: ZukanManager
-  m_TagString: Untagged
+  m_TagString: ZukanManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -956,7 +956,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  pageWidth: 631
   prevPageIndex: 0
+  zukanManager: {fileID: 1040696908}
+  tempIndex: 0
 --- !u!114 &1685697367
 MonoBehaviour:
   m_ObjectHideFlags: 0

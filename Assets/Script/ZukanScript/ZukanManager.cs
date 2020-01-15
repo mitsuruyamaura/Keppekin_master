@@ -69,25 +69,25 @@ public class ZukanManager : MonoBehaviour
             kinButton.Init(GameData.instance.kindata.kinDataList[i], this);
             kinButtons[i] = kinButton;
         }
-            
-            //最初のボタンリストを表示し、他のボタンリストは非表示にする。
-            //for (int i = 0; i < kinButtonList.Count; i++)
-            //{
-            //    if (i == 0)
-            //    {
-            //        kinButtonList[i].SetActive(true);
-            //    }
-            //    else
-            //    {
-            //        kinButtonList[i].SetActive(false);
-            //    }
-            //}
 
-            //右矢印ボタンにメソッドを登録
-            btnRightArrow.onClick.AddListener(OnClickNextButtonList);
+        //最初のボタンリストを表示し、他のボタンリストは非表示にする。
+        //for (int i = 0; i < kinButtonList.Count; i++)
+        //{
+        //    if (i == 0)
+        //    {
+        //        kinButtonList[i].SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        kinButtonList[i].SetActive(false);
+        //    }
+        //}
+
+        //右矢印ボタンにメソッドを登録
+        btnRightArrow.onClick.AddListener(() => OnClickNextButtonList());
 
             //左矢印ボタンにメソッドを登録
-            btnLeftArrow.onClick.AddListener(OnClickPrevButtonList);
+            btnLeftArrow.onClick.AddListener(() => OnClickPrevButtonList());
 
         btnHome.onClick.AddListener(()=>StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME)));
 
@@ -147,57 +147,77 @@ public class ZukanManager : MonoBehaviour
     /// <summary>
     /// ボタンリストを1ページ進める
     /// </summary>
-    private void OnClickNextButtonList()
+    private void OnClickNextButtonList(bool isSwipe = false)
     {
         if (!isMoveButtonList)
         {
             //ボタンの重複防止用のフラグを立てる
             isMoveButtonList = true;
+
+            //左矢印ボタンを表示する
             btnLeftArrow.gameObject.SetActive(true);
 
-            //現在表示中のボタンリストを非表示にする
-            kinButtonList[currentButtonListNo].SetActive(false);
-
-            //ボタンリストの番号を1つ(ページ)進める
+            //ボタンリストの番号を１つ(ページ進める)
             currentButtonListNo++;
 
-            //すでにリストが最終ページなら最初のページ番号にする
+            //ボタンリストが最終ページなら右矢印ボタンを非表示にする
             if (currentButtonListNo >= kinButtonList.Count - 1)
             {
                 btnRightArrow.gameObject.SetActive(false);
             }
 
-            //1ページ進めたボタンリストを表示
-            kinButtonList[currentButtonListNo].SetActive(true);
+            //スワイプでボタンリストを移動させていたら無視
+            if (!isSwipe)
+            {
+                //スワイプしていない（ボタンを押していない）なら、1ページ進めたボタンリストを表示
+                float destX = -currentButtonListNo * page.pageWidth;
+                page.content.anchoredPosition = new Vector2(destX, page.content.anchoredPosition.y);
+                page.tempIndex = -currentButtonListNo;
 
+            }
+
+           
             //再度ボタンを押せるようにする
             isMoveButtonList = false;
         }
     }
 
-    private void OnClickPrevButtonList()
+
+    /// <summary>
+    /// ボタンリストを1つもどす
+    /// </summary>
+    private void OnClickPrevButtonList(bool isSwipe = false)
     {
         if (!isMoveButtonList)
         {
             //ボタンの重複防止用のフラグを立てる
             isMoveButtonList = true;
 
+            //右矢印ボタンを表示する
             btnRightArrow.gameObject.SetActive(true);
 
-            //現在表示中のボタンリストを非表示にする
-            kinButtonList[currentButtonListNo].SetActive(false);
+   
 
             //ボタンリストの番号を一つページを戻す
             currentButtonListNo--;
+            Debug.Log(currentButtonListNo);
 
-            //すでにリストが最初のページなら最後のページ番号にする
+
+            //すでにリストが最初のページなら左矢印ボタンを非表示にする
             if (currentButtonListNo <= 0)
             {
                 btnLeftArrow.gameObject.SetActive(false);
             }
 
-            //1ページ戻したボタンリストを表示
-            kinButtonList[currentButtonListNo].SetActive(true);
+            //スワイプでボタンリストを移動させていたら無視
+            if (!isSwipe)
+            {
+                //スワイプしていない（ボタンを押した）なら、1ページ戻したボタンリストを表示
+                float destX = currentButtonListNo * page.pageWidth;
+                page.content.anchoredPosition = new Vector2(destX, page.content.anchoredPosition.y);
+                page.tempIndex = currentButtonListNo;
+
+            }
 
             //再度ボタンを押せるようにする
             isMoveButtonList = false;
@@ -206,21 +226,34 @@ public class ZukanManager : MonoBehaviour
         
     }
 
-    //スワイプに合わせてボタンの表示/非表示を切り替え
-    void Update()
+    //スワイプに合わせてボタンの左右矢印ボタンの表示/非表示を切り替え
+   public void OnClickArrowButton(int prevPageIndex)
     {
-        if (page.prevPageIndex == 0)
+        //比較用にcurrentArrowButtonListNoを使うが、currentButtonListNoはこの後のメソッドで変更するので
+        //ここではcurrentButtonListNoをいったん別の変数に入れて利用する
+        int temp = currentButtonListNo;
+
+        //prevPageIndexの値をみて矢印ボタンの表示状態を非表示に変更する
+        if (prevPageIndex == 0)
         {
-            btnRightArrow.gameObject.SetActive(true);
             btnLeftArrow.gameObject.SetActive(false);
         }
 
-        if (page.prevPageIndex == -1)
+        if (prevPageIndex == kinButtonList.Count - 1)
         {
             btnRightArrow.gameObject.SetActive(false);
-            btnLeftArrow.gameObject.SetActive(true);
         }
-        
+
+        //比較してどちらの矢印ボタンのメソッドにするか決定する
+        if (temp > prevPageIndex)
+        {
+            OnClickPrevButtonList(true);
+        }
+        else
+        {
+            OnClickNextButtonList(true);
+        }
+
     }
 
 }

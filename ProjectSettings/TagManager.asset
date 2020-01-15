@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - ReturnBullet
   - BattleUI
+  - ZukanManager
   layers:
   - Default
   - TransparentFX
