@@ -53,13 +53,20 @@ public class PageScrollRect : ScrollRect
         }
 
         //Abs絶対値
-        if (pageIndex == prevPageIndex && Mathf.Abs(eventData.delta .x) >= 5) {
+        //-の数値が出たら-がとった整数にする処理
+        //例えば　-3が3になる　3はそのまま3
+        if (pageIndex == prevPageIndex && Mathf.Abs(eventData.delta .x) >= 5)
+        {
             pageIndex += (int)Mathf.Sign(eventData.delta.x);
         }
 
         //スワイプ距離計算
         float destX = pageIndex * pageWidth;
+
+
+        // content.anchoredPosition 箱ごと滑らかに動く
         content.anchoredPosition = new Vector2(destX, content.anchoredPosition.y);
+
 
         //元の位置に戻らずに移動しているなら
         if (isMove)

@@ -10,7 +10,6 @@ public class ZukanManager : MonoBehaviour
     public Image kinImage;
     public TMP_Text kinName;
     public Image kinType;
-    public TMP_Text removeCountText;
 
     public Button btnRightArrow;
     public Button btnLeftArrow;
@@ -120,8 +119,7 @@ public class ZukanManager : MonoBehaviour
         
         kinType.sprite = Resources.Load<Sprite>("Type/" + kinData.kinType);
 
-        //除菌回数の表示
-        removeCountText.text = kinData.removeCount.ToString();
+      
 
         //キンのレアリティに応じてアイコンを生成する
         //すでに生成されている場合は生成されている数を比べて、違う場合は破棄する。

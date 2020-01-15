@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424d6931516464d1aa32ae0d376303ca, type: 3}
+  m_Name: KinZukanData
+  m_EditorClassIdentifier: 
+  kinZukanDataList:
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
+  - kinNum: 0
+    kinName: 
+    rarerity: 0
+    katakanaName: 
+    kinType: 0
+    info: 
