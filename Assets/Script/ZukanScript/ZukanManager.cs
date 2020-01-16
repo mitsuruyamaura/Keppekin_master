@@ -33,6 +33,10 @@ public class ZukanManager : MonoBehaviour
     //ヒエラルキー上のCanvasをアサインし、そこを生成位置とする
     public Transform kinPopupTran;
 
+    //インスペクター上でIconNumberのイメージを6個入れる。
+    //０が左端。
+    public Image[] iconNumbers;
+
 
 
     //重複タップ防止用フラグ
@@ -95,6 +99,11 @@ public class ZukanManager : MonoBehaviour
 
         //先頭のキンのデータをデフォルトとして画面上部に表示
         Display(GameData.instance.kindata.kinDataList[0]);
+
+        //初期位置の色を変える
+        iconNumbers[0].color = new Color(1.0f, 0.259f, 0.471f);
+        Debug.Log(iconNumbers[0].color);
+
     }
 
 
@@ -174,6 +183,9 @@ public class ZukanManager : MonoBehaviour
 
             }
 
+            //ナンバーアイコンの色変更
+            ChangeIconNumberImage();
+
            
             //再度ボタンを押せるようにする
             isMoveButtonList = false;
@@ -214,14 +226,14 @@ public class ZukanManager : MonoBehaviour
                 float destX = currentButtonListNo * page.pageWidth;
                 page.content.anchoredPosition = new Vector2(destX, page.content.anchoredPosition.y);
                 page.tempIndex = currentButtonListNo;
-
             }
+
+            //ナンバーボタンの色変更
+            ChangeIconNumberImage();
 
             //再度ボタンを押せるようにする
             isMoveButtonList = false;
         }
-        
-        
     }
 
     //スワイプに合わせてボタンの左右矢印ボタンの表示/非表示を切り替え
@@ -250,6 +262,30 @@ public class ZukanManager : MonoBehaviour
         else
         {
             OnClickNextButtonList(true);
+        }
+
+    }
+
+
+    /// <summary>
+    /// ボタンリストの位置にあるアイコンナンバーの色を変える
+    /// </summary>
+    private void ChangeIconNumberImage()
+    {
+
+        for (int i = 0; i < iconNumbers.Length; i++)
+        {
+            if (currentButtonListNo == i)
+            {
+                //ボタンリストの位置にあるアイコンの色を変更
+                iconNumbers[i].color = new Color(1.0f, 0.259f, 0.471f);
+            }
+            else
+            {
+                //そのほかの位置にあるアイコンの色を白にする
+                iconNumbers[i].color = new Color(1.0f, 1.0f, 1.0f);
+            }
+
         }
 
     }
