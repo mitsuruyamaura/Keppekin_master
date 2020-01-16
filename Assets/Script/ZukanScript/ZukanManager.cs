@@ -278,6 +278,7 @@ public class ZukanManager : MonoBehaviour
             if (currentButtonListNo == i)
             {
                 //ボタンリストの位置にあるアイコンの色を変更
+                //特色は使う色のRGB値を255で割る。
                 iconNumbers[i].color = new Color(1.0f, 0.259f, 0.471f);
             }
             else
