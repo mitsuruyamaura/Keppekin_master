@@ -1,6 +1,7 @@
-[
+{
+    "ZukanInfo":[
 	{
-		"kinNum\n": 0,
+		"kinNum": 0,
 		"kinName": "tegakin",
 		"rarerity": 1,
 		"katakanaName": "テガキン",
@@ -8,7 +9,7 @@
 		"info": "人の手に常にいるキン。n\n汚れを見つけると手に持っているn\nペンでマーキングする。n\nそのマークへほかのキンが集まる。"
 	},
 	{
-		"kinNum\n": 1,
+		"kinNum": 1,
 		"kinName": "obasi",
 		"rarerity": 2,
 		"katakanaName": "オバシ",
@@ -16,7 +17,7 @@
 		"info": "箸渡しや拾い箸などをするとn\n発生してしまうキン。n\n豆のようなものはオバシが集めたn\n栄養が詰まった袋。"
 	},
 	{
-		"kinNum\n": 2,
+		"kinNum": 2,
 		"kinName": "mokkiran",
 		"rarerity": 3,
 		"katakanaName": "モッキラン",
@@ -24,7 +25,7 @@
 		"info": "汚れを吸収する特殊な粒子を集めn\n身の回りを固めたキン。n\n浄化作用が大きく除菌グッズにはn\n必ずモッキランがいる。"
 	},
 	{
-		"kinNum\n": 3,
+		"kinNum": 3,
 		"kinName": "musoku",
 		"rarerity": 2,
 		"katakanaName": "ムーソク",
@@ -32,15 +33,15 @@
 		"info": "主にトイレに生息するキン。n\nムーソクは衣服や頭髪に付着し、n\n『トイレ行ってきたんだろうな』n\nという匂いを分泌する。"
 	},
 	{
-		"kinNum\n": 4,
+		"kinNum": 4,
 		"kinName": "petora",
 		"rarerity": 3,
-		"katakanaName": "ペトラ\n",
+		"katakanaName": "ペトラ",
 		"kinType": 0,
 		"info": "ぺトトが成長するとぺトトになる。n\nぺトトよりペタペタ感が増して少しn\n不快感が増すようになった。"
 	},
 	{
-		"kinNum\n": 5,
+		"kinNum": 5,
 		"kinName": "momonzo",
 		"rarerity": 1,
 		"katakanaName": "モモンゾ",
@@ -48,7 +49,7 @@
 		"info": "体が汚れを絡め取る特殊な繊維でn\nできている。汚れてしまった毛はn\nまっさらな毛へと生まれ変わる。n\nお尻の尻尾も生え変わるらしい。"
 	},
 	{
-		"kinNum\n": 6,
+		"kinNum": 6,
 		"kinName": "pechoro",
 		"rarerity": 1,
 		"katakanaName": "ペッチョロ",
@@ -56,7 +57,7 @@
 		"info": "糖分を好むキン。n\n単体では作用を起こさないが、n\nぺトトとくっつくとぺちょぺちょとn\nした分泌物を出すので少し不快だ。"
 	},
 	{
-		"kinNum\n": 7,
+		"kinNum": 7,
 		"kinName": "hokoriinu",
 		"rarerity": 1,
 		"katakanaName": "ホコリーヌ",
@@ -64,7 +65,7 @@
 		"info": "ホコリで繁殖するキン。n\nホコリをまきちらして遊ぶのがn\n大好きなので、ホコリーヌが鼻にn\n入るとくしゃみが止まらなくなる。"
 	},
 	{
-		"kinNum\n": 8,
+		"kinNum": 8,
 		"kinName": "poosun",
 		"rarerity": 1,
 		"katakanaName": "プースン",
@@ -72,7 +73,7 @@
 		"info": "唾液に反応すると凶暴化するキン。n\nオバシとは天敵関係にあり、n\n凶暴化するとオバシの持つ栄養袋をn\nしつこくねらう。"
 	},
 	{
-		"kinNum\n": 9,
+		"kinNum": 9,
 		"kinName": "medikuma",
 		"rarerity": 3,
 		"katakanaName": "メディクマ",
@@ -80,7 +81,7 @@
 		"info": "薬の成分を好み繁殖するキン。n\n使いようによっては人体に悪影響をn\nもたらすため、特別な資格を持ったn\nものにしか扱うことを許されない。"
 	},
 	{
-		"kinNum\n": 10,
+		"kinNum": 10,
 		"kinName": "forkin",
 		"rarerity": 1,
 		"katakanaName": "フォーキン",
@@ -88,7 +89,7 @@
 		"info": "唾液に反応すると凶暴化するキン。n\nオバシとは天敵関係にあり、n\n凶暴化するとオバシの持つ栄養袋をn\nしつこくねらう。"
 	},
 	{
-		"kinNum\n": 11,
+		"kinNum": 11,
 		"kinName": "kogepi",
 		"rarerity": 2,
 		"katakanaName": "コゲピ",
@@ -96,7 +97,7 @@
 		"info": "鍋の底やコンロに住処を作るキン。n\n隙間や角に一度集合するとなかなかn\nしつこくその場から離れないので、n\nキッチンなどはまめに掃除しよう。"
 	},
 	{
-		"kinNum\n": 12,
+		"kinNum": 12,
 		"kinName": "hisimo",
 		"rarerity": 1,
 		"katakanaName": "ヒシモ",
@@ -104,7 +105,7 @@
 		"info": "主に頭皮に繁殖するキン。n\nフケ、皮脂をエサに大きくなるのでn\n頭をよく洗って追い出さないとn\n集落ができて頭がかゆくなる。"
 	},
 	{
-		"kinNum\n": 13,
+		"kinNum": 13,
 		"kinName": "kinkirakin",
 		"rarerity": 2,
 		"katakanaName": "キンキラキン",
@@ -112,7 +113,7 @@
 		"info": "石鹸、消臭剤の中にいるキン。n\n汚れを食べるのが大好きなのでn\nDIRTYのキンにかじりつく。n\nかわいいのにクリオネっぽいキン。"
 	},
 	{
-		"kinNum\n": 14,
+		"kinNum": 14,
 		"kinName": "rippers",
 		"rarerity": 2,
 		"katakanaName": "リッパーズ",
@@ -120,7 +121,7 @@
 		"info": "くしゃみ、喋っている時に飛びちるn\n唾液で発生するキン。n\n風邪菌などを取り込むので冬場はn\nリッパーズに要注意。"
 	},
 	{
-		"kinNum\n": 15,
+		"kinNum": 15,
 		"kinName": "mattun",
 		"rarerity": 2,
 		"katakanaName": "マットゥン",
@@ -128,7 +129,7 @@
 		"info": "両腕の菌糸に絡みついたゴム質の帯n\nで汚れを絡め取ってくれる。n\n汚れた菌糸は自分で食べて、またn\n新しい菌糸を両腕から生やす。"
 	},
 	{
-		"kinNum\n": 16,
+		"kinNum": 16,
 		"kinName": "yubun",
 		"rarerity": 1,
 		"katakanaName": "ユーブン",
@@ -136,7 +137,7 @@
 		"info": "乳液、油など油分が使われているn\nところに生息するキン。n\n酸化するとDIRTYに変わるのでn\n注意が必要だ。"
 	},
 	{
-		"kinNum\n": 17,
+		"kinNum": 17,
 		"kinName": "kaimen",
 		"rarerity": 1,
 		"katakanaName": "カイメーン",
@@ -144,7 +145,7 @@
 		"info": "界面活性剤から発生するキン。n\n球体部は水になじみ、棒部分は油にn\nなじむ。単体では行動できないのでn\n常に集団を作って行動している。"
 	},
 	{
-		"kinNum\n": 18,
+		"kinNum": 18,
 		"kinName": "spon",
 		"rarerity": 1,
 		"katakanaName": "スポン",
@@ -152,7 +153,7 @@
 		"info": "スッポンのように汚れにくっつく。n\n汚れに吸いつきまとめてくれるが、n\n単体では何もできないのでn\nCLEANのキンと併用する必要がある。"
 	},
 	{
-		"kinNum\n": 19,
+		"kinNum": 19,
 		"kinName": "chirigamin",
 		"rarerity": 2,
 		"katakanaName": "チリガミン",
@@ -160,7 +161,7 @@
 		"info": "トイレットペーパーの三角折り目にn\n繁殖するキン。n\n折り目をつける行為は清掃員さんn\nだけの特権なので注意。"
 	},
 	{
-		"kinNum\n": 20,
+		"kinNum": 20,
 		"kinName": "getogeto",
 		"rarerity": 1,
 		"katakanaName": "ゲトゲト",
@@ -168,15 +169,15 @@
 		"info": "チクッと感じたらたぶんいるかも。n\nチクチクが気になって肌を擦るとn\n余計に入り込もうとするのでn\n落ち着いて対処しよう。"
 	},
 	{
-		"kinNum\n": 21,
+		"kinNum": 21,
 		"kinName": "doniwa",
 		"rarerity": 1,
-		"katakanaName": "ドニワ\n",
+		"katakanaName": "ドニワ",
 		"kinType": 0,
 		"info": "ドアノブに生息しているキン。n\n独特の金属臭を出したり他のキンとn\nくっついて不快なぬめりを出す。n\nくさい。"
 	},
 	{
-		"kinNum\n": 22,
+		"kinNum": 22,
 		"kinName": "teasemo",
 		"rarerity": 1,
 		"katakanaName": "テアセーモ",
@@ -184,15 +185,15 @@
 		"info": "人の手汗から発生するキン。n\n手汗の水分を吸って成長する。n\n手を渡り旅をするのが夢らしいがn\n洗われるので夢が叶うことはない。"
 	},
 	{
-		"kinNum\n": 23,
+		"kinNum": 23,
 		"kinName": "asyu",
 		"rarerity": 1,
-		"katakanaName": "アシュー\n",
+		"katakanaName": "アシュー",
 		"kinType": 0,
 		"info": "足の匂いに集まってくるキン。n\nアシューがいると臭いが増すうえにn\nぺトトやペトラなどのキンもn\n集まってきてしまう。"
 	},
 	{
-		"kinNum\n": 24,
+		"kinNum": 24,
 		"kinName": "kasabuta",
 		"rarerity": 3,
 		"katakanaName": "カサブタ",
@@ -200,15 +201,15 @@
 		"info": "治りかけの傷に集まってくるキン。n\n絆創膏のようなものは体液で固めたn\nシートで傷に貼りつけてくれるが、n\nカピカピゴツゴツでチョットいや。"
 	},
 	{
-		"kinNum\n": 25,
-		"kinName": "karesyu\n",
+		"kinNum": 25,
+		"kinName": "karesyu",
 		"rarerity": 1,
 		"katakanaName": "カレーシュ",
 		"kinType": 0,
 		"info": "ヒトの加齢臭から発生するキン。n\nカレーとよく似ているが全然違う。n\nお父さんの枕、Yシャツの黄ばみはn\nだいたいカレーシュのせい。"
 	},
 	{
-		"kinNum\n": 26,
+		"kinNum": 26,
 		"kinName": "gurumin",
 		"rarerity": 2,
 		"katakanaName": "グルミン",
@@ -216,7 +217,7 @@
 		"info": "古着やぬいぐるみにいるキン。n\nくたびれ感・独特の匂いを出す。n\n古着屋の匂いはグルミンのせい。n\n好き嫌いが結構分かれるよね。"
 	},
 	{
-		"kinNum\n": 27,
+		"kinNum": 27,
 		"kinName": "simosimon",
 		"rarerity": 1,
 		"katakanaName": "シモシモン",
@@ -224,7 +225,7 @@
 		"info": "指紋の隙間に入り込んでいるキン。n\n画面についている指紋はシモシモンn\nが固まっている場所。頭の中は脂がn\n詰まっていて体の吸盤で吸い付く。"
 	},
 	{
-		"kinNum\n": 28,
+		"kinNum": 28,
 		"kinName": "syusyuru",
 		"rarerity": 1,
 		"katakanaName": "シュシュール",
@@ -232,7 +233,7 @@
 		"info": "除菌スプレーなどに発生するキン。n\nキンキラキンとくっつくと、n\nとてもとても強い。"
 	},
 	{
-		"kinNum\n": 29,
+		"kinNum": 29,
 		"kinName": "jobers",
 		"rarerity": 1,
 		"katakanaName": "ジョバーズ",
@@ -240,7 +241,7 @@
 		"info": "用を足した時に飛び散る水滴からn\n発生するキン。n\n衣服や肌に噛み付かれたままだとn\n排泄物まみれにされるので要注意。"
 	},
 	{
-		"kinNum\n": 30,
+		"kinNum": 30,
 		"kinName": "chappuru",
 		"rarerity": 1,
 		"katakanaName": "チャップル",
@@ -248,7 +249,7 @@
 		"info": "飲みさしの飲み物に繁殖するキン。n\nチャップルがいる水を飲み、お腹をn\n壊す人もいるが、その時はメーバがn\nチャップルに寄生しているからだ。"
 	},
 	{
-		"kinNum\n": 31,
+		"kinNum": 31,
 		"kinName": "taple",
 		"rarerity": 1,
 		"katakanaName": "テープル",
@@ -256,7 +257,7 @@
 		"info": "テープなど粘着面に繁殖するキン。n\nテープやシールをはがしたあとのn\nネチョネチョ感はテープルが残したn\n分泌物のしわざ。"
 	},
 	{
-		"kinNum\n": 32,
+		"kinNum": 32,
 		"kinName": "pichon",
 		"rarerity": 2,
 		"katakanaName": "ピチョン",
@@ -264,15 +265,15 @@
 		"info": "使用後の傘に繁殖する謎のキン。n\n外気や雨の成分を取り込んでn\n傘にびっしり繁殖することがある。"
 	},
 	{
-		"kinNum\n": 33,
-		"kinName": "brushu\n",
+		"kinNum": 33,
+		"kinName": "brushu",
 		"rarerity": 1,
 		"katakanaName": "ブラシュ",
 		"kinType": 1,
 		"info": "ブラシに生息しているキン。n\nDIRTYのキンや汚れを与えるとn\n手足でとらえて食べる。n\n毛先が痛んでくると寿命が近い証。"
 	},
 	{
-		"kinNum\n": 34,
+		"kinNum": 34,
 		"kinName": "petoto",
 		"rarerity": 1,
 		"katakanaName": "ぺトト",
@@ -280,7 +281,7 @@
 		"info": "ペトペトとした感触を出すキン。n\nテアセーモの分泌する水分を好む。n\nぺトトがはったあとはペトペトとn\n指に張りつくような感触が残る。\n"
 	},
 	{
-		"kinNum\n": 35,
+		"kinNum": 35,
 		"kinName": "mopu",
 		"rarerity": 1,
 		"katakanaName": "モプー",
@@ -288,7 +289,7 @@
 		"info": "ペラペラした緑の帯は汚れを絡めてn\n外殻にするための触手。n\nいつも汚れで身を固めていないとn\n落ち着かないらしい。"
 	},
 	{
-		"kinNum\n": 36,
+		"kinNum": 36,
 		"kinName": "bukumaimai",
 		"rarerity": 2,
 		"katakanaName": "ブクマイマイ",
@@ -296,7 +297,7 @@
 		"info": "図書館の本や不特定多数の人がn\n触れるような本に生息するキン。n\n古本特有の臭いを出し、はった後はn\n何ともいえない独特な感触が残る。"
 	},
 	{
-		"kinNum\n": 37,
+		"kinNum": 37,
 		"kinName": "meba",
 		"rarerity": 1,
 		"katakanaName": "メーバ",
@@ -304,7 +305,7 @@
 		"info": "飲みさしの液体の表面に発生する。n\n飲み物に増殖したメーバはカビのn\n原因になるので注意。ちなみに寄生n\nされたチャップルは自我を失う。"
 	},
 	{
-		"kinNum\n": 38,
+		"kinNum": 38,
 		"kinName": "etanon",
 		"rarerity": 2,
 		"katakanaName": "エタノン",
@@ -312,7 +313,7 @@
 		"info": "水・油に混ざる特性を持つキン。n\nカビ発生防止にも役立ついいやつ。n\nしかし体内の殺菌純度が高い個体はn\n瞬時に蒸発してしまうので注意。"
 	},
 	{
-		"kinNum\n": 39,
+		"kinNum": 39,
 		"kinName": "seiikin",
 		"rarerity": 3,
 		"katakanaName": "セイイキン",
@@ -320,19 +321,20 @@
 		"info": "使い慣れたお布団に住み着くキンn\nセイイキンがいると何ともいえないn\n安心感に包まれる。自分の布団がn\n結局落ち着くのはこいつのおかげだ。"
 	},
 	{
-		"kinNum\n": 40,
-		"kinName": "\njyoper",
+		"kinNum": 40,
+		"kinName": "jyoper",
 		"rarerity": 2,
-		"katakanaName": "ジョーパー\n",
+		"katakanaName": "ジョーパー",
 		"kinType": 2,
 		"info": "ジョバーズの幼菌。n\nジョーパーはもともとトイレに住みn\n着いているキンなので中性キンだ。n\nヒトの排泄物で成長してしまうのでn\nDIRTYになってしまう。"
 	},
 	{
-		"kinNum\n": 41,
-		"kinName": "mekiruru\n",
+		"kinNum": 41,
+		"kinName": "mekiruru",
 		"rarerity": 3,
 		"katakanaName": "メキルル",
 		"kinType": 1,
 		"info": "こいつこそが最強！！なキン。n\n紫外線のなかに生息している。n\n必殺殺菌線を放つことができるが、n\n強すぎるので目を隠している。"
 	}
 ]
+}

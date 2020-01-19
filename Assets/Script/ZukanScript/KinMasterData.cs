@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "KinZukanData", menuName = "ScritablaObjects/KinZukanData")]
-public class KinZukanData : ScriptableObject
+[System.Serializable]
+public class kinMasterData
 {
-    public List<KinZukanDataList> kinZukanDataList = new List<KinZukanDataList>();
+    public List<KinZukanData> ZukanInfo = new List<KinZukanData>();
 
     [System.Serializable]
-    public class KinZukanDataList
+    public class KinZukanData
     {
         public int kinNum;
         public string kinName;
@@ -18,7 +18,7 @@ public class KinZukanData : ScriptableObject
         public KIN_TYPE kinType;
 
 
-        [HideInInspector]
+        //[HideInInspector]
         public string info; //各キンの情報
 
     }

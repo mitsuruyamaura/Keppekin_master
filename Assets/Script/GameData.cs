@@ -10,6 +10,8 @@ public class GameData : MonoBehaviour
     //シングルトン...一つのゲームシーンに一個しか存在できないゲームオブジェクト(空のものにつける)
     public static GameData instance;
 
+    public KinSO kinSO;
+
     //TODO ここにバトルシーンなどに引き継ぎたいデータを保存する変数を用意する
     //まずSceneManagerクラスから変数を移す
     public int rank;
@@ -23,6 +25,11 @@ public class GameData : MonoBehaviour
 
     [Header("プレビューシーンで使用するキンの番号")]
     public int previewKinNo;
+
+
+    [Header("KinMasterData（スクリプタブルオブジェクト）")]
+    public LoadMasterDataFromJson loadMasterDataFromJson;
+
 
     //クラスの中に作ったクラスがインスペクターで見れる
     [System.Serializable]
@@ -112,6 +119,10 @@ public class GameData : MonoBehaviour
         Debug.Log(exp);
         Debug.Log(chochiku);
         Debug.Log(currentDirtyPoint);
+
+        //KinMasterData(スクリプタブル・オブジェクトで扱うマスターデータ用クラス)に
+        //Jsonファイルのデータを読み込んで入れ込む
+        loadMasterDataFromJson.LoadFromJson();
 
     }
 

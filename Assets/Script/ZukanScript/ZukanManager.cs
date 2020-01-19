@@ -58,11 +58,11 @@ public class ZukanManager : MonoBehaviour
 
         //シーン遷移時のフェイドイン処理
         StartCoroutine(TransitionManager.instance.FadeIn());
-        kinButtons = new KinDetail[GameData.instance.kindata.kinDataList.Count];
+        kinButtons = new KinDetail[GameData.instance.kinSO.kinMasterData.kinZukanData.Count];
 
 
         //KinDataに登録されているキンの数だけボタンを生成
-        for (int i = 0; i < GameData.instance.kindata.kinDataList.Count; i++)
+        for (int i = 0; i < GameData.instance.kinSO.kinMasterData.kinZukanData.Count; i++)
         {
             Transform tran = kinButtonList[0].transform;
             if (i < 8)
@@ -72,6 +72,22 @@ public class ZukanManager : MonoBehaviour
             else if (i >= 8 && i < 16)
             {
                 tran = kinButtonList[1].transform;
+            }
+            else if (i >=  16 && i < 24)
+            {
+                tran = kinButtonList[2].transform;
+            }
+            else if (i >= 24 && i < 32)
+            {
+                tran = kinButtonList[3].transform;
+            }
+            else if (i >= 32 && i < 40)
+            {
+                tran = kinButtonList[4].transform;
+            }
+            else if (i >= 40 && i < 42)
+            {
+                tran = kinButtonList[5].transform;
             }
 
 

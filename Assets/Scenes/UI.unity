@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222533000}
   - component: {fileID: 222532999}
+  - component: {fileID: 222533001}
   m_Layer: 0
   m_Name: GameData
   m_TagString: Untagged
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99398bd63013a44b2ad5bbd9b23a7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kinSO: {fileID: 11400000, guid: c8efe6480a5af4996a78439594c3c166, type: 2}
   rank: 0
   exp: 0
   chochiku: 0
@@ -156,6 +158,7 @@ MonoBehaviour:
   chochikuStar: 0
   kindata: {fileID: 11400000, guid: 71c7bc90adcf74b35a0c43924938f83a, type: 2}
   previewKinNo: 0
+  loadMasterDataFromJson: {fileID: 222533001}
   enemyDatas:
     kinNum: 0
     kinName: 
@@ -192,6 +195,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222533001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222532998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4815feeb37041ff80246a5508da86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinSO: {fileID: 11400000, guid: c8efe6480a5af4996a78439594c3c166, type: 2}
 --- !u!1 &244895803
 GameObject:
   m_ObjectHideFlags: 0
