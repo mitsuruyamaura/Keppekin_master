@@ -17,6 +17,8 @@ public class ZukanManager : MonoBehaviour
     public Button btnHome;　//ホームへのシーン遷移
     public Button btnPreview; //previewシーンへの遷移
 
+    public bool isPreview; //重複防止用のフラグ
+
     [Header("キンのボタンのプレファブ")]
     public KinDetail kinDetailPrefab;
     [Header("キンのボタンの生成位置")]
@@ -318,11 +320,17 @@ public class ZukanManager : MonoBehaviour
 
     private void OnClickChooseKin()
     {
-        //GameDataにdisplayKinNo(現在表示されているキンの番号を渡す)
-        GameData.instance.previewKinNo = displayKinNo;
+        if (!isPreview)
+        {
+            isPreview = true;
 
-        //シーン遷移
-        StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN_PREVIEW));
+            //GameDataにdisplayKinNo(現在表示されているキンの番号を渡す)
+            GameData.instance.previewKinNo = displayKinNo;
+
+            //シーン遷移
+            StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN_PREVIEW));
+
+        }
 
     }
 }

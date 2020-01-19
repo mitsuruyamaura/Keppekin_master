@@ -485,8 +485,18 @@ MonoBehaviour:
   - {fileID: 4471805950149592194, guid: 17ad748659d194f818869fcb143eeafb, type: 3}
   - {fileID: 306987612584570532, guid: 51380b3a5a08545a39dc6531cdc7df93, type: 3}
   - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
+  - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
   objCtrl: {fileID: 459741361}
-  setPos: {fileID: 0}
+  setPos: {fileID: 1678431705}
   btnReturn: {fileID: 3555653781986896218}
 --- !u!4 &677788302
 Transform:
