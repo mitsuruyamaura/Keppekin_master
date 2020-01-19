@@ -14,7 +14,8 @@ public class ZukanManager : MonoBehaviour
     public Button btnRightArrow;
     public Button btnLeftArrow;
 
-    public Button btnHome;
+    public Button btnHome;　//ホームへのシーン遷移
+    public Button btnPreview; //previewシーンへの遷移
 
     [Header("キンのボタンのプレファブ")]
     public KinDetail kinDetailPrefab;
@@ -46,9 +47,13 @@ public class ZukanManager : MonoBehaviour
 
     public PageScrollRect page;
 
+    private int displayKinNo; //Previewシーンで参照するキンの番号を保存する
+
 
     void Start()
     {
+        UIManager.instance.SwitchDisplayCanvas(1);
+
         //シーン遷移時のフェイドイン処理
         StartCoroutine(TransitionManager.instance.FadeIn());
         kinButtons = new KinDetail[GameData.instance.kindata.kinDataList.Count];
@@ -97,6 +102,10 @@ public class ZukanManager : MonoBehaviour
             //先頭なので左には戻れないようにする
             btnLeftArrow.gameObject.SetActive(false);
 
+        //プレヴューシーンへの遷移
+        btnPreview.onClick.AddListener(OnClickChooseKin);
+
+
         //先頭のキンのデータをデフォルトとして画面上部に表示
         Display(GameData.instance.kindata.kinDataList[0]);
 
@@ -115,6 +124,19 @@ public class ZukanManager : MonoBehaviour
             {
                 kinButtons[i].isSelect = true;
                 kinButtons[i].kinImage.sprite = Resources.Load<Sprite>("Image/Icon_FaceImage/SelectIcon/s_" + kinData.kinName);
+
+                //3Dモデルのあるキンか確認
+                if (kinData.is3DModel)
+                {
+                    //あるならプレヴューボタンを押せるようにする
+                    btnPreview.interactable = true;
+                }
+                else
+                {
+                    //ないなら灰色にして押せないようにする
+                    btnPreview.interactable = false;
+                }
+
             }
             else
             {
@@ -127,6 +149,9 @@ public class ZukanManager : MonoBehaviour
         kinName.text = kinData.kinName;
         
         kinType.sprite = Resources.Load<Sprite>("Type/" + kinData.kinType);
+
+        //現在表示されているキンの番号をkinDataからdisplayKinNoに入れておく
+        displayKinNo = kinData.kinNum;
 
       
 
@@ -291,4 +316,13 @@ public class ZukanManager : MonoBehaviour
 
     }
 
+    private void OnClickChooseKin()
+    {
+        //GameDataにdisplayKinNo(現在表示されているキンの番号を渡す)
+        GameData.instance.previewKinNo = displayKinNo;
+
+        //シーン遷移
+        StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN_PREVIEW));
+
+    }
 }

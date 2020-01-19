@@ -25,5 +25,7 @@ public class KinData : ScriptableObject
 
         public string info; //各キンの情報
 
+        public bool is3DModel; //3Dモデルがあるキンはtrue、ないキンはfalse
+
     }
 }

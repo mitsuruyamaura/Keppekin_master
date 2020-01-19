@@ -23,6 +23,8 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 1
+    info: 
+    is3DModel: 1
   - kinNum: 1
     kinName: obasi
     rarerity: 2
@@ -33,6 +35,8 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 2
     kinName: mokkiran
     rarerity: 3
@@ -43,6 +47,8 @@ MonoBehaviour:
     inkImage: Big_Clean
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 3
     kinName: musoku
     rarerity: 2
@@ -53,6 +59,8 @@ MonoBehaviour:
     inkImage: Small_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 4
     kinName: petora
     rarerity: 3
@@ -63,6 +71,8 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 5
     kinName: momonzo
     rarerity: 1
@@ -73,6 +83,8 @@ MonoBehaviour:
     inkImage: Small_Clean
     removeCount: 0
     nakamaKinNum: 2
+    info: 
+    is3DModel: 1
   - kinNum: 6
     kinName: pechoro
     rarerity: 2
@@ -83,6 +95,8 @@ MonoBehaviour:
     inkImage: Small_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 7
     kinName: hokoriinu
     rarerity: 1
@@ -93,6 +107,8 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 8
     kinName: poosun
     rarerity: 1
@@ -103,6 +119,8 @@ MonoBehaviour:
     inkImage: Small_neut
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 9
     kinName: medikuma
     rarerity: 3
@@ -113,6 +131,8 @@ MonoBehaviour:
     inkImage: Big_Clean
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 10
     kinName: forkin
     rarerity: 1
@@ -123,6 +143,8 @@ MonoBehaviour:
     inkImage: Small_neut
     removeCount: 0
     nakamaKinNum: 3
+    info: 
+    is3DModel: 1
   - kinNum: 11
     kinName: kogepi
     rarerity: 2
@@ -133,6 +155,8 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 12
     kinName: hisimo
     rarerity: 1
@@ -143,6 +167,8 @@ MonoBehaviour:
     inkImage: Snall_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 13
     kinName: kinkirakin
     rarerity: 2
@@ -153,6 +179,8 @@ MonoBehaviour:
     inkImage: Small_Clean
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1
   - kinNum: 14
     kinName: rippers
     rarerity: 2
@@ -163,3 +191,5 @@ MonoBehaviour:
     inkImage: Big_Dirty
     removeCount: 0
     nakamaKinNum: 0
+    info: 
+    is3DModel: 1

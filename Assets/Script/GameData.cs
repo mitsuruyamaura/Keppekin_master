@@ -21,6 +21,9 @@ public class GameData : MonoBehaviour
     [Header("キンのデータベース(スクリプタブルオブジェクト)")]
     public KinData kindata;
 
+    [Header("プレビューシーンで使用するキンの番号")]
+    public int previewKinNo;
+
     //クラスの中に作ったクラスがインスペクターで見れる
     [System.Serializable]
     public class BattleKinData

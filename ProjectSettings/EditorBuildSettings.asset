@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zukan.unity
     guid: 932f7b19465fc40eab1334433f99f537
+  - enabled: 1
+    path: Assets/Scenes/Zukan_Preview.unity
+    guid: 123de342a6b014d319f73c8830191c75
   m_configObjects: {}

@@ -107,4 +107,11 @@ public class UIManager : MonoBehaviour
         }
 
     }
+
+    public void SwitchDisplayCanvas(float alpha)
+    {
+        //CanvasGroupのアルファ値を引数で受け取った値(0か1)にする
+        canvasGroup.alpha = alpha;
+    }
+
 }

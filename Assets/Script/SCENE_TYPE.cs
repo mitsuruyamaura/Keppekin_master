@@ -4,5 +4,6 @@
     HOME,
     STAGE,
     BATTLE,
-    ZUKAN
+    ZUKAN,
+    ZUKAN_PREVIEW,
 }
