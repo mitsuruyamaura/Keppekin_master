@@ -21,6 +21,8 @@ public class UIManager : MonoBehaviour
     public Image rankImage;
     public Image[] starIcons;
 
+    public CanvasGroup canvasGroup;
+
     void Awake()
     {
         if (instance == null)

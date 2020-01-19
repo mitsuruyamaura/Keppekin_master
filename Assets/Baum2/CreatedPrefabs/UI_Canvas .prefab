@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 525129053350738574}
   - component: {fileID: 525129053350738569}
   - component: {fileID: 371598398}
+  - component: {fileID: 525129052774285708}
   m_Layer: 5
   m_Name: 'UI_Canvas '
   m_TagString: UICanvas
@@ -473,6 +474,19 @@ MonoBehaviour:
   - {fileID: 3329056468989350696}
   - {fileID: 8350441321989108032}
   - {fileID: 7323576411213508203}
+  canvasGroup: {fileID: 525129052774285708}
+--- !u!225 &525129052774285708
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525129053350738568}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &676661586840518726
 GameObject:
   m_ObjectHideFlags: 0
