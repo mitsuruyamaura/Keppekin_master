@@ -25,7 +25,7 @@ public class KinInfoPu : MonoBehaviour
         canvasGroup.DOFade(1.0f, 0.5f);
 
         //キンの名前表示
-        txtKinName.text = kinData.kinName;
+        txtKinName.text = kinData.katakanaName;
 
         //キン情報を表示
         //キンデータの文字列をnの部分で区切り、それを順番にstring配列に入れる

@@ -25,7 +25,7 @@ public class KinDetail : MonoBehaviour
 
     public void Init(kinMasterData.KinZukanData data, ZukanManager display)
     {
-        data = kinData;
+        kinData = data;
         zukanManager = display;
 
         //TODO IconFaceが出来上がったら""変更する

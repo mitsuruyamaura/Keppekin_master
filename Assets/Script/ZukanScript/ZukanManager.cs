@@ -151,7 +151,7 @@ public class ZukanManager : MonoBehaviour
         }
 
         kinImage.sprite = Resources.Load<Sprite>("Image/" + kinData.kinName);
-        kinName.text = kinData.kinName;
+        kinName.text = kinData.katakanaName;
         
         kinType.sprite = Resources.Load<Sprite>("Type/" + kinData.kinType);
 
@@ -254,7 +254,7 @@ public class ZukanManager : MonoBehaviour
             {
                 //スワイプしていない（ボタンを押した）なら、1ページ戻したボタンリストを表示
                 float destX = currentButtonListNo * page.pageWidth;
-                page.content.anchoredPosition = new Vector2(destX, page.content.anchoredPosition.y);
+                page.content.anchoredPosition = new Vector2(-destX, page.content.anchoredPosition.y);
                 page.tempIndex = currentButtonListNo;
             }
 
