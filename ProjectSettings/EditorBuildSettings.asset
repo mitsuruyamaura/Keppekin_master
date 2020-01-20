@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zukan_Preview.unity
     guid: 123de342a6b014d319f73c8830191c75
+  - enabled: 1
+    path: Assets/Scenes/Kansatsu.unity
+    guid: e6ec6e34de80b4018afd814659a4ea26
   m_configObjects: {}
