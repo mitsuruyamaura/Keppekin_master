@@ -6,4 +6,5 @@
     BATTLE,
     ZUKAN,
     ZUKAN_PREVIEW,
+    KANSATSU,
 }

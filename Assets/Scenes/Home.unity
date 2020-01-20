@@ -612,6 +612,7 @@ MonoBehaviour:
   objCtrl: {fileID: 1552115003}
   setPos: {fileID: 1678431705}
   zukanButton: {fileID: 4002118060264046685}
+  kansatsuButton: {fileID: 469761296}
 --- !u!4 &677788302
 Transform:
   m_ObjectHideFlags: 0

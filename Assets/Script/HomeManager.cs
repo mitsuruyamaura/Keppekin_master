@@ -16,6 +16,8 @@ public class HomeManager : MonoBehaviour
 
 	public Button zukanButton;
 
+    public Button kansatsuButton;
+
 
     void Awake()
     {
@@ -32,7 +34,14 @@ public class HomeManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(TransitionManager.instance.FadeIn());
+
+        //UIヘッダーを表示する
+        UIManager.instance.SwitchDisplayCanvas(1);
+
+
         zukanButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN)));
+
+        kansatsuButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.KANSATSU)));
     }
 
 }
