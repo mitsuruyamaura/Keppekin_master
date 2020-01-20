@@ -58,11 +58,11 @@ public class ZukanManager : MonoBehaviour
 
         //シーン遷移時のフェイドイン処理
         StartCoroutine(TransitionManager.instance.FadeIn());
-        kinButtons = new KinDetail[GameData.instance.kinSO.kinMasterData.kinZukanData.Count];
+        kinButtons = new KinDetail[GameData.instance.kinSO.kinMasterData.ZukanInfo.Count];
 
 
         //KinDataに登録されているキンの数だけボタンを生成
-        for (int i = 0; i < GameData.instance.kinSO.kinMasterData.kinZukanData.Count; i++)
+        for (int i = 0; i < GameData.instance.kinSO.kinMasterData.ZukanInfo.Count; i++)
         {
             Transform tran = kinButtonList[0].transform;
             if (i < 8)
@@ -92,22 +92,9 @@ public class ZukanManager : MonoBehaviour
 
 
             KinDetail kinButton = Instantiate(kinDetailPrefab, tran, false);
-            kinButton.Init(GameData.instance.kindata.kinDataList[i], this);
+            kinButton.Init(GameData.instance.kinSO.kinMasterData.ZukanInfo[i], this);
             kinButtons[i] = kinButton;
         }
-
-        //最初のボタンリストを表示し、他のボタンリストは非表示にする。
-        //for (int i = 0; i < kinButtonList.Count; i++)
-        //{
-        //    if (i == 0)
-        //    {
-        //        kinButtonList[i].SetActive(true);
-        //    }
-        //    else
-        //    {
-        //        kinButtonList[i].SetActive(false);
-        //    }
-        //}
 
         //右矢印ボタンにメソッドを登録
         btnRightArrow.onClick.AddListener(() => OnClickNextButtonList());
@@ -125,7 +112,7 @@ public class ZukanManager : MonoBehaviour
 
 
         //先頭のキンのデータをデフォルトとして画面上部に表示
-        Display(GameData.instance.kindata.kinDataList[0]);
+        Display(GameData.instance.kinSO.kinMasterData.ZukanInfo[0]);
 
         //初期位置の色を変える
         iconNumbers[0].color = new Color(1.0f, 0.259f, 0.471f);
@@ -134,7 +121,7 @@ public class ZukanManager : MonoBehaviour
     }
 
 
-    public void Display(KinData.KinDataList kinData)
+    public void Display(kinMasterData.KinZukanData kinData)
     {
         for (int i = 0; i < kinButtons.Length; i++)
         {
@@ -159,7 +146,7 @@ public class ZukanManager : MonoBehaviour
             else
             {
                 kinButtons[i].isSelect = false;
-                kinButtons[i].kinImage.sprite = Resources.Load <Sprite>("Image/Icon_FaceImage/" + GameData.instance.kindata.kinDataList[i].kinName);
+                kinButtons[i].kinImage.sprite = Resources.Load <Sprite>("Image/Icon_FaceImage/" + GameData.instance.kinSO.kinMasterData.ZukanInfo[i].kinName);
             }
         }
 

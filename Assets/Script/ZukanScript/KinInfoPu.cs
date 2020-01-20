@@ -19,7 +19,7 @@ public class KinInfoPu : MonoBehaviour
     /// <summary>
     /// ポップアップに表示するキンの詳細を設定
     /// </summary>
-    public void SetupPopUp(KinData.KinDataList kinData)
+    public void SetupPopUp(kinMasterData.KinZukanData kinData)
     {
         //アルファを0にしておいて、フェイドインさせて表示する
         canvasGroup.DOFade(1.0f, 0.5f);

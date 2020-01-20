@@ -7,7 +7,7 @@ public class KinDetail : MonoBehaviour
 {
     public Button buttonKinInfo;
     public bool isSelect;
-    public KinData.KinDataList kinData;
+    public kinMasterData.KinZukanData kinData;
     public ZukanManager zukanManager;
     public Image kinImage;
 
@@ -23,9 +23,9 @@ public class KinDetail : MonoBehaviour
         buttonKinInfo.onClick.AddListener(OnclickSelect);
     }
 
-    public void Init(KinData.KinDataList data, ZukanManager display)
+    public void Init(kinMasterData.KinZukanData data, ZukanManager display)
     {
-        kinData = data;
+        data = kinData;
         zukanManager = display;
 
         //TODO IconFaceが出来上がったら""変更する

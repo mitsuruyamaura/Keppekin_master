@@ -21,5 +21,7 @@ public class kinMasterData
         //[HideInInspector]
         public string info; //各キンの情報
 
+        public bool is3DModel;
+
     }
 }
