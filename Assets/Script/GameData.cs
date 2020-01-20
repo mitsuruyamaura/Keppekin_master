@@ -62,12 +62,16 @@ public class GameData : MonoBehaviour
         DIRTY_POINT
     }
 
+    [Header("インスペクターでモデルがあるキンの数だけ数字を入れる")]
+    public int modelCount; 
+
 
 //初期化...普段は省略してかける
 //int x = new int();
 //x = 5;
 //int x = 5;
 //けど、上で作ったクラスはUnityが知らないからいちいちnewで初期化してあげないと使えない
+
 
 
     private void Awake()
@@ -123,6 +127,13 @@ public class GameData : MonoBehaviour
         //KinMasterData(スクリプタブル・オブジェクトで扱うマスターデータ用クラス)に
         //Jsonファイルのデータを読み込んで入れ込む
         loadMasterDataFromJson.LoadFromJson();
+
+        //3Dモデルのあるキンのデータだけフラグを立てる
+        for (int i = 0; i < modelCount; i++)
+        {
+            kinSO.kinMasterData.ZukanInfo[i].is3DModel = true;
+        }
+       
 
     }
 
