@@ -72,7 +72,8 @@ public class SchaleKin : MonoBehaviour
         if (isMoveDir)
         {
             //上で生成なら下方向に移動
-            speed = Random.Range(2.5f, 5);
+            speed = -Random.Range(2.5f, 5);
+
 
         }
         else
@@ -80,6 +81,10 @@ public class SchaleKin : MonoBehaviour
             //下で生成なら上方向に移動
             speed = Random.Range(2.5f, 5);
         }
+
+        float rate = Random.Range(0.5f, 1.5f);
+        Vector2 scaleKin = new Vector2(rate, rate);
+        transform.localScale = scaleKin;
 
         state = State.SET_UP;
 

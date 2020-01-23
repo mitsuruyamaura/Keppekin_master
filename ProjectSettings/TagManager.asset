@@ -13,6 +13,9 @@ TagManager:
   - ReturnBullet
   - BattleUI
   - ZukanManager
+  - Wall
+  - Rival
+  - Enemy
   layers:
   - Default
   - TransparentFX
