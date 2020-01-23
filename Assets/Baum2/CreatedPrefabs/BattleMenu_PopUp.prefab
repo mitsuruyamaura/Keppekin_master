@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 4716576295652983696}
   - component: {fileID: 4716576295652983697}
   m_Layer: 0
-  m_Name: TODO_Image_yameru
+  m_Name: Image_yameru
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,7 +166,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -2, y: -265}
-  m_SizeDelta: {x: 560, y: 300}
+  m_SizeDelta: {x: 265, y: 265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4716576295652983696
 CanvasRenderer:
@@ -189,16 +189,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5424528, b: 0.5424528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 660dc62601542452a8ea5f06cc3d0ac5, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -909,4 +909,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb39f348f2234458ba07c192f2073ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleUIManager: {fileID: 0}
   battleBg: {fileID: 4775845109005214711}
