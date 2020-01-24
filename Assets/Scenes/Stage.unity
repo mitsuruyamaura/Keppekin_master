@@ -1330,16 +1330,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583031228773920805}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0930d3a9b671149eca5997ff356b5953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dirtyGage: {fileID: 1861386542}
   sliderGauge: {fileID: 688740842}
-  maxDirtyPoint: 100
-  currentDirtyPoint: 0
-  uiManager: {fileID: 0}
 --- !u!224 &6171318023437412176 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4637831891646977908, guid: 9be13a81e782247eb83f3d642e173af4,

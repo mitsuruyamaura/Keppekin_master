@@ -42,6 +42,8 @@ public class EnemyManager : MonoBehaviour
     void Awake()
     {
         StartCoroutine(TransitionManager.instance.FadeIn());
+        //UIヘッダー戻す
+        UIManager.instance.SwitchDisplayCanvas(1);
 
         StartCoroutine(CreateKinMaskImage());
 

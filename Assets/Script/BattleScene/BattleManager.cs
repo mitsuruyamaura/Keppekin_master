@@ -59,7 +59,10 @@ public class BattleManager : MonoBehaviour
     {
         StartCoroutine(TransitionManager.instance.FadeIn());
 
-      
+        //UIヘッダー隠す
+        UIManager.instance.SwitchDisplayCanvas(0);
+
+
 
 
         //バトルに参加した仲間と敵のキンのデータを取得する

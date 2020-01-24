@@ -10,25 +10,11 @@ public class BattleDebug : MonoBehaviour
 
     public Slider sliderGauge;
 
-    public float maxDirtyPoint;
-    public float currentDirtyPoint;
-
-    //いじるな
-    public UIManager uiManager;
-
-
     private void Start()
     {
-        //100/100で始まるのでゲージがフルの状態で始まる
-        currentDirtyPoint = maxDirtyPoint;
         //現在値を最大値で割ることで徐々にゲージを減らしていける
-        dirtyGage.fillAmount = currentDirtyPoint / maxDirtyPoint;
+        dirtyGage.fillAmount = GameData.instance.currentDirtyPoint / 100;
         
-
-        //UIシーンは別途ロードされるので、毎回、UIマネージャーを探して紐付けする
-        uiManager = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UIManager>();
-        //uiManager.UpdateGage(); //まだ使わないけど追加
-
         StartCoroutine(AnimateDirtyGauge());
 
 
@@ -42,7 +28,7 @@ public class BattleDebug : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         //Dirtyゲージの表示を更新
-        dirtyGage.fillAmount = currentDirtyPoint / maxDirtyPoint;
+        dirtyGage.fillAmount = GameData.instance.currentDirtyPoint / 100;
         //DOValueはSliderの型限定で使えるので注意
         //DOValue(1...アニメーションさせる値、2...時間)　両方ともfloat型じゃないとダメ
         sliderGauge.DOValue(dirtyGage.fillAmount, 0.5f).SetEase(Ease.Linear);

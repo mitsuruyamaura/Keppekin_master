@@ -126,7 +126,7 @@ public class GameData : MonoBehaviour
 
         //KinMasterData(スクリプタブル・オブジェクトで扱うマスターデータ用クラス)に
         //Jsonファイルのデータを読み込んで入れ込む
-        loadMasterDataFromJson.LoadFromJson();
+        //loadMasterDataFromJson.LoadFromJson();
 
         //3Dモデルのあるキンのデータだけフラグを立てる
         for (int i = 0; i < modelCount; i++)
