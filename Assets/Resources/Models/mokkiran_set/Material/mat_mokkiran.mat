@@ -186,8 +186,8 @@ Material:
     - _OcclusionStrength: 1
     - _Offset_X_Axis_BLD: -0.05
     - _Offset_Y_Axis_BLD: 0.09
-    - _Offset_Z: 0
-    - _Outline_Width: 0.001
+    - _Offset_Z: -0.09
+    - _Outline_Width: 0.0009
     - _Parallax: 0.02
     - _RimLight: 1
     - _RimLight_FeatherOff: 1
@@ -231,6 +231,6 @@ Material:
     - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
     - _HighColor: {r: 0, g: 0, b: 0, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Outline_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    - _Outline_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
     - _RimLightColor: {r: 1, g: 0.9454322, b: 0.8537736, a: 1}
     - _ViewShift: {r: 0, g: 0, b: 0, a: 1}

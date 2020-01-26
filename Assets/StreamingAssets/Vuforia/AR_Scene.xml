@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="kinkirakin" size="512.000000 512.000000" />
+    <ImageTarget name="momonzo" size="512.000000 512.000000" />
+    <ImageTarget name="chirigamin" size="512.000000 512.000000" />
+    <ImageTarget name="yubun" size="512.000000 512.000000" />
+    <ImageTarget name="tegakin" size="512.000000 512.000000" />
+    <ImageTarget name="taple" size="512.000000 512.000000" />
+    <ImageTarget name="spon" size="512.000000 512.000000" />
+    <ImageTarget name="rippers" size="512.000000 512.000000" />
+    <ImageTarget name="poosun" size="512.000000 512.000000" />
+    <ImageTarget name="petoto" size="512.000000 512.000000" />
+    <ImageTarget name="petora" size="512.000000 512.000000" />
+    <ImageTarget name="pechoro" size="512.000000 512.000000" />
+    <ImageTarget name="obasi" size="512.000000 512.000000" />
+    <ImageTarget name="musoku" size="512.000000 512.000000" />
+    <ImageTarget name="mokkiran" size="512.000000 512.000000" />
+    <ImageTarget name="medikuma" size="512.000000 512.000000" />
+    <ImageTarget name="meba" size="512.000000 512.000000" />
+    <ImageTarget name="mattun" size="512.000000 512.000000" />
+    <ImageTarget name="kogepi" size="512.000000 512.000000" />
+    <ImageTarget name="kaimen" size="512.000000 512.000000" />
+    <ImageTarget name="hokoriinu" size="512.000000 512.000000" />
+    <ImageTarget name="hisimo" size="512.000000 512.000000" />
+    <ImageTarget name="getogeto" size="512.000000 512.000000" />
+    <ImageTarget name="forkin" size="512.000000 512.000000" />
+    <ImageTarget name="doniwa" size="512.000000 512.000000" />
+  </Tracking>
+</QCARConfig>

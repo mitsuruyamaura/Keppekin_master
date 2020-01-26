@@ -193,3 +193,123 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+  - kinNum: 15
+    kinName: chirigamin
+    rarerity: 1
+    level: 1
+    kinType: 1
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 16
+    kinName: doniwa
+    rarerity: 1
+    level: 1
+    kinType: 0
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 17
+    kinName: getogeto
+    rarerity: 1
+    level: 2
+    kinType: 0
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 18
+    kinName: kaimen
+    rarerity: 1
+    level: 1
+    kinType: 1
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 19
+    kinName: mattun
+    rarerity: 2
+    level: 3
+    kinType: 1
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Big_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 20
+    kinName: meba
+    rarerity: 1
+    level: 3
+    kinType: 0
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 21
+    kinName: spon
+    rarerity: 2
+    level: 1
+    kinType: 1
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 22
+    kinName: taple
+    rarerity: 1
+    level: 1
+    kinType: 2
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_neut
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 23
+    kinName: yubun
+    rarerity: 1
+    level: 1
+    kinType: 2
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Big_neut
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
+  - kinNum: 24
+    kinName: petoto
+    rarerity: 1
+    level: 1
+    kinType: 0
+    kinPower: 10
+    bulletSpeed: 0
+    inkImage: Small_Dirty
+    removeCount: 0
+    nakamaKinNum: 0
+    info: 
+    is3DModel: 1
