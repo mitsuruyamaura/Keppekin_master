@@ -10902,7 +10902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mC741BBB0A647C814227953
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m0FCCD33CE2C6A7589E52A2AB0872FE361BF5EF60_gshared (Dictionary_2_t32F25F093828AA9F93CB11C2A2B4648FD62A09BA * __this, RuntimeObject * p0, const RuntimeMethod* method);
 // System.Void System.Array::Resize<System.Object>(!!0[]&,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Resize_TisRuntimeObject_m867A1BD65D179315E1C238CBD162DD91D0F362CC_gshared (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** p0, int32_t p1, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Resize_TisRuntimeObject_m5DDE22DC2BDD151FF241480E31970F64BE8FF63F_gshared (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** p0, int32_t p1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::set_Capacity(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_m5E67DE1CEC89ADB8A82937E2D0CB48A78F962FA3_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t p0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
@@ -11315,7 +11315,7 @@ inline bool Dictionary_2_Remove_m2C59CD9833FEA1FDC8DADF25EAE2DEE461A63A9E (Dicti
 // System.Void System.Array::Resize<DG.Tweening.Tween>(!!0[]&,System.Int32)
 inline void Array_Resize_TisTween_t119487E0AB84EF563521F1043116BDBAE68AC437_m4B8F36E02040DB5031839E90C47F5566378FD38C (TweenU5BU5D_t59E878639D2690DEB50DB29D6D3871EB68312DD5** p0, int32_t p1, const RuntimeMethod* method)
 {
-	((  void (*) (TweenU5BU5D_t59E878639D2690DEB50DB29D6D3871EB68312DD5**, int32_t, const RuntimeMethod*))Array_Resize_TisRuntimeObject_m867A1BD65D179315E1C238CBD162DD91D0F362CC_gshared)(p0, p1, method);
+	((  void (*) (TweenU5BU5D_t59E878639D2690DEB50DB29D6D3871EB68312DD5**, int32_t, const RuntimeMethod*))Array_Resize_TisRuntimeObject_m5DDE22DC2BDD151FF241480E31970F64BE8FF63F_gshared)(p0, p1, method);
 }
 // System.Void System.Collections.Generic.List`1<DG.Tweening.Tween>::set_Capacity(System.Int32)
 inline void List_1_set_Capacity_mE73C6B6FF209AECF0492FB03088252FFBED8A828 (List_1_t57BB69F1AC3759152D9E750F6120000328D367B8 * __this, int32_t p0, const RuntimeMethod* method)
