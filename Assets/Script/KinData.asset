@@ -25,6 +25,7 @@ MonoBehaviour:
     nakamaKinNum: 1
     info: 
     is3DModel: 1
+    katakanaName: "\u30C6\u30AC\u30AD\u30F3"
   - kinNum: 1
     kinName: obasi
     rarerity: 2
@@ -37,6 +38,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30AA\u30D0\u30B7"
   - kinNum: 2
     kinName: mokkiran
     rarerity: 3
@@ -49,6 +51,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30E2\u30C3\u30AD\u30E9\u30F3"
   - kinNum: 3
     kinName: musoku
     rarerity: 2
@@ -61,6 +64,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30E0\u30FC\u30BD\u30AF"
   - kinNum: 4
     kinName: petora
     rarerity: 3
@@ -73,6 +77,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30DA\u30C8\u30E9"
   - kinNum: 5
     kinName: momonzo
     rarerity: 1
@@ -85,6 +90,7 @@ MonoBehaviour:
     nakamaKinNum: 2
     info: 
     is3DModel: 1
+    katakanaName: "\u30E2\u30E2\u30F3\u30BE"
   - kinNum: 6
     kinName: pechoro
     rarerity: 2
@@ -97,6 +103,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30DA\u30C3\u30C1\u30E7\u30ED"
   - kinNum: 7
     kinName: hokoriinu
     rarerity: 1
@@ -109,6 +116,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30DB\u30B3\u30EA\u30FC\u30CC"
   - kinNum: 8
     kinName: poosun
     rarerity: 1
@@ -121,6 +129,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30D7\u30FC\u30B9\u30F3"
   - kinNum: 9
     kinName: medikuma
     rarerity: 3
@@ -133,6 +142,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30E1\u30C7\u30A3\u30AF\u30DE"
   - kinNum: 10
     kinName: forkin
     rarerity: 1
@@ -145,6 +155,7 @@ MonoBehaviour:
     nakamaKinNum: 3
     info: 
     is3DModel: 1
+    katakanaName: "\u30D5\u30A9\u30FC\u30AD\u30F3"
   - kinNum: 11
     kinName: kogepi
     rarerity: 2
@@ -157,6 +168,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30B3\u30B2\u30D4"
   - kinNum: 12
     kinName: hisimo
     rarerity: 1
@@ -169,6 +181,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30D2\u30B7\u30E2"
   - kinNum: 13
     kinName: kinkirakin
     rarerity: 2
@@ -181,6 +194,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30AD\u30F3\u30AD\u30E9\u30AD\u30F3"
   - kinNum: 14
     kinName: rippers
     rarerity: 2
@@ -193,6 +207,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30EA\u30C3\u30D1\u30FC\u30BA"
   - kinNum: 15
     kinName: chirigamin
     rarerity: 1
@@ -205,6 +220,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30C1\u30EA\u30AC\u30DF\u30F3"
   - kinNum: 16
     kinName: doniwa
     rarerity: 1
@@ -217,6 +233,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30C9\u30CB\u30EF"
   - kinNum: 17
     kinName: getogeto
     rarerity: 1
@@ -229,6 +246,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30B2\u30C8\u30B2\u30C8"
   - kinNum: 18
     kinName: kaimen
     rarerity: 1
@@ -241,6 +259,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30AB\u30A4\u30E1\u30FC\u30F3"
   - kinNum: 19
     kinName: mattun
     rarerity: 2
@@ -253,6 +272,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30DE\u30C3\u30C8\u30A5\u30F3"
   - kinNum: 20
     kinName: meba
     rarerity: 1
@@ -265,6 +285,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30E1\u30FC\u30D0"
   - kinNum: 21
     kinName: spon
     rarerity: 2
@@ -277,6 +298,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30B9\u30DD\u30F3"
   - kinNum: 22
     kinName: taple
     rarerity: 1
@@ -289,6 +311,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30C6\u30FC\u30D7\u30EB"
   - kinNum: 23
     kinName: yubun
     rarerity: 1
@@ -301,6 +324,7 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u30E6\u30FC\u30D6\u30F3"
   - kinNum: 24
     kinName: petoto
     rarerity: 1
@@ -313,3 +337,4 @@ MonoBehaviour:
     nakamaKinNum: 0
     info: 
     is3DModel: 1
+    katakanaName: "\u307A\u30C8\u30C8"

@@ -48,12 +48,13 @@ public class ResultPopUp : MonoBehaviour
     public int debugRarelity;
     public int debugLevel;
 
-    private void Start()
-    {
-        removeCountTxt.text = num.ToString();
-        resultType = RESULT_TYPE.WIN;
-        StartCoroutine(AnimeText());
-    }
+    //Debug用なので
+    //private void Start()
+    //{
+    //    removeCountTxt.text = num.ToString();
+    //    resultType = RESULT_TYPE.WIN;
+    //    StartCoroutine(AnimeText());
+    //}
 
 
 
@@ -74,7 +75,7 @@ public class ResultPopUp : MonoBehaviour
         if (isResult)
         {
             resultType = RESULT_TYPE.WIN;
-            StartCoroutine(AnimeText());
+            StartCoroutine(AnimeText(enemyData));
      
             yield return new WaitForSeconds(1.0f);
 
@@ -84,7 +85,7 @@ public class ResultPopUp : MonoBehaviour
         else
         {
             resultType = RESULT_TYPE.LOSE;
-            StartCoroutine(AnimeText());
+            StartCoroutine(AnimeText(enemyData));
 
         }
     }
@@ -203,7 +204,7 @@ public class ResultPopUp : MonoBehaviour
     }
 
 
-    private IEnumerator AnimeText()
+    private IEnumerator AnimeText(GameData.BattleKinData enemyData)
     {
         //アニメの中で待つとAppendが順番ではなく、まとまってしまうので先に一旦待つ。
         yield return new WaitForSeconds(0.5f);
@@ -268,11 +269,29 @@ public class ResultPopUp : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(1.0f);
+
+        //勝利した場合は除菌回数をプラスする
+        if (resultType == RESULT_TYPE.WIN)
+        {
+            yield return new WaitForSeconds(1.0f);
+        }
+
+
+        //倒したキンの除菌回数をキンデータから取得する
+        int removeCount = 0;
+        foreach (KinData.KinDataList data in GameData.instance.kindata.kinDataList)
+        {
+            if (data.kinName == enemyData.kinName)
+            {
+                removeCount = data.removeCount;
+            }
+
+        }
+
+
 
         //除菌回数をアニメさせてカウント
-        int value = 9;
-        int remove = value + 1;
+        int remove = removeCount + 1;
 
         //DOTween.To()と書くとDOTweenに登録されていないオブジェクトも動かせる
         //DOTween.To(①...何に入れるか、②...何を入れるか、③どこまで値を変化させるか、④変化させるのにかける時間)

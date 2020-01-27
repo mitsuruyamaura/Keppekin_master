@@ -4346,6 +4346,9 @@ MonoBehaviour:
   kinNames:
   - 
   - 
+  katakanaNames:
+  - 
+  - 
   kinTypes: 0000000000000000
   maxKinNum: 5
   btnReturn: {fileID: 9047685370794906863}

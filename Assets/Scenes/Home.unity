@@ -601,7 +601,7 @@ MonoBehaviour:
   homeKinPrefabs:
   - {fileID: 1219734482671587915, guid: 9d1af06a6c3634eb1a5628e5fdd68a4e, type: 3}
   - {fileID: 1385172791554909310, guid: 998a3f199dcc948f5a6dc63350d4e09a, type: 3}
-  - {fileID: 6224315820089104110, guid: 0990c827cdda445428cbd16aa77986df, type: 3}
+  - {fileID: 6224315820089104110, guid: a6c63f3e8c0d748669072f4acf3e8864, type: 3}
   - {fileID: 306987612584570532, guid: 51380b3a5a08545a39dc6531cdc7df93, type: 3}
   - {fileID: 4272750756647087467, guid: 466cedc1114c5434eabd5a4c3fbdf4f0, type: 3}
   - {fileID: 1401200517003410154, guid: 88e628a5639744601a58f28adaf572b1, type: 3}

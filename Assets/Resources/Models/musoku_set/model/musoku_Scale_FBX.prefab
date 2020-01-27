@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3610191744149920951}
   - component: {fileID: 6670949810596360653}
-  - component: {fileID: 6353858504561395778}
   - component: {fileID: 2360584420903925548}
   - component: {fileID: 8213479994094965153}
   m_Layer: 9
@@ -55,25 +54,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6353858504561395778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306987612584570532}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kinBulletPrefab: {fileID: 0}
-  speed: 0
-  waitTime: 0
-  debugSwitch: 0
-  kinStateManager: {fileID: 0}
-  inkImageName: 
-  battleUI: {fileID: 0}
 --- !u!54 &2360584420903925548
 Rigidbody:
   m_ObjectHideFlags: 0

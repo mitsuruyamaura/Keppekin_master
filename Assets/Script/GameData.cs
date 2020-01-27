@@ -19,6 +19,7 @@ public class GameData : MonoBehaviour
     public int chochiku;
     public float currentDirtyPoint;
     public int chochikuStar;
+    public string katakanaName;
 
     [Header("キンのデータベース(スクリプタブルオブジェクト)")]
     public KinData kindata;

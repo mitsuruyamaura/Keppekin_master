@@ -27,7 +27,7 @@ public class HomeManager : MonoBehaviour
 
         //選択されたキンのモデルのPrefabをインスタンスして、スワイプできるように設定する
         objCtrl.obj = Instantiate(homeKinPrefabs[value], setPos);
-        objCtrl.obj.GetComponent<ShotManager>().enabled = false; //ホームでキンが球を飛ばさないようにする
+        //objCtrl.obj.GetComponent<ShotManager>().enabled = false; //ホームでキンが球を飛ばさないようにする
         
     }
 

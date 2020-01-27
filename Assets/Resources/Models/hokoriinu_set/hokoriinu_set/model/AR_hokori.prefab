@@ -228,8 +228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kinBulletPrefab: {fileID: 6633198825311391333, guid: c51bfab24a5a04350b33fa55709cc825,
     type: 3}
-  speed: 4
-  waitTime: 60
+  speed: 3
+  waitTime: 120
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty

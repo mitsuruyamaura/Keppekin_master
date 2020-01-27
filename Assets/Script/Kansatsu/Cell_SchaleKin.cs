@@ -34,7 +34,8 @@ public class Cell_SchaleKin : FancyScrollViewCell<ItemData, Context>
     public override void UpdateContent(ItemData itemData)
     {
         kindata = itemData.Kindata;
-        cellKinName.text = kindata.kinName;
+        cellKinName.text = kindata.katakanaName;
+
         typeImage.sprite = Resources.Load<Sprite>("Type/" + kindata.kinType);
 
 

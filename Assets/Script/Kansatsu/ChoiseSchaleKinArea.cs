@@ -22,6 +22,8 @@ public class ChoiseSchaleKinArea : MonoBehaviour
         {
             selectSchaleKinPopup.kinNames[arrayNum] = cell.kindata.kinName;
             selectSchaleKinPopup.kinTypes[arrayNum] = cell.kindata.kinType;
+            selectSchaleKinPopup.katakanaNames[arrayNum] = cell.kindata.katakanaName;
+
             Debug.Log(cell.kindata.kinName);
             Debug.Log(cell.kindata.kinType);
 

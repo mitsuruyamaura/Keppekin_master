@@ -86,7 +86,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 941399606081478520}
-  - component: {fileID: 6834671269039072679}
   - component: {fileID: 572999303247362431}
   - component: {fileID: 1030791144968832367}
   m_Layer: 9
@@ -112,25 +111,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &6834671269039072679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4272750756647087467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kinBulletPrefab: {fileID: 0}
-  speed: 0
-  waitTime: 0
-  debugSwitch: 0
-  kinStateManager: {fileID: 0}
-  inkImageName: 
-  battleUI: {fileID: 0}
 --- !u!54 &572999303247362431
 Rigidbody:
   m_ObjectHideFlags: 0

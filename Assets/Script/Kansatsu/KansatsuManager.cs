@@ -88,7 +88,7 @@ public class KansatsuManager : MonoBehaviour
     /// </summary>
     /// <param name="names"></param>
     /// <param name="types"></param>
-    public void SetUpShaleKinInfo(string[] names, KIN_TYPE[] types, int maxValue)
+    public void SetUpShaleKinInfo(string[] names, KIN_TYPE[] types, int maxValue, string[]katakanas)
     {
         for (int i = 0; i < names.Length; i++)
         {
@@ -99,8 +99,8 @@ public class KansatsuManager : MonoBehaviour
             //生成までにかかる時間を設定
             waitTimes[i] = Random.Range(minWaitTime, maxWaitTime);
 
-            //キンの名前を画面に表示する
-            txtKinNames[i].text = names[i];
+            //キンの名前(カタカナ)を画面に表示する
+            txtKinNames[i].text = katakanas[i];
             Debug.Log(names[i]);
 
             //キンのイメージと属性のイメージを画面に表示

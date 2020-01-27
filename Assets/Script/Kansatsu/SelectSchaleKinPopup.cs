@@ -16,6 +16,9 @@ public class SelectSchaleKinPopup : MonoBehaviour
     [Header("生成したいキン１〜２の名前")]
     public string[] kinNames;
 
+    [Header("生成したいキン１〜２の名前(カタカナ)")]
+    public string[] katakanaNames;
+
     [Header("生成したいキン１〜２のタイプ")]
     public KIN_TYPE[] kinTypes;
 
@@ -82,7 +85,7 @@ public class SelectSchaleKinPopup : MonoBehaviour
     public void ClosePopUp()
     {
         //KansatsuManagerのSetupKinInfoに設定した2体分のキンのデータと最大生成数を渡す
-        kansatsuManager.SetUpShaleKinInfo(kinNames, kinTypes, maxKinNum);
+        kansatsuManager.SetUpShaleKinInfo(kinNames, kinTypes, maxKinNum, katakanaNames);
 
         //PUをアニメ付きで破壊する
         gameObject.transform.DOScale(1.3f, 0.25f);
