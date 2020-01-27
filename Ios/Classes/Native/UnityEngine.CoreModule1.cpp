@@ -1005,6 +1005,7 @@ IL2CPP_EXTERN_C const uint32_t SupportedRenderingFeatures_get_active_m2C2E65CE6B
 IL2CPP_EXTERN_C const uint32_t SupportedRenderingFeatures_set_active_m2E459FC4898691C6E729A5EC2D2B08A1733CDCC2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t SystemInfo_IsValidEnumValue_m112F964C57B2311EA910CCA5CE0FFABFFF906740_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t SystemInfo_SupportsTextureFormat_m1FCBD02367A45D11CAA6503715F3AAE24CA98B79_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t TextAsset__ctor_mCF94BB158ECE8B7B756FE600A05B625F9BE4588B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Texture2DArray_Internal_Create_m01110342339A90ABB2DB4ED1E79C84CBE1DD794D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Texture2D_Apply_mCC17B1895AEB420CF75B1A50A62AB623C225A6C1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Texture2D_CreateExternalTexture_m292548AA116AA5176E8CA03AFBBC088E3B698DE4_MetadataUsageId;
@@ -7402,6 +7403,24 @@ public:
 };
 
 
+// UnityEngine.TextAsset_CreateOptions
+struct  CreateOptions_t05C7FEB96E4CAA0C0AB5BC34190C8315402C3495 
+{
+public:
+	// System.Int32 UnityEngine.TextAsset_CreateOptions::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(CreateOptions_t05C7FEB96E4CAA0C0AB5BC34190C8315402C3495, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.TextureFormat
 struct  TextureFormat_t7C6B5101554065C47682E592D1E26079D4EC2DCE 
 {
@@ -11780,6 +11799,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enum_IsDefined_mA573B15329CA2AA7C59367D5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_IsValidEnumValue_m112F964C57B2311EA910CCA5CE0FFABFFF906740 (Enum_t2AF27C02B8653AE29442467390005ABC74D8F521 * ___value0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.SystemInfo::SupportsTextureFormatNative(UnityEngine.TextureFormat)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_SupportsTextureFormatNative_mD028594492646D7AB78A4C2F51CA06F63E665210 (int32_t ___format0, const RuntimeMethod* method);
+// System.Void UnityEngine.TextAsset::.ctor(UnityEngine.TextAsset/CreateOptions,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAsset__ctor_mCF94BB158ECE8B7B756FE600A05B625F9BE4588B (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * __this, int32_t ___options0, String_t* ___text1, const RuntimeMethod* method);
+// System.Void UnityEngine.TextAsset::Internal_CreateInstance(UnityEngine.TextAsset,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * ___self0, String_t* ___text1, const RuntimeMethod* method);
 // System.String UnityEngine.TextAsset::get_text()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextAsset_get_text_mD3FBCD974CF552C7F7C7CD9A07BACAE51A2C5D42 (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Texture::GetDataWidth()
@@ -27966,6 +27989,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAreaAttribute__ctor_m6134ACE5D232B16
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.TextAsset::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAsset__ctor_mCBEED53F0158C8B95CB0DCFAB932460E97BF22BB (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * __this, const RuntimeMethod* method)
+{
+	{
+		TextAsset__ctor_mCF94BB158ECE8B7B756FE600A05B625F9BE4588B(__this, 1, (String_t*)NULL, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.TextAsset::.ctor(UnityEngine.TextAsset_CreateOptions,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAsset__ctor_mCF94BB158ECE8B7B756FE600A05B625F9BE4588B (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * __this, int32_t ___options0, String_t* ___text1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TextAsset__ctor_mCF94BB158ECE8B7B756FE600A05B625F9BE4588B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
+		Object__ctor_m091EBAEBC7919B0391ABDAFB7389ADC12206525B(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___options0;
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		String_t* L_1 = ___text1;
+		TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D(__this, L_1, /*hidden argument*/NULL);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
 // System.String UnityEngine.TextAsset::get_text()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TextAsset_get_text_mD3FBCD974CF552C7F7C7CD9A07BACAE51A2C5D42 (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * __this, const RuntimeMethod* method)
 {
@@ -27992,6 +28051,23 @@ IL_000d:
 		return L_1;
 	}
 }
+// System.Void UnityEngine.TextAsset::Internal_CreateInstance(UnityEngine.TextAsset,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E * ___self0, String_t* ___text1, const RuntimeMethod* method)
+{
+	typedef void (*TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D_ftn) (TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E *, String_t*);
+	static TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TextAsset_Internal_CreateInstance_mCEAF00AA919FE697046D03741DA82DB0D2E52F2D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TextAsset::Internal_CreateInstance(UnityEngine.TextAsset,System.String)");
+	_il2cpp_icall_func(___self0, ___text1);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

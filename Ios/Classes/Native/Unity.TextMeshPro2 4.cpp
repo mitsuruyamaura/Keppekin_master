@@ -118,7 +118,7 @@ struct InterfaceActionInvoker1
 };
 
 // System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,System.Object>
-struct Action_2_t2C6E8B13602564FA6CC0AADA6FFE4346CF58FF36;
+struct Action_2_t90FA358EDC64669F7C4BC31AB18EA84974155475;
 // System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera[]>
 struct Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5;
 // System.AsyncCallback
@@ -549,7 +549,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE2198697ECF23C241049D2DE7B96D2235E07F4FF
 IL2CPP_EXTERN_C String_t* _stringLiteralF68F8024409C886EB138B16388AE91EF83431AE6;
 IL2CPP_EXTERN_C String_t* _stringLiteralF70D593B74AE150B98B668DB26E8CDF367879C7A;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA768C81120B0D3B2B56D0FF31302D746E48E29A;
-IL2CPP_EXTERN_C const RuntimeMethod* Action_2__ctor_mF341FDA29081BE5396A031C32DC363E8B9735B20_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Action_2__ctor_mF9A7A7E9E4B360A61EB7D616E8A01032E083E3B1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_mF3F89565A9CEFF85AA1FB27C6EC64BE590DC386B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20_m751D9E690C55EAC53AB8C54812EFEAA238E52575_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t0556D67DD582620D1F495627EDE30D03284151F4_m3E0C8F08ADF98436AEF5AE9F4C56A51FF7D0A892_RuntimeMethod_var;
@@ -13855,7 +13855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC832F1AC0F814BAEB19175F5D7
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B4A5BC34051AAA3F4C9590CF249F3A095332161_gshared (Dictionary_2_tFE2A3F3BDE1290B85039D74816BB1FE1109BE0F8 * __this, const RuntimeMethod* method);
 // System.Void System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_mADA691F687D021D68BD7406ACAD1074893A6B39C_gshared (Action_2_t2C6E8B13602564FA6CC0AADA6FFE4346CF58FF36 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_mB69FE16C5B98EFEC9A650D38F0B84CE61E09DE50_gshared (Action_2_t90FA358EDC64669F7C4BC31AB18EA84974155475 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::ContainsKey(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_mBC44DAB119CBE7A4B7820ABF12AD024A4654471E_gshared (Dictionary_2_tFE2A3F3BDE1290B85039D74816BB1FE1109BE0F8 * __this, int32_t p0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::set_Item(!0,!1)
@@ -14044,9 +14044,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraCallback__ctor_m7CAE962B355F00AB28
 // System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t * Delegate_Combine_mC25D2F7DECAFBA6D9A2F9EBA8A77063F0658ECF1 (Delegate_t * p0, Delegate_t * p1, const RuntimeMethod* method);
 // System.Void System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera[]>::.ctor(System.Object,System.IntPtr)
-inline void Action_2__ctor_mF341FDA29081BE5396A031C32DC363E8B9735B20 (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+inline void Action_2__ctor_mF9A7A7E9E4B360A61EB7D616E8A01032E083E3B1 (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
 {
-	((  void (*) (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Action_2__ctor_mADA691F687D021D68BD7406ACAD1074893A6B39C_gshared)(__this, p0, p1, method);
+	((  void (*) (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Action_2__ctor_mB69FE16C5B98EFEC9A650D38F0B84CE61E09DE50_gshared)(__this, p0, p1, method);
 }
 // System.Void UnityEngine.Rendering.RenderPipelineManager::add_beginFrameRendering(System.Action`2<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera[]>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderPipelineManager_add_beginFrameRendering_mF9896552D7B492FBC22B0D1832C536C91E542B56 (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 * p0, const RuntimeMethod* method);
@@ -20108,7 +20108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UpdateManager__ctor_m5E12CCE949D7259
 		Delegate_t * L_8 = Delegate_Combine_mC25D2F7DECAFBA6D9A2F9EBA8A77063F0658ECF1(L_6, L_7, /*hidden argument*/NULL);
 		((Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_StaticFields*)il2cpp_codegen_static_fields_for(Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_il2cpp_TypeInfo_var))->set_onPreCull_4(((CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 *)CastclassSealed((RuntimeObject*)L_8, CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0_il2cpp_TypeInfo_var)));
 		Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 * L_9 = (Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5 *)il2cpp_codegen_object_new(Action_2_t11D263E8C52BF70BBCED2592B3AA25E25AE2E2F5_il2cpp_TypeInfo_var);
-		Action_2__ctor_mF341FDA29081BE5396A031C32DC363E8B9735B20(L_9, __this, (intptr_t)((intptr_t)TMP_UpdateManager_OnBeginFrameRendering_mABD8D40DC937B02E9228C37CBDEECC327CC00C9F_RuntimeMethod_var), /*hidden argument*/Action_2__ctor_mF341FDA29081BE5396A031C32DC363E8B9735B20_RuntimeMethod_var);
+		Action_2__ctor_mF9A7A7E9E4B360A61EB7D616E8A01032E083E3B1(L_9, __this, (intptr_t)((intptr_t)TMP_UpdateManager_OnBeginFrameRendering_mABD8D40DC937B02E9228C37CBDEECC327CC00C9F_RuntimeMethod_var), /*hidden argument*/Action_2__ctor_mF9A7A7E9E4B360A61EB7D616E8A01032E083E3B1_RuntimeMethod_var);
 		RenderPipelineManager_add_beginFrameRendering_mF9896552D7B492FBC22B0D1832C536C91E542B56(L_9, /*hidden argument*/NULL);
 		return;
 	}

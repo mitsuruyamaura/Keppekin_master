@@ -41,6 +41,7 @@
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
+		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
@@ -53,10 +54,13 @@
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.SpriteRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderTexture" preserve="nothing"/>
 		<type fullname="UnityEngine.Rigidbody2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider2D" preserve="nothing"/>
-		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.PhysicsMaterial2D" preserve="nothing"/>
+		<type fullname="UnityEngine.EdgeCollider2D" preserve="nothing"/>
+		<type fullname="UnityEngine.CircleCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.LineRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
@@ -70,40 +74,55 @@
 		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
-		<type fullname="CreateRandomHomeKins" preserve="nothing"/>
+		<type fullname="Cell_SchaleKin" preserve="nothing"/>
+		<type fullname="ChoiseSchaleKinArea" preserve="nothing"/>
 		<type fullname="DamaedInk" preserve="nothing"/>
 		<type fullname="DestroyBullet" preserve="nothing"/>
 		<type fullname="Effect_Touch" preserve="nothing"/>
 		<type fullname="EnemyManager" preserve="nothing"/>
+		<type fullname="Example03" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Cell" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Example02" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.ScrollView" preserve="nothing"/>
 		<type fullname="FancyScrollView.Scroller" preserve="nothing"/>
 		<type fullname="GameData" preserve="nothing"/>
 		<type fullname="GoBattleMenu" preserve="nothing"/>
+		<type fullname="HomeManager" preserve="nothing"/>
 		<type fullname="JyunbiPopUp" preserve="nothing"/>
+		<type fullname="KansatsuManager" preserve="nothing"/>
 		<type fullname="KinBullet" preserve="nothing"/>
 		<type fullname="KinData" preserve="nothing"/>
+		<type fullname="KinDetail" preserve="nothing"/>
+		<type fullname="KinInfoList" preserve="nothing"/>
+		<type fullname="KinInfoPu" preserve="nothing"/>
+		<type fullname="KinSO" preserve="nothing"/>
 		<type fullname="KinStateManager" preserve="nothing"/>
 		<type fullname="KinStates" preserve="nothing"/>
+		<type fullname="LoadMasterDataFromJson" preserve="nothing"/>
 		<type fullname="NakamaKinCheckArea" preserve="nothing"/>
 		<type fullname="ObiAnime" preserve="nothing"/>
 		<type fullname="ObjCtrl" preserve="nothing"/>
+		<type fullname="PageScrollRect" preserve="nothing"/>
+		<type fullname="PreviewManager" preserve="nothing"/>
 		<type fullname="ResultPopUp" preserve="nothing"/>
 		<type fullname="ReturnHome" preserve="nothing"/>
 		<type fullname="SceneStateManager" preserve="nothing"/>
+		<type fullname="SchaleKin" preserve="nothing"/>
+		<type fullname="SelectSchaleKinPopup" preserve="nothing"/>
 		<type fullname="ShotManager" preserve="nothing"/>
 		<type fullname="StageManager" preserve="nothing"/>
 		<type fullname="StagePopUp" preserve="nothing"/>
 		<type fullname="Stain" preserve="nothing"/>
 		<type fullname="TransitionManager" preserve="nothing"/>
 		<type fullname="UIManager" preserve="nothing"/>
+		<type fullname="ZukanManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="DOTween">
 		<type fullname="DG.Tweening.Core.DOTweenSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_InputField" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
@@ -153,7 +172,9 @@
 		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.RectMask2D" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 	</assembly>
