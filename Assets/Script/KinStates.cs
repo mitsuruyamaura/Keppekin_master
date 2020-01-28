@@ -33,6 +33,9 @@ public class KinStates : MonoBehaviour
     [Header("キンの攻撃力")]
     public int kinPower; //キンの攻撃力
 
+    [Header("キンのカタカナ名前")]
+    public string katakanaName;
+
     private JyunbiPopUp jyunbi; //StagePopUpを開くための紐付け
 
     public void Start()

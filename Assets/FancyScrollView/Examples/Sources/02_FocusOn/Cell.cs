@@ -28,7 +28,7 @@ namespace FancyScrollView.Example02
         public override void UpdateContent(ItemData itemData)
         {
             kindata = itemData.Kindata;
-            cellKinName.text = kindata.kinName;
+            cellKinName.text = kindata.katakanaName;
             typeImage.sprite = Resources.Load<Sprite>("Type/" + kindata.kinType);
 
             var selected = Context.SelectedIndex == Index;

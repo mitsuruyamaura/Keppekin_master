@@ -156,6 +156,7 @@ public class EnemyManager : MonoBehaviour
                     //合致したデータの持つ値(名前、属性、イメージ)を生成したキンのデータに入れる
                     silhouetteObj.rundomNum = data.kinNum;
                     silhouetteObj.kinName = data.kinName;
+                    silhouetteObj.katakanaName = data.katakanaName;
                     silhouetteObj.type = data.kinType;
                     silhouetteObj.kinMaskImage.sprite = Resources.Load<Sprite>("Image/" + data.kinName);
                     silhouetteObj.level = data.level;

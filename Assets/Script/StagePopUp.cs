@@ -45,7 +45,7 @@ public class StagePopUp : MonoBehaviour
 
         //JyunbiPopUpで処理していた画像イメージの取得をここで行う
         kinImage.sprite = Resources.Load<Sprite>("Image/" + battlekinStates.kinName);
-        kinName.GetComponent<Text>().text = battlekinStates.kinName;
+        kinName.GetComponent<Text>().text = battlekinStates.katakanaName;
         typeImage.sprite = Resources.Load<Sprite>("Type/" + battlekinStates.type);
 
         //強さとレアリティの値に合わせてイメージを生成する
