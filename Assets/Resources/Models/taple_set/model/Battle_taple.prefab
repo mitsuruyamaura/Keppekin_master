@@ -667,9 +667,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7610525084997015590}
   - component: {fileID: 510041452741850460}
-  - component: {fileID: -5353586222231634813}
+  - component: {fileID: 1938127371808957518}
+  - component: {fileID: 3700181920228200097}
+  - component: {fileID: 5059661483966112147}
   m_Layer: 9
-  m_Name: AR_taple
+  m_Name: Battle_taple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,15 +684,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6901025250648304181}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children:
   - {fileID: 7858633585196493795}
   - {fileID: 7265393813733323316}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &510041452741850460
 Animator:
   serializedVersion: 3
@@ -710,7 +712,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &-5353586222231634813
+--- !u!54 &1938127371808957518
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -721,11 +723,46 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!136 &3700181920228200097
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6901025250648304181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0030489669
+  m_Height: 0.015116342
+  m_Direction: 1
+  m_Center: {x: 0.00072813686, y: 0, z: 0.0003791839}
+--- !u!114 &5059661483966112147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6901025250648304181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinBulletPrefab: {fileID: 1480810335374679906, guid: 4c26233b2562f4cfdbb350484fa91d9b,
+    type: 3}
+  speed: 20
+  waitTime: 30
+  debugSwitch: 0
+  kinStateManager: {fileID: 0}
+  inkImageName: Small_Neut
+  battleUI: {fileID: 0}
+  damageEfe: {fileID: 0}
 --- !u!1 &7671824170096865840
 GameObject:
   m_ObjectHideFlags: 0
