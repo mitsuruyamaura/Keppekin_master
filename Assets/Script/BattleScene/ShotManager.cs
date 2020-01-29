@@ -79,8 +79,14 @@ public class ShotManager : MonoBehaviour
         KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
         //KinBulletクラスで作ったinkImageName変数にこのクラスで作ったinkImageNameを入れる
         kinBullet.inkImageName = inkImageName;
-        kinBullet.damage = kinStateManager.loadEnemyData.kinPower;
-        kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+        kinBullet.damage = 3;  //kinStateManager.loadEnemyData.kinPower;
+
+        float x = Random.Range(-90, 90);
+        float y = Random.Range(-90, 90);
+        float z = Random.Range(-45, 45);
+
+        kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(x, y, z).normalized * speed);
+
     }
 
     //戻ってきた弾に当たったらHPを減少させる

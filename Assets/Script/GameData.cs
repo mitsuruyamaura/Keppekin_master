@@ -147,4 +147,18 @@ public class GameData : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+
+    //Input.GetKeyDown(KeyCode.Space).....とりあえずPCのみでリセットをかけるようにする
+    //Spaceを押したらDelete();を実行する
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Space押しとる");
+            Delete();
+        }
+        
+    }
+
 }

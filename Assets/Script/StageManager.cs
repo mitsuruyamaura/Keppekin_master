@@ -8,9 +8,9 @@ public class StageManager : MonoBehaviour
 {
     void Start()
     {
-        GameData.instance.chochikuStar++;
+        
         StartCoroutine(UIManager.instance.CheckChochikuStar());
-        //GameData.instance.rank++;
+  
         //ランクイメージの確認
         UIManager.instance.CheckRankImage();
     }

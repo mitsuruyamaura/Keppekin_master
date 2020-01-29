@@ -22,11 +22,12 @@ public class HomeManager : MonoBehaviour
     void Awake()
     {
         //配列からランダムに一体のキンを選択する
-        int value = Random.Range(0, homeKinPrefabs.Length);
-        Debug.Log(value);
+        //int value = Random.Range(0, homeKinPrefabs.Length);
+        //Debug.Log(value);
 
+        //一番目の配列しか生成しないようにする
         //選択されたキンのモデルのPrefabをインスタンスして、スワイプできるように設定する
-        objCtrl.obj = Instantiate(homeKinPrefabs[value], setPos);
+        objCtrl.obj = Instantiate(homeKinPrefabs[0], setPos);
         //objCtrl.obj.GetComponent<ShotManager>().enabled = false; //ホームでキンが球を飛ばさないようにする
         
     }
