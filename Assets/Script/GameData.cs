@@ -60,7 +60,9 @@ public class GameData : MonoBehaviour
         RANK,
         EXP,
         CHOCHIKU,
-        DIRTY_POINT
+        DIRTY_POINT,
+        STAR,
+        
     }
 
     [Header("インスペクターでモデルがあるキンの数だけ数字を入れる")]
@@ -94,11 +96,14 @@ public class GameData : MonoBehaviour
     /// </summary>
     public void Save()
     {
+
+
         //SetFloatでデータをセットしてからSaveメソッドでデータを保存する
         PlayerPrefs.SetFloat(DATA_TYPE.RANK.ToString(), rank);
         PlayerPrefs.SetFloat(DATA_TYPE.EXP.ToString(), exp);
         PlayerPrefs.SetFloat(DATA_TYPE.CHOCHIKU.ToString(), chochiku);
         PlayerPrefs.SetFloat(DATA_TYPE.DIRTY_POINT.ToString(), currentDirtyPoint);
+        PlayerPrefs.SetInt(DATA_TYPE.STAR.ToString(), chochikuStar);
 
         PlayerPrefs.Save();
     }
@@ -119,11 +124,15 @@ public class GameData : MonoBehaviour
 
         currentDirtyPoint = PlayerPrefs.GetFloat(DATA_TYPE.DIRTY_POINT.ToString(), 100);
 
+        //保存されてなかったら初期値は第二引数の0がはいる
+        chochikuStar = PlayerPrefs.GetInt(DATA_TYPE.STAR.ToString(), 0);
+
 
         Debug.Log(rank);
         Debug.Log(exp);
         Debug.Log(chochiku);
         Debug.Log(currentDirtyPoint);
+        Debug.Log(chochikuStar);
 
         //KinMasterData(スクリプタブル・オブジェクトで扱うマスターデータ用クラス)に
         //Jsonファイルのデータを読み込んで入れ込む
