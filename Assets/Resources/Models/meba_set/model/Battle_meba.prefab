@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 4886994867889570834}
   - component: {fileID: 2724514057103677598}
   m_Layer: 9
-  m_Name: Home_meba 1
+  m_Name: Battle_meba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,7 +728,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!1 &5530759895709516173
 GameObject:
   m_ObjectHideFlags: 0

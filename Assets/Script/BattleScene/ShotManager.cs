@@ -30,6 +30,8 @@ public class ShotManager : MonoBehaviour
 
     public GameObject damageEfe;
 
+    public float forwardWaitTime;
+
 
     /// <summary>
     /// 
@@ -39,6 +41,7 @@ public class ShotManager : MonoBehaviour
         kinStateManager = kinState;
         inkImageName = kinStateManager.loadEnemyData.inkImage;
         battleUI = GameObject.FindGameObjectWithTag("BattleUI").GetComponent<BattleUIManager>();
+        forwardWaitTime = waitTime + Random.Range(10, 20);
 
     }
 
@@ -71,6 +74,13 @@ public class ShotManager : MonoBehaviour
                 Kinshot();
             }
 
+            //waitTimeフレームごとにショットする(小さいほど早く打ってくる)
+            if (count % forwardWaitTime ==0)
+            {
+                //正面にうつ
+                ForwardKinShot();
+            }
+
         }
     }
 
@@ -88,6 +98,19 @@ public class ShotManager : MonoBehaviour
         kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(x, y, z).normalized * speed);
 
     }
+
+    public void ForwardKinShot()
+    {
+        forwardWaitTime = waitTime + Random.Range(10, 20);
+        KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
+
+        //KinBulletクラスで作ったinkImage変数にこのクラスで作ったinkImageNameを入れる
+        kinBullet.inkImageName = inkImageName;
+        kinBullet.damage = 3; //KinStateManager.loadEnemtData.kinPower;
+
+        kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+    }
+
 
     //戻ってきた弾に当たったらHPを減少させる
     public void OnCollisionEnter(Collision col)

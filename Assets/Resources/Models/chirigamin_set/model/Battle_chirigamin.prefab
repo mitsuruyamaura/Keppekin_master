@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 8056104492626556295}
   - component: {fileID: 4764246551524727108}
   m_Layer: 9
-  m_Name: AR_chirigamin
+  m_Name: Battle_chirigamin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,13 +287,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kinBulletPrefab: {fileID: 3624081429234989111, guid: a659d7d22801f4d35a0898bf25140647,
     type: 3}
-  speed: 5
-  waitTime: 140
+  speed: 7
+  waitTime: 20
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Clean
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &8056104492626556295
 Rigidbody:
   m_ObjectHideFlags: 0

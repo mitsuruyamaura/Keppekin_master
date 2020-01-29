@@ -23,8 +23,8 @@ public class PreviewManager : MonoBehaviour
         //Zukanシーンで選択されたキンのモデルのPrefabをインスタンスして、スワイプできるように設定する
         objCtrl.obj = Instantiate(homeKinPrefabs[GameData.instance.previewKinNo] , setPos);
 
-        //キンが球をとばさないようにする
-        objCtrl.obj.GetComponent<ShotManager>().enabled = false;
+        ////キンが球をとばさないようにする
+        //objCtrl.obj.GetComponent<ShotManager>().enabled = false;
     }
 
     void Start()

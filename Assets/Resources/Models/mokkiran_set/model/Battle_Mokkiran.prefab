@@ -1050,7 +1050,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Big_Clean
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &4888118557886634203
 Rigidbody:
   m_ObjectHideFlags: 0

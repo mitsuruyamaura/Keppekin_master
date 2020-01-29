@@ -762,7 +762,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Neut
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!1 &7671824170096865840
 GameObject:
   m_ObjectHideFlags: 0

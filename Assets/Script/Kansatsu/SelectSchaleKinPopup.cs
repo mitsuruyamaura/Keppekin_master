@@ -68,7 +68,7 @@ public class SelectSchaleKinPopup : MonoBehaviour
         int.TryParse(inputField.text, out maxKinNum);
 
 
-        //最大数が5以下なら5にする
+        ////最大数が5以下なら5にする
         if (maxKinNum <= 5)
         {
             maxKinNum = 5;

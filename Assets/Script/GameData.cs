@@ -38,6 +38,7 @@ public class GameData : MonoBehaviour
     {
         public int kinNum;
         public string kinName;
+        public string katakanaName;
         public int kinRarelity;
         public int kinLebel;
         public int kinPower;

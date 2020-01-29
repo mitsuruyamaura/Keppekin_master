@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2360584420903925548}
   - component: {fileID: 8213479994094965153}
   m_Layer: 9
-  m_Name: AR_musoku
+  m_Name: Battle_musoku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &2360584420903925548
 Rigidbody:
   m_ObjectHideFlags: 0

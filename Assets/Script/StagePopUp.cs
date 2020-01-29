@@ -107,6 +107,7 @@ public class StagePopUp : MonoBehaviour
             GameData.BattleKinData saveEnemyKindata = new GameData.BattleKinData();
             saveEnemyKindata.kinNum = battlekinStates.rundomNum;
             saveEnemyKindata.kinName = battlekinStates.kinName;
+            saveEnemyKindata.katakanaName = battlekinStates.katakanaName;
             saveEnemyKindata.kinRarelity = battlekinStates.rarelity;
             saveEnemyKindata.kinLebel = battlekinStates.level;
             saveEnemyKindata.kinType = battlekinStates.type;
@@ -118,6 +119,7 @@ public class StagePopUp : MonoBehaviour
             GameData.BattleKinData saveNakamaKindata = new GameData.BattleKinData();
             saveNakamaKindata.kinNum = nakamaKinStates.rundomNum;
             saveNakamaKindata.kinName = nakamaKinStates.kinName;
+            saveNakamaKindata.katakanaName = nakamaKinStates.katakanaName;
             saveNakamaKindata.kinRarelity = nakamaKinStates.rarelity;
             saveNakamaKindata.kinLebel = nakamaKinStates.level;
             saveNakamaKindata.kinType = nakamaKinStates.type;

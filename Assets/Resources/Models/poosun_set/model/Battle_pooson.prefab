@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 1362698029849126282}
   - component: {fileID: 7333885333304240087}
   m_Layer: 9
-  m_Name: AR_pooson
+  m_Name: Battle_pooson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,12 +636,13 @@ MonoBehaviour:
   kinBulletPrefab: {fileID: 1480810335374679906, guid: 4c26233b2562f4cfdbb350484fa91d9b,
     type: 3}
   speed: 20
-  waitTime: 20
+  waitTime: 40
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Neut
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &1362698029849126282
 Rigidbody:
   m_ObjectHideFlags: 0

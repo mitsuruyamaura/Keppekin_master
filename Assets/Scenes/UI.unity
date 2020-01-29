@@ -156,12 +156,14 @@ MonoBehaviour:
   chochiku: 0
   currentDirtyPoint: 0
   chochikuStar: 0
+  katakanaName: 
   kindata: {fileID: 11400000, guid: 71c7bc90adcf74b35a0c43924938f83a, type: 2}
   previewKinNo: 0
   loadMasterDataFromJson: {fileID: 222533001}
   enemyDatas:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0
@@ -173,6 +175,7 @@ MonoBehaviour:
   nakamaDates:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0
@@ -633,7 +636,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 2
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -810,7 +813,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.8
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1193,7 +1196,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.5, y: 0.5, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0

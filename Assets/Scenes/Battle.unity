@@ -412,6 +412,7 @@ MonoBehaviour:
   loadEnemyData:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0
@@ -563,6 +564,7 @@ MonoBehaviour:
   nakamas:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0
@@ -907,6 +909,7 @@ MonoBehaviour:
   nakamaData:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0
@@ -918,6 +921,7 @@ MonoBehaviour:
   enemyData:
     kinNum: 0
     kinName: 
+    katakanaName: 
     kinRarelity: 0
     kinLebel: 0
     kinPower: 0

@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 572999303247362431}
   - component: {fileID: 1030791144968832367}
   m_Layer: 9
-  m_Name: AR_petora
+  m_Name: Battle_petora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,12 +127,13 @@ MonoBehaviour:
   kinBulletPrefab: {fileID: 6633198825311391333, guid: c51bfab24a5a04350b33fa55709cc825,
     type: 3}
   speed: 20
-  waitTime: 40
+  waitTime: 20
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Big_Dirty
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &572999303247362431
 Rigidbody:
   m_ObjectHideFlags: 0

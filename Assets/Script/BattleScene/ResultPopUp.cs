@@ -34,6 +34,9 @@ public class ResultPopUp : MonoBehaviour
     [Header("染領失敗")]
     public Image[] loseMesImage;
 
+    //勝敗PU時のキンネーム
+    public string katakanaName;
+
 
     public enum RESULT_TYPE
     {
@@ -68,7 +71,7 @@ public class ResultPopUp : MonoBehaviour
         //除菌回数やキンのアイコンなどの情報をKinStateManagerのloadEnemyDataから取得し表示する
         removeCountTxt.text = enemyData.removeCount.ToString();
         removeKinIcon.sprite = Resources.Load<Sprite>("Image/" + enemyData.kinName);
-        removeKinName.text = enemyData.kinName;
+        removeKinName.text = enemyData.katakanaName;
         removeKinType.text = enemyData.kinType.ToString();
 
         //勝敗によって分岐
@@ -103,6 +106,7 @@ public class ResultPopUp : MonoBehaviour
         //Mathf.Pow(1,2)...第一引数に入れた値を第二引数乗する
         //(float型の計算式なのでまたintにキャストしている)
         // 1 = 1 * (1 * 10) = 10, 2 = 2 * (2 * 10) = 40, 3 = 3 * (3 * 10) = 90
+
         int rareExp = (int)Mathf.Pow(rarelity, 2) * 10;
 
         Debug.Log(rareExp);
@@ -123,7 +127,6 @@ public class ResultPopUp : MonoBehaviour
             //貯蓄が一気に経験値に入るとともにリセットをかける
             GameData.instance.exp += GameData.instance.chochiku;
             GameData.instance.chochiku = 0;
-            GameData.instance.currentDirtyPoint = 0;
             GameData.instance.currentDirtyPoint = 100;
         }
 
@@ -134,46 +137,22 @@ public class ResultPopUp : MonoBehaviour
             //スター3個超えたらランクが一個上がる
             GameData.instance.exp -= 100;
             GameData.instance.chochikuStar++;
+
+            //スター3個増えたらランクが一個上がる
             if (GameData.instance.chochikuStar >= 3)
             {
                 GameData.instance.rank++;
                 if (GameData.instance.rank >= 5)
                 {
+                    //ランク５以上になったら5にする
                     GameData.instance.rank = 5;
                 }
 
+                //chochikuStarリセット
                 GameData.instance.chochikuStar = 0;
             }
 
-            
-
             Debug.Log(GameData.instance.rank);
-
-        }
-
-
-        //先頭に勝つたびダーティが-30
-        //最終的に0以下になると経験値が30増える
-        GameData.instance.currentDirtyPoint -= 30f;
-
-        if (GameData.instance.currentDirtyPoint <= 0)
-        {
-            GameData.instance.currentDirtyPoint = 0;
-            GameData.instance.exp += 50;
-            //SceneStateManager.instance.UpdateGage();
-
-            GameData.instance.currentDirtyPoint = 100;
-
-            //経験値が100以上になるとランクが１上がる
-            if (GameData.instance.exp >= 100)
-            {
-                GameData.instance.exp = 0;
-                // SceneStateManager.instance.UpdateGage();
-                GameData.instance.rank += 1;
-
-                Debug.Log(GameData.instance.rank);
-
-            }
         }
 
         GameData.instance.Save();
@@ -305,8 +284,8 @@ public class ResultPopUp : MonoBehaviour
             remove,
             3f);
 
-        //勝利メソッドのデバッグ
-        Win(debugLevel, debugRarelity);
+        ////勝利メソッドのデバッグ
+        //Win(debugLevel, debugRarelity);
 
     }
 

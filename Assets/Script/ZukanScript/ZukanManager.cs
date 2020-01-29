@@ -331,6 +331,7 @@ public class ZukanManager : MonoBehaviour
             GameData.instance.previewKinNo = displayKinNo;
 
             //シーン遷移
+            Debug.Log("観察遷移");
             StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN_PREVIEW));
 
         }

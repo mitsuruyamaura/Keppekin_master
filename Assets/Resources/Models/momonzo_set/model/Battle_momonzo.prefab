@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 3301219772539695629}
   - component: {fileID: 6011653176709813384}
   m_Layer: 9
-  m_Name: AR_momonzo
+  m_Name: Battle_momonzo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,7 +265,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Clean
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &3301219772539695629
 Rigidbody:
   m_ObjectHideFlags: 0

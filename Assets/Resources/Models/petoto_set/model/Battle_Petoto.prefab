@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 2340461124445306265}
   - component: {fileID: 4035807280775320311}
   m_Layer: 9
-  m_Name: AR_Petoto
+  m_Name: Battle_Petoto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +660,8 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
 --- !u!54 &2340461124445306265
 Rigidbody:
   m_ObjectHideFlags: 0

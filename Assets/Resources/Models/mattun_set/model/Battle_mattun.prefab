@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kinBulletPrefab: {fileID: 6633198825311391333, guid: c51bfab24a5a04350b33fa55709cc825,
+  kinBulletPrefab: {fileID: 3624081429234989111, guid: a659d7d22801f4d35a0898bf25140647,
     type: 3}
   speed: 10
   waitTime: 40
@@ -226,7 +226,9 @@ MonoBehaviour:
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
   battleUI: {fileID: 0}
-  damageEfe: {fileID: 0}
+  damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
+    type: 3}
+  forwardWaitTime: 0
 --- !u!1 &3852435758857306696
 GameObject:
   m_ObjectHideFlags: 0
