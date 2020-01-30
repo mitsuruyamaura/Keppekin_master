@@ -1044,14 +1044,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kinBulletPrefab: {fileID: 3624081429234989111, guid: a659d7d22801f4d35a0898bf25140647,
     type: 3}
-  speed: 60
-  waitTime: 30
+  speed: 45
+  waitTime: 40
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Big_Clean
   battleUI: {fileID: 0}
   damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
     type: 3}
+  forwardWaitTime: 0
 --- !u!54 &4888118557886634203
 Rigidbody:
   m_ObjectHideFlags: 0

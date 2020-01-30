@@ -694,7 +694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kinBulletPrefab: {fileID: 1480810335374679906, guid: 4c26233b2562f4cfdbb350484fa91d9b,
     type: 3}
-  speed: 25
+  speed: 15
   waitTime: 40
   debugSwitch: 0
   kinStateManager: {fileID: 0}
@@ -702,6 +702,7 @@ MonoBehaviour:
   battleUI: {fileID: 0}
   damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
     type: 3}
+  forwardWaitTime: 0
 --- !u!136 &3386815083173528247
 CapsuleCollider:
   m_ObjectHideFlags: 0

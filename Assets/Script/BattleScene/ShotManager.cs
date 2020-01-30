@@ -41,7 +41,7 @@ public class ShotManager : MonoBehaviour
         kinStateManager = kinState;
         inkImageName = kinStateManager.loadEnemyData.inkImage;
         battleUI = GameObject.FindGameObjectWithTag("BattleUI").GetComponent<BattleUIManager>();
-        forwardWaitTime = waitTime + Random.Range(10, 20);
+        forwardWaitTime = waitTime + Random.Range(70, 140);
 
     }
 
@@ -101,7 +101,7 @@ public class ShotManager : MonoBehaviour
 
     public void ForwardKinShot()
     {
-        forwardWaitTime = waitTime + Random.Range(10, 20);
+        forwardWaitTime = waitTime + Random.Range(70, 140);
         KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
 
         //KinBulletクラスで作ったinkImage変数にこのクラスで作ったinkImageNameを入れる
