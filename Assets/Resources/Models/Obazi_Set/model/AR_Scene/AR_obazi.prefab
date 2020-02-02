@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 1385172791554909310}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 80, y: 80, z: 80}
   m_Children:
   - {fileID: 6273250867442627568}
   - {fileID: 2895708562068814975}
@@ -107,6 +107,7 @@ MonoBehaviour:
   inkImageName: Big_Dirty
   battleUI: {fileID: 0}
   damageEfe: {fileID: 0}
+  forwardWaitTime: 0
 --- !u!54 &3642923291472761870
 Rigidbody:
   m_ObjectHideFlags: 0
