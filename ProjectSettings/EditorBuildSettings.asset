@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/UI.unity
     guid: 94cdae7c313fe4c7fba6967d675e2ff3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: ddef4b9e5ff5f455c97cbb2ca26fb278
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Kansatsu.unity
     guid: e6ec6e34de80b4018afd814659a4ea26
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Stage.unity
     guid: 349709503adc34cbc95dfed97706993b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: 0428e114418ec4f01bde1e70c7ee15d8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Zukan.unity
     guid: 932f7b19465fc40eab1334433f99f537
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Zukan_Preview.unity
     guid: 123de342a6b014d319f73c8830191c75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARScene/AR.unity
     guid: 75dc955b8ccbf442da46cd31efce5dc1
   m_configObjects: {}
