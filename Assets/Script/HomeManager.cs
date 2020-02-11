@@ -43,6 +43,8 @@ public class HomeManager : MonoBehaviour
         zukanButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN)));
 
         kansatsuButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.KANSATSU)));
+
+        SoundManager.instance.PlayBgm(SoundManager.BGM_TYPE.HOME);
     }
 
 }
