@@ -5359,7 +5359,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5455,7 +5455,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5557,6 +5557,8 @@ MonoBehaviour:
   se: []
   bgmSource: {fileID: 1748243211}
   seSource: {fileID: 1748243210}
+  fadeTime: 2
+  index: -1
 --- !u!4 &1748243213
 Transform:
   m_ObjectHideFlags: 0

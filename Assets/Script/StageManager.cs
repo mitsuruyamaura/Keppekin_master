@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
+
+
+
     void Start()
     {
         
@@ -13,6 +16,10 @@ public class StageManager : MonoBehaviour
   
         //ランクイメージの確認
         UIManager.instance.CheckRankImage();
+
+        //StartCoroutine(SoundManager.instance.StopBGM());
+
+        SoundManager.instance.PlayBgm(SoundManager.BGM_TYPE.HOME);
     }
 
 }

@@ -62,7 +62,8 @@ public class BattleManager : MonoBehaviour
         //UIヘッダー隠す
         UIManager.instance.SwitchDisplayCanvas(0);
 
-
+        //BGMがなる
+        SoundManager.instance.PlayBgm(SoundManager.BGM_TYPE.BATTLE);
 
 
         //バトルに参加した仲間と敵のキンのデータを取得する
