@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2861553809991128389}
   - component: {fileID: 6465473025524678845}
   - component: {fileID: 3692109810972115684}
+  - component: {fileID: 8650958931407906078}
   m_Layer: 9
   m_Name: Battle_tegakin
   m_TagString: Untagged
@@ -107,6 +108,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.0036533745
   m_Center: {x: -0, y: 0.0003347788, z: -0.00015192898}
+--- !u!114 &8650958931407906078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219734482671587915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &1570161074066205175
 GameObject:
   m_ObjectHideFlags: 0

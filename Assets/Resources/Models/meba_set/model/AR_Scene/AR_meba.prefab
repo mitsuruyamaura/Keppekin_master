@@ -708,6 +708,7 @@ GameObject:
   - component: {fileID: 1894372230315907973}
   - component: {fileID: -1760422375391635825}
   - component: {fileID: 4886994867889570834}
+  - component: {fileID: 4362219460041520610}
   m_Layer: 9
   m_Name: AR_meba
   m_TagString: Untagged
@@ -782,6 +783,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008422737, y: 0.0069311694, z: 0.0022905578}
   m_Center: {x: 0.00011655391, y: 0.00043521004, z: -0.000126155}
+--- !u!114 &4362219460041520610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799556928690341100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &5530759895709516173
 GameObject:
   m_ObjectHideFlags: 0

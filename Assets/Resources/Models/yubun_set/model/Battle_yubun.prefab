@@ -1020,6 +1020,7 @@ GameObject:
   - component: {fileID: 8571825062230644534}
   - component: {fileID: -5928915702950445719}
   - component: {fileID: 3182257107687920421}
+  - component: {fileID: 2301962746419147598}
   m_Layer: 9
   m_Name: Battle_yubun
   m_TagString: Untagged
@@ -1114,3 +1115,16 @@ MonoBehaviour:
   damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
     type: 3}
   forwardWaitTime: 0
+--- !u!114 &2301962746419147598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069265917648526347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001

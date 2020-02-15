@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 6595582136446151013}
   - component: {fileID: 2340461124445306265}
   - component: {fileID: 4035807280775320311}
+  - component: {fileID: 4219962312979151536}
   m_Layer: 9
   m_Name: Battle_Petoto
   m_TagString: Untagged
@@ -693,6 +694,19 @@ CapsuleCollider:
   m_Height: 0.010370169
   m_Direction: 0
   m_Center: {x: -0, y: 0.00045532733, z: -0}
+--- !u!114 &4219962312979151536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755057377614242483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &7752111019299188446
 GameObject:
   m_ObjectHideFlags: 0

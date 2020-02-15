@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 5113583869037465534}
   - component: {fileID: 8056104492626556295}
   - component: {fileID: 4764246551524727108}
+  - component: {fileID: 3756201948113945775}
   m_Layer: 9
   m_Name: Battle_chirigamin
   m_TagString: Untagged
@@ -326,6 +327,19 @@ CapsuleCollider:
   m_Height: 0.01915347
   m_Direction: 0
   m_Center: {x: 0.0002119977, y: -0.0059303828, z: 0.0000422736}
+--- !u!114 &3756201948113945775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617574920714339495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &3249808563561748422
 GameObject:
   m_ObjectHideFlags: 0

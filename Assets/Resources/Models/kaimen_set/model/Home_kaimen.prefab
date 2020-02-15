@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 8865774618466926037}
   - component: {fileID: 7378340786906159847}
   - component: {fileID: 8682384689680058344}
+  - component: {fileID: 3707620302307898574}
   m_Layer: 9
   m_Name: Home_kaimen
   m_TagString: Untagged
@@ -145,6 +146,19 @@ CapsuleCollider:
   m_Height: 0.013078958
   m_Direction: 1
   m_Center: {x: 0, y: -0.0022187207, z: 0.00021861773}
+--- !u!114 &3707620302307898574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583048666728587964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &3279344390526674909
 GameObject:
   m_ObjectHideFlags: 0

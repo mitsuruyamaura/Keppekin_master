@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 3537698477529802670}
   - component: {fileID: -7310841068785954025}
   - component: {fileID: 422472337713729843}
+  - component: {fileID: 2081798037484093688}
   m_Layer: 9
   m_Name: Battle_hisimo
   m_TagString: Untagged
@@ -798,6 +799,19 @@ CapsuleCollider:
   m_Height: 0.013582606
   m_Direction: 1
   m_Center: {x: 0.00013822736, y: -0.0013999864, z: 0}
+--- !u!114 &2081798037484093688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735976139570671223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &6057619275127559086
 GameObject:
   m_ObjectHideFlags: 0

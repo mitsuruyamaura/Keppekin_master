@@ -545,8 +545,9 @@ GameObject:
   - component: {fileID: 4509687040821150887}
   - component: {fileID: 7541858882829745711}
   - component: {fileID: 2709102131327313799}
+  - component: {fileID: 1891454817516547453}
   m_Layer: 9
-  m_Name: taple_Scale
+  m_Name: Home_taple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,6 +618,19 @@ CapsuleCollider:
   m_Height: 0.015116342
   m_Direction: 1
   m_Center: {x: 0.00072813686, y: 0, z: 0.0003791839}
+--- !u!114 &1891454817516547453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7369290185438239694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &7504085536977637809
 GameObject:
   m_ObjectHideFlags: 0

@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 7521552569744373209}
   - component: {fileID: 6092832241083433953}
   - component: {fileID: 7981726946787086502}
+  - component: {fileID: 1905513898465312755}
   m_Layer: 9
   m_Name: AR_getogeto
   m_TagString: Untagged
@@ -450,6 +451,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.008179427
   m_Center: {x: 0.00048528612, y: -0.0006078994, z: -0.0006682137}
+--- !u!114 &1905513898465312755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508504424153115312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &3635864172319159868
 GameObject:
   m_ObjectHideFlags: 0

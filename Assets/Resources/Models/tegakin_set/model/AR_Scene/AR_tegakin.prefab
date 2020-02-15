@@ -712,6 +712,7 @@ GameObject:
   - component: {fileID: 4775072299051957808}
   - component: {fileID: 4344785641732025288}
   - component: {fileID: 6255285186487462289}
+  - component: {fileID: 9003837124017511413}
   m_Layer: 9
   m_Name: AR_tegakin
   m_TagString: Untagged
@@ -806,6 +807,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.0036533745
   m_Center: {x: -0, y: 0.0003347788, z: -0.00015192898}
+--- !u!114 &9003837124017511413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8439570875586197822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &8667947271091198267
 GameObject:
   m_ObjectHideFlags: 0

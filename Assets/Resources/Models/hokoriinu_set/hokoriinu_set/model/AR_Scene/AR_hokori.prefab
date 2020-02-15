@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 8849799739713581869}
   - component: {fileID: 1324576278837501397}
   - component: {fileID: 3192774462556517384}
+  - component: {fileID: 6210548602741174539}
   m_Layer: 9
   m_Name: AR_hokori
   m_TagString: Untagged
@@ -342,6 +343,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.006545443
   m_Center: {x: 0.000009438954, y: 0.0013462743, z: 0.0002558278}
+--- !u!114 &6210548602741174539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2450406664276978756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &3467117454562829530
 GameObject:
   m_ObjectHideFlags: 0

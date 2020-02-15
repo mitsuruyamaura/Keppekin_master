@@ -705,8 +705,9 @@ GameObject:
   - component: {fileID: 3358399881330784220}
   - component: {fileID: 4534021923653809416}
   - component: {fileID: 5109600838816435877}
+  - component: {fileID: 2032189948706287128}
   m_Layer: 9
-  m_Name: doniwa_Scale
+  m_Name: Home_doniwa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -776,6 +777,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2032189948706287128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8523683515746560181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &8538569160270021175
 GameObject:
   m_ObjectHideFlags: 0

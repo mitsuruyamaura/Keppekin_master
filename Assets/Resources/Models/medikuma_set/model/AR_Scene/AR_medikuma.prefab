@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 1250527630145023788}
   - component: {fileID: 4530767555501963638}
   - component: {fileID: 7479274767464252235}
+  - component: {fileID: 502497947127619583}
   m_Layer: 9
   m_Name: AR_medikuma
   m_TagString: Untagged
@@ -521,6 +522,19 @@ CapsuleCollider:
   m_Height: 0.009555375
   m_Direction: 1
   m_Center: {x: -0, y: 0.0005739778, z: -0}
+--- !u!114 &502497947127619583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5951658880821389817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &6640802140331531260
 GameObject:
   m_ObjectHideFlags: 0

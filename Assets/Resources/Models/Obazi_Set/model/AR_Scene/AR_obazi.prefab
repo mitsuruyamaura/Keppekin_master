@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8102530840983904331}
   - component: {fileID: 3642923291472761870}
   - component: {fileID: 7170876847472335945}
+  - component: {fileID: 6485301387013119704}
   m_Layer: 9
   m_Name: AR_obazi
   m_TagString: Untagged
@@ -138,6 +139,19 @@ CapsuleCollider:
   m_Height: 0.007445328
   m_Direction: 1
   m_Center: {x: -0, y: 0, z: -0.000117924064}
+--- !u!114 &6485301387013119704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385172791554909310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &1593733796066844610
 GameObject:
   m_ObjectHideFlags: 0

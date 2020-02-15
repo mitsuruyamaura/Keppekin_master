@@ -1715,6 +1715,7 @@ GameObject:
   - component: {fileID: 7108716403883046635}
   - component: {fileID: 4924086712168368339}
   - component: {fileID: 8066639685549805969}
+  - component: {fileID: 2135962665587131009}
   m_Layer: 9
   m_Name: AR_rippers
   m_TagString: Untagged
@@ -1811,6 +1812,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.0048804325
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2135962665587131009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721501643588804749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &8071377350669614775
 GameObject:
   m_ObjectHideFlags: 0

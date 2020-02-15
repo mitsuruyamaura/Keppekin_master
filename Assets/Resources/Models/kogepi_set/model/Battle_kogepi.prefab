@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 6881191236626293331}
   - component: {fileID: 6208332055726077493}
   - component: {fileID: 452025540766210535}
+  - component: {fileID: 3105345341539387861}
   m_Layer: 9
   m_Name: Battle_kogepi
   m_TagString: Untagged
@@ -208,6 +209,7 @@ MonoBehaviour:
   battleUI: {fileID: 0}
   damageEfe: {fileID: 2717988989235076827, guid: b2e5868a766b4484ca19962e29c1ab2e,
     type: 3}
+  forwardWaitTime: 0
 --- !u!54 &6208332055726077493
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -237,6 +239,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.004008477
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3105345341539387861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801337373811350858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &2004286633925173937
 GameObject:
   m_ObjectHideFlags: 0

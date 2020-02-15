@@ -729,8 +729,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4792778462069276850}
   - component: {fileID: 3173170077627117000}
+  - component: {fileID: 7175624074179493850}
   m_Layer: 9
-  m_Name: pechoro_Scale_FIX
+  m_Name: Home_pechoro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,6 +772,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7175624074179493850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419487504245109409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.001
 --- !u!1 &8802703150022704749
 GameObject:
   m_ObjectHideFlags: 0
