@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb8aa17b1cef4ba29aaa679d550f405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  returnHomeButton: {fileID: 2118555967}
 --- !u!1 &1433232952
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +603,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118555967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1583031228773920800, guid: 9be13a81e782247eb83f3d642e173af4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1583031228773920804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1583031228773920804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,7 +760,13 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1583031228773920800, guid: 9be13a81e782247eb83f3d642e173af4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1583031228773920801, guid: 9be13a81e782247eb83f3d642e173af4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9be13a81e782247eb83f3d642e173af4, type: 3}
 --- !u!224 &6171318023437412176 stripped
 RectTransform:

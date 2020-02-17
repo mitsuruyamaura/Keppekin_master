@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
-
+    public Button returnHomeButton;
 
 
     void Start()
@@ -20,6 +20,15 @@ public class StageManager : MonoBehaviour
         //StartCoroutine(SoundManager.instance.StopBGM());
 
         SoundManager.instance.PlayBgm(SoundManager.BGM_TYPE.HOME);
+
+        returnHomeButton.onClick.AddListener(()=>OnclickMoveScene(SCENE_TYPE.HOME, returnHomeButton));
+        
+    }
+
+    private void OnclickMoveScene(SCENE_TYPE sceneType, Button button)
+    {
+        button.interactable = false;
+        StartCoroutine(SceneStateManager.instance.MoveScene(sceneType));
     }
 
 }

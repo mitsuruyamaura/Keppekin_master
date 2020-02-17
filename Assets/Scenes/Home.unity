@@ -120,18 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &205657404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7464223171517150027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c619af23d1a4129884b51becf34af8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &329600323
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +616,7 @@ MonoBehaviour:
   setPos: {fileID: 1678431705}
   zukanButton: {fileID: 4002118060264046685}
   kansatsuButton: {fileID: 469761296}
+  battleStageButton: {fileID: 4470048492053198011}
 --- !u!4 &677788302
 Transform:
   m_ObjectHideFlags: 0
@@ -976,7 +965,7 @@ GameObject:
   - component: {fileID: 1465476427}
   - component: {fileID: 1465476429}
   m_Layer: 0
-  m_Name: TODO_DT_Bar_BattleStage
+  m_Name: Bar_BattleStage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1275,7 +1264,7 @@ GameObject:
   - component: {fileID: 7360170820547571137}
   - component: {fileID: 1351542299310498265}
   m_Layer: 0
-  m_Name: TODO_Back
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1493,18 +1482,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5437457009586113001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 205657404}
-        m_MethodName: MoveBattleMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!224 &5057677977635420272
@@ -1675,7 +1653,6 @@ GameObject:
   - component: {fileID: 3919220649801034270}
   - component: {fileID: 5437457009586113001}
   - component: {fileID: 4470048492053198011}
-  - component: {fileID: 205657404}
   m_Layer: 0
   m_Name: Button_BattleStage
   m_TagString: Untagged

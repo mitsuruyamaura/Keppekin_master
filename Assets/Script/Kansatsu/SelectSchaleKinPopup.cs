@@ -46,7 +46,7 @@ public class SelectSchaleKinPopup : MonoBehaviour
         canvasGroup.DOFade(1, 0.25f);
 
         //各ボタンにメソッドを登録
-        btnReturn.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME)));
+        btnReturn.onClick.AddListener(() => OnclickMoveScene(SCENE_TYPE.HOME, btnReturn));
         btnKansatsu.onClick.AddListener(ClosePopUp);
 
         //最大生成数の初期数字を表示
@@ -84,6 +84,7 @@ public class SelectSchaleKinPopup : MonoBehaviour
     /// </summary>
     public void ClosePopUp()
     {
+        btnKansatsu.interactable = false;
         //KansatsuManagerのSetupKinInfoに設定した2体分のキンのデータと最大生成数を渡す
         kansatsuManager.SetUpShaleKinInfo(kinNames, kinTypes, maxKinNum, katakanaNames);
 
@@ -92,5 +93,11 @@ public class SelectSchaleKinPopup : MonoBehaviour
         //アルファを０にする
         canvasGroup.DOFade(0, 0.5f);
         Destroy(gameObject, 0.5f);
+    }
+
+    private void OnclickMoveScene(SCENE_TYPE sceneType, Button button)
+    {
+        button.interactable = false;
+        StartCoroutine(SceneStateManager.instance.MoveScene(sceneType));
     }
 }

@@ -102,7 +102,7 @@ public class ZukanManager : MonoBehaviour
             //左矢印ボタンにメソッドを登録
             btnLeftArrow.onClick.AddListener(() => OnClickPrevButtonList());
 
-        btnHome.onClick.AddListener(()=>StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME)));
+        btnHome.onClick.AddListener(()=>OnclickMoveScene(SCENE_TYPE.HOME,btnHome));
 
             //先頭なので左には戻れないようにする
             btnLeftArrow.gameObject.SetActive(false);
@@ -332,9 +332,15 @@ public class ZukanManager : MonoBehaviour
 
             //シーン遷移
             Debug.Log("観察遷移");
-            StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN_PREVIEW));
+            OnclickMoveScene(SCENE_TYPE.ZUKAN_PREVIEW, btnPreview);
 
         }
 
+    }
+
+    private void OnclickMoveScene(SCENE_TYPE sceneType, Button button)
+    {
+        button.interactable = false;
+        StartCoroutine(SceneStateManager.instance.MoveScene(sceneType));
     }
 }

@@ -162,6 +162,7 @@ public class ResultPopUp : MonoBehaviour
 
     public void OnClickCloseButton()
     {
+        closeBut.interactable = false;
         StartCoroutine(ClosePopUp());
     }
 
@@ -179,6 +180,7 @@ public class ResultPopUp : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
 
+        StartCoroutine(SoundManager.instance.StopBGM()); 
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }
 

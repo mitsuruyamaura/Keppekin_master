@@ -35,7 +35,14 @@ public class PreviewManager : MonoBehaviour
         StartCoroutine(TransitionManager.instance.FadeIn());
 
         //ボタンシーン遷移用のメソッドを登録
-        btnReturn.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.ZUKAN)));
+
+        btnReturn.onClick.AddListener(() => OnclickMoveScene(SCENE_TYPE.ZUKAN, btnReturn));
         
+    }
+
+    private void OnclickMoveScene(SCENE_TYPE sceneType, Button button)
+    {
+        button.interactable = false;
+        StartCoroutine(SceneStateManager.instance.MoveScene(sceneType));
     }
 }

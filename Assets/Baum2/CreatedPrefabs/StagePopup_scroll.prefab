@@ -2433,8 +2433,8 @@ MonoBehaviour:
   rarelityPlace: {fileID: 5039218671088050036}
   debugPanel: {fileID: 1470675917}
   battleDebug: {fileID: 0}
-  winButton: {fileID: 1615709704}
-  loseButton: {fileID: 2051020894}
+  closeButton: {fileID: 5144034399445101680}
+  battleButton: {fileID: 7011117890102377070}
   isDebugBattleOn: 1
   battlekinStates: {fileID: 0}
   nakamaKinStates: {fileID: 0}

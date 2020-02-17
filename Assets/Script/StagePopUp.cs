@@ -20,8 +20,9 @@ public class StagePopUp : MonoBehaviour
     public GameObject debugPanel;
     public BattleDebug battleDebug;
 
-    public Button winButton;
-    public Button loseButton;
+
+    public Button closeButton;
+    public Button battleButton;
 
     public bool isDebugBattleOn;
 
@@ -83,6 +84,8 @@ public class StagePopUp : MonoBehaviour
     public void ClosePopUp()
 
     {
+        closeButton.interactable = false;
+
         //シーケンス宣言して、Appendで順番に処理を書いていく、秒数の合計はDestroyの処理時間に合わせる
         Sequence sequence = DOTween.Sequence();
         sequence.Append(backGround.transform.DOScale(new Vector3(1.1f, 1.1f, 1.1f), 0.1f).SetEase(Ease.Linear));
@@ -99,6 +102,8 @@ public class StagePopUp : MonoBehaviour
     {
         if (isDebugBattleOn)
         {
+            battleButton.interactable = false;
+
             //SetUpメソッドで渡された変数statesをbattlekinstatesにいれ、
             //バトルボタンが押されるとbattlekinstateの各データがGameDataクラスに渡される
             //Gamedataクラスはシングルトンでシーンを遷移しても破壊されないので、バトルシーンにタップしたきんのデータが持っていける
@@ -133,6 +138,7 @@ public class StagePopUp : MonoBehaviour
             GameData.instance.nakamaDates = saveNakamaKindata; 
             
             Debug.Log("通ってる");
+            StartCoroutine(SoundManager.instance.StopBGM());
             StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.BATTLE));
         }
         else
@@ -150,5 +156,6 @@ public class StagePopUp : MonoBehaviour
         ClosePopUp();
     }
 
+   
 
 }

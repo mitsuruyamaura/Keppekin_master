@@ -10,9 +10,21 @@ public class BattleMenuPopUp : MonoBehaviour
 
     public GameObject battleBg;
 
+    public Button battleButton;
+    public Button returnStageButton;
+
+
+    void Start()
+    {
+        battleButton.onClick.AddListener(()=>ReturnBattle());
+        returnStageButton.onClick.AddListener(()=>ReturnStage());
+        
+    }
+
     public void ReturnBattle()
 
     {
+        battleButton.interactable = false;
         Debug.Log("バトルボタン押した");
         //シーケンス宣言して、Appendで順番に処理を書いていく、秒数の合計はDestroyの処理時間に合わせる
         Sequence sequence = DOTween.Sequence();
@@ -35,6 +47,7 @@ public class BattleMenuPopUp : MonoBehaviour
 
     public void ReturnStage()
     {
+        returnStageButton.interactable = false;
         Debug.Log("戻るボタン押した");
         StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }

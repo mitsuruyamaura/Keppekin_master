@@ -75,7 +75,7 @@ public class KansatsuManager : MonoBehaviour
         UIManager.instance.SwitchDisplayCanvas(0);
 
         //ボタンの登録
-        returnButton.onClick.AddListener(() => StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME)));
+        returnButton.onClick.AddListener(() => OnclickMoveScene(SCENE_TYPE.HOME, returnButton));
 
         //キンの生成数の表示を更新
         UpdateDisplayKinCount();
@@ -196,6 +196,12 @@ public class KansatsuManager : MonoBehaviour
         txtEnemyCount.text = enemyCount.ToString();
         txtRivalCount.text = rivalCount.ToString();
 
+    }
+
+    private void OnclickMoveScene(SCENE_TYPE sceneType, Button button)
+    {
+        button.interactable = false;
+        StartCoroutine(SceneStateManager.instance.MoveScene(sceneType));
     }
 }
 

@@ -163,7 +163,7 @@ MonoBehaviour:
     type: 3}
   speed: 20
   waitTime: 50
-  debugSwitch: 1
+  debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Clean
   battleUI: {fileID: 0}
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63dbf865d50744a19a9d4f5049c9dbe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.001
+  amplitude: 0.1
 --- !u!1 &3279344390526674909
 GameObject:
   m_ObjectHideFlags: 0
